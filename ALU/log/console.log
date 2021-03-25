@@ -1,839 +1,1369 @@
-# Design Explorer: Shortcut to "C:\My_Designs\SIMD\SIMD.aws" workspace added.
-acom -reorder -O3 -e 100 -work ALU -2002  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (59, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (68, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (77, 5): Keyword 'component' expected.
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Error: COMP96_0025: MULT_SUB_I.vhd : (41, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# Error: COMP96_0025: MULT_ADD_L.vhd : (44, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_L.vhd : (46, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_L.vhd : (46, 12): Design unit declaration expected.
-# Error: COMP96_0025: MULT_SUB_L.vhd : (43, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (45, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (45, 12): Design unit declaration expected.
-# Compile failure 20 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (59, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (68, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (77, 5): Keyword 'component' expected.
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# Error: COMP96_0025: MULT_SUB_I.vhd : (41, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# Error: COMP96_0025: MULT_ADD_L.vhd : (44, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_L.vhd : (46, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_L.vhd : (46, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0025: MULT_SUB_L.vhd : (43, 15): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (45, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (45, 12): Design unit declaration expected.
-# Compile failure 20 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (59, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (68, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (77, 5): Keyword 'component' expected.
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# Error: COMP96_0025: MULT_SUB_I.vhd : (41, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# Error: COMP96_0025: MULT_ADD_L.vhd : (44, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_L.vhd : (46, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_L.vhd : (46, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0025: MULT_SUB_L.vhd : (43, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (45, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (45, 12): Design unit declaration expected.
-# Compile failure 20 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (59, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (68, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (77, 5): Keyword 'component' expected.
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0019: MULT_ADD_I.vhd : (42, 19): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_SUB_I.vhd : (41, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# Error: COMP96_0025: MULT_ADD_L.vhd : (44, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_L.vhd : (46, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_L.vhd : (46, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0025: MULT_SUB_L.vhd : (43, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (45, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (45, 12): Design unit declaration expected.
-# Compile failure 20 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (59, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (68, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (77, 5): Keyword 'component' expected.
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0019: MULT_ADD_I.vhd : (42, 19): Keyword 'begin' expected.
-# Error: COMP96_0329: MULT_ADD_I.vhd : (49, 3): Generate statement must have a label.
-# Error: COMP96_0015: MULT_ADD_I.vhd : (49, 30): ')' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (49, 55): Keyword 'generate' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (51, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (51, 9): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_SUB_I.vhd : (41, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# Error: COMP96_0025: MULT_ADD_L.vhd : (44, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_L.vhd : (46, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_L.vhd : (46, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0025: MULT_SUB_L.vhd : (43, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (45, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (45, 12): Design unit declaration expected.
-# Compile failure 23 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (59, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (68, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (77, 5): Keyword 'component' expected.
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0329: MULT_ADD_I.vhd : (49, 3): Generate statement must have a label.
-# Error: COMP96_0015: MULT_ADD_I.vhd : (49, 30): ')' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (49, 55): Keyword 'generate' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (51, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (51, 9): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# Error: COMP96_0025: MULT_SUB_I.vhd : (41, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# Error: COMP96_0025: MULT_ADD_L.vhd : (44, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_L.vhd : (46, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_L.vhd : (46, 12): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0025: MULT_SUB_L.vhd : (43, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (45, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (45, 12): Design unit declaration expected.
-# Compile failure 23 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_I.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
 # Compile Entity "MULT_ADD_I"
 # Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0329: MULT_ADD_I.vhd : (49, 3): Generate statement must have a label.
-# Error: COMP96_0015: MULT_ADD_I.vhd : (49, 30): ')' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (49, 55): Keyword 'generate' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (51, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (51, 9): Design unit declaration expected.
-# Compile failure 6 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
+# Error: COMP96_0078: MULT_ADD_I.vhd : (48, 55): Unknown identifier "sign".
+# Error: COMP96_0133: MULT_ADD_I.vhd : (48, 55): Cannot find object declaration.
+# Error: COMP96_0077: MULT_ADD_I.vhd : (48, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: MULT_ADD_I.vhd : (50, 58): Unknown identifier "sign".
+# Error: COMP96_0133: MULT_ADD_I.vhd : (50, 58): Cannot find object declaration.
+# Error: COMP96_0077: MULT_ADD_I.vhd : (50, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_I.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
 # Compile Entity "MULT_ADD_I"
 # Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0019: MULT_ADD_I.vhd : (43, 3): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -2002  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
-# Error: COMP96_0025: MULT_ADD_I.vhd : (42, 11): Identifier or string literal expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 2): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 11): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0019: MULT_ADD_I.vhd : (43, 3): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0019: MULT_ADD_I.vhd : (43, 3): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (44, 10): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0015: MULT_ADD_I.vhd : (50, 30): ')' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (50, 55): Keyword 'then' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (52, 3): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_ADD_I.vhd : (54, 7): ';' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (54, 9): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0123: MULT_ADD_I.vhd : (47, 3): Variable or constant cannot be the target of a signal assignment.
-# Error: COMP96_0143: MULT_ADD_I.vhd : (47, 3): Object "product" cannot be written.
-# Error: COMP96_0123: MULT_ADD_I.vhd : (48, 3): Variable or constant cannot be the target of a signal assignment.
-# Error: COMP96_0143: MULT_ADD_I.vhd : (48, 3): Object "sign" cannot be written.
-# Error: COMP96_0123: MULT_ADD_I.vhd : (49, 3): Variable or constant cannot be the target of a signal assignment.
-# Error: COMP96_0143: MULT_ADD_I.vhd : (49, 3): Object "sum" cannot be written.
-# Error: COMP96_0123: MULT_ADD_I.vhd : (51, 4): Variable or constant cannot be the target of a signal assignment.
-# Error: COMP96_0143: MULT_ADD_I.vhd : (51, 4): Object "sum" cannot be written.
-# Error: COMP96_0123: MULT_ADD_I.vhd : (53, 4): Variable or constant cannot be the target of a signal assignment.
-# Error: COMP96_0143: MULT_ADD_I.vhd : (53, 4): Object "sum" cannot be written.
-# Compile failure 10 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0015: MULT_ADD_I.vhd : (47, 11): ';' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (47, 11): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_ADD_I.vhd : (48, 8): ';' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (48, 8): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (48, 11): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0015: MULT_ADD_I.vhd : (47, 11): ';' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (47, 11): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_ADD_I.vhd : (48, 8): ';' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (48, 8): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (48, 11): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# Error: COMP96_0015: MULT_ADD_I.vhd : (47, 11): ';' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (47, 11): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_ADD_I.vhd : (48, 8): ';' expected.
-# Error: COMP96_0019: MULT_ADD_I.vhd : (48, 8): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_I.vhd : (48, 11): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_SUB_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# Error: COMP96_0019: MULT_SUB_I.vhd : (41, 15): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_SUB_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# Error: COMP96_0019: MULT_SUB_I.vhd : (41, 15): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (43, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (43, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_ADD_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# Error: COMP96_0019: MULT_ADD_L.vhd : (44, 15): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_ADD_L.vhd : (46, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_ADD_L.vhd : (46, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0019: MULT_SUB_L.vhd : (43, 15): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (45, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (45, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0015: MULT_SUB_L.vhd : (48, 11): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (48, 11): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_SUB_L.vhd : (49, 8): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (49, 8): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (49, 11): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0015: MULT_SUB_L.vhd : (50, 7): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (50, 7): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_SUB_L.vhd : (51, 7): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (51, 7): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (51, 9): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0015: MULT_SUB_L.vhd : (48, 11): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (48, 11): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_SUB_L.vhd : (49, 8): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (49, 8): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (49, 11): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -2008  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0015: MULT_SUB_L.vhd : (48, 11): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (48, 11): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_SUB_L.vhd : (49, 8): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (49, 8): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (49, 11): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0015: MULT_SUB_L.vhd : (48, 11): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (48, 11): Keyword 'end' expected.
-# Error: COMP96_0015: MULT_SUB_L.vhd : (49, 8): ';' expected.
-# Error: COMP96_0019: MULT_SUB_L.vhd : (49, 8): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_L.vhd : (49, 11): Design unit declaration expected.
-# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Error: COMP96_0078: MULT_SUB_L.vhd : (40, 19): Unknown identifier "signed".
-# Error: COMP96_0064: MULT_SUB_L.vhd : (40, 19): Unknown type.
-# Error: COMP96_0078: MULT_SUB_L.vhd : (41, 19): Unknown identifier "signed".
-# Error: COMP96_0064: MULT_SUB_L.vhd : (41, 19): Unknown type.
-# Error: COMP96_0078: MULT_SUB_L.vhd : (44, 21): Unknown identifier "signed".
-# Error: COMP96_0064: MULT_SUB_L.vhd : (44, 21): Unknown type.
-# Error: COMP96_0078: MULT_SUB_L.vhd : (45, 17): Unknown identifier "signed".
-# Error: COMP96_0064: MULT_SUB_L.vhd : (45, 17): Unknown type.
-# Error: COMP96_0078: MULT_SUB_L.vhd : (48, 15): Unknown identifier "signed".
-# Error: COMP96_0078: MULT_SUB_L.vhd : (48, 27): Unknown identifier "signed".
-# Error: COMP96_0289: MULT_SUB_L.vhd : (49, 12): Prefix of index must be an array.
-# Error: COMP96_0077: MULT_SUB_L.vhd : (49, 12): Undefined type of expression. Expected type 'STD_ULOGIC'.
-# Error: COMP96_0078: MULT_SUB_L.vhd : (50, 10): Unknown identifier "signed".
-# Error: COMP96_0289: MULT_SUB_L.vhd : (51, 36): Prefix of index must be an array.
-# Error: COMP96_0077: MULT_SUB_L.vhd : (51, 6): Undefined type of expression. Expected type 'BOOLEAN'.
-# Error: COMP96_0289: MULT_SUB_L.vhd : (53, 39): Prefix of index must be an array.
-# Error: COMP96_0077: MULT_SUB_L.vhd : (53, 9): Undefined type of expression. Expected type 'BOOLEAN'.
-# Error: COMP96_0149: MULT_SUB_L.vhd : (56, 30): Explicit type conversions are allowed between closely related types only.
-# Compile failure 18 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_SUB_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_SUB_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# Error: COMP96_0019: MULT_SUB_I.vhd : (42, 15): Keyword 'begin' expected.
-# Error: COMP96_0019: MULT_SUB_I.vhd : (44, 3): Keyword 'end' expected.
-# Error: COMP96_0016: MULT_SUB_I.vhd : (44, 12): Design unit declaration expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_SUB_I.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_ADD_L.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
 # Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_SUB_L.vhd
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_I.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/MULT_ADD_I.vhd
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_L.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2018  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_L.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
-# Compile Entity "MULT_ADD_I"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
 # File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
 # Compile Entity "MULT_SUB_L"
 # Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Compile failure 4 Errors 0 Warnings  Analysis time :  93.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_I.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (59, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (68, 6): Keyword 'component' expected.
-# Error: COMP96_0019: ALU.vhd : (77, 5): Keyword 'component' expected.
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
 # File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
 # Compile Entity "MULT_ADD_I"
 # Compile Architecture "behavioral" of Entity "MULT_ADD_I"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
-# Compile Entity "MULT_SUB_I"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
-# Compile Entity "MULT_ADD_L"
-# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
-# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
-# Compile Entity "MULT_SUB_L"
-# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
-# Compile failure 8 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0329: ALU.vhd : (80, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (80, 31): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0015: ALU.vhd : (96, 27): ';' expected.
-# Error: COMP96_0019: ALU.vhd : (96, 27): Keyword 'end' expected.
-# Error: COMP96_0019: ALU.vhd : (96, 32): Keyword 'case' expected.
-# Error: COMP96_0015: ALU.vhd : (97, 27): ';' expected.
-# Error: COMP96_0019: ALU.vhd : (97, 27): Keyword 'end' expected.
-# Error: COMP96_0015: ALU.vhd : (98, 27): ';' expected.
-# Error: COMP96_0019: ALU.vhd : (98, 27): Keyword 'end' expected.
-# Error: COMP96_0019: ALU.vhd : (100, 5): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (100, 10): Design unit declaration expected.
-# Compile failure 9 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0046: ALU.vhd : (96, 6): Sequential statement expected.
-# Error: COMP96_0015: ALU.vhd : (97, 27): ';' expected.
-# Error: COMP96_0019: ALU.vhd : (97, 27): Keyword 'end' expected.
-# Error: COMP96_0019: ALU.vhd : (97, 32): Keyword 'case' expected.
-# Error: COMP96_0015: ALU.vhd : (98, 27): ';' expected.
-# Error: COMP96_0019: ALU.vhd : (98, 27): Keyword 'end' expected.
-# Error: COMP96_0015: ALU.vhd : (99, 27): ';' expected.
-# Error: COMP96_0019: ALU.vhd : (99, 27): Keyword 'end' expected.
-# Error: COMP96_0019: ALU.vhd : (100, 5): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (100, 10): Design unit declaration expected.
-# Compile failure 10 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0329: ALU.vhd : (79, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (79, 24): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (83, 5): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (83, 10): Design unit declaration expected.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0329: ALU.vhd : (79, 2): Generate statement must have a label.
-# Error: COMP96_0019: ALU.vhd : (79, 24): Keyword 'generate' expected.
-# Error: COMP96_0019: ALU.vhd : (85, 6): Keyword 'end' expected.
-# Error: COMP96_0016: ALU.vhd : (85, 11): Design unit declaration expected.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMALS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
-# Compile Entity "SIMALS"
-# Error: COMP96_0018: SIMALS.vhd : (37, 7): Identifier expected.
-# Compile Architecture "structural" of Entity "SIMALS"
-# Error: COMP96_0018: SIMALS.vhd : (43, 9): Identifier expected.
-# Error: COMP96_0033: SIMALS.vhd : (53, 106): Missing actual.
-# Error: COMP96_0724: SIMALS.vhd : (53, 106): ',' or ')' expected.
-# Error: COMP96_0015: SIMALS.vhd : (53, 109): ';' expected.
-# Error: COMP96_0033: SIMALS.vhd : (54, 109): Missing actual.
-# Error: COMP96_0724: SIMALS.vhd : (54, 109): ',' or ')' expected.
-# Error: COMP96_0015: SIMALS.vhd : (54, 112): ';' expected.
-# Error: COMP96_0033: SIMALS.vhd : (55, 109): Missing actual.
-# Error: COMP96_0724: SIMALS.vhd : (55, 109): ',' or ')' expected.
-# Error: COMP96_0015: SIMALS.vhd : (55, 112): ';' expected.
-# Error: COMP96_0033: SIMALS.vhd : (56, 112): Missing actual.
-# Error: COMP96_0724: SIMALS.vhd : (56, 112): ',' or ')' expected.
-# Error: COMP96_0015: SIMALS.vhd : (56, 115): ';' expected.
-# Error: COMP96_0029: SIMALS.vhd : (60, 9): Expression expected.
-# Compile failure 15 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMALS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
-# Compile Entity "SIMALS"
-# Error: COMP96_0018: SIMALS.vhd : (37, 7): Identifier expected.
-# Compile Architecture "structural" of Entity "SIMALS"
-# Error: COMP96_0056: SIMALS.vhd : (42, 1): Cannot find referenced entity declaration "SIMALS".
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0019: AHS.vhd : (107, 5): Keyword 'process' expected.
+# Error: COMP96_0019: AHS.vhd : (108, 0): Keyword 'end' expected.
 # Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMALS.vhd
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
-# Compile Entity "SIMALS"
-# Error: COMP96_0018: SIMALS.vhd : (37, 4): Identifier expected.
-# Compile Architecture "structural" of Entity "SIMALS"
-# Error: COMP96_0056: SIMALS.vhd : (42, 1): Cannot find referenced entity declaration "SIMALS".
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0753: AHS.vhd : (43, 39): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (43, 22): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (44, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (44, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (45, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (45, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (46, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (46, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (47, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (47, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (48, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (48, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (49, 43): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (49, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (50, 45): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (50, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0367: AHS.vhd : (52, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (53, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0110: AHS.vhd : (57, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (59, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (63, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (65, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (69, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (71, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (75, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (77, 5): Signal cannot be the target of a variable assignment.
+# Warning: COMP96_0119: AHS.vhd : (77, 9): The range is 'null range'.
+# Error: COMP96_0367: AHS.vhd : (77, 26): Improper array length (16). Expected length is 0.
+# Error: COMP96_0110: AHS.vhd : (81, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (83, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (87, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (89, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (93, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (95, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (99, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (101, 5): Signal cannot be the target of a variable assignment.
+# Compile failure 35 Errors 1 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0047: AHS.vhd : (43, 2): Concurrent statement or ':' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0019: AHS.vhd : (43, 19): Keyword '<=' expected.
+# Error: COMP96_0015: AHS.vhd : (43, 34): '=>' expected.
 # Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMALS.vhd
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0753: AHS.vhd : (43, 39): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (43, 22): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (44, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (44, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (45, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (45, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (46, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (46, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (47, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (47, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (48, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (48, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (49, 43): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (49, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (50, 45): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (50, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0367: AHS.vhd : (52, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (53, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0110: AHS.vhd : (57, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (59, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (63, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (65, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (69, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (71, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (75, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (77, 5): Signal cannot be the target of a variable assignment.
+# Warning: COMP96_0119: AHS.vhd : (77, 9): The range is 'null range'.
+# Error: COMP96_0367: AHS.vhd : (77, 26): Improper array length (16). Expected length is 0.
+# Error: COMP96_0110: AHS.vhd : (81, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (83, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (87, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (89, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (93, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (95, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (99, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (101, 5): Signal cannot be the target of a variable assignment.
+# Compile failure 35 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0753: AHS.vhd : (47, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (47, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (48, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (48, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (49, 41): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (49, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (50, 43): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (50, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0753: AHS.vhd : (51, 45): Cannot find the "+" operator with operands denoted with the "[STD_ULOGIC_VECTOR, STD_ULOGIC_VECTOR]" signature.
+# Error: COMP96_0077: AHS.vhd : (51, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0367: AHS.vhd : (53, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (54, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0110: AHS.vhd : (58, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (60, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (64, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (66, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (70, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (72, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (76, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (78, 5): Signal cannot be the target of a variable assignment.
+# Warning: COMP96_0119: AHS.vhd : (78, 9): The range is 'null range'.
+# Error: COMP96_0367: AHS.vhd : (78, 26): Improper array length (16). Expected length is 0.
+# Error: COMP96_0110: AHS.vhd : (82, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (84, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (88, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (90, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (94, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (96, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (100, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (102, 5): Signal cannot be the target of a variable assignment.
+# Compile failure 29 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0367: AHS.vhd : (53, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (54, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0110: AHS.vhd : (58, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (60, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (64, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (66, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (70, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (72, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (76, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (78, 5): Signal cannot be the target of a variable assignment.
+# Warning: COMP96_0119: AHS.vhd : (78, 9): The range is 'null range'.
+# Error: COMP96_0367: AHS.vhd : (78, 26): Improper array length (16). Expected length is 0.
+# Error: COMP96_0110: AHS.vhd : (82, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (84, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (88, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (90, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (94, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (96, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (100, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (102, 5): Signal cannot be the target of a variable assignment.
+# Compile failure 19 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0367: AHS.vhd : (53, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (54, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0110: AHS.vhd : (60, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (64, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (66, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (70, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (72, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (76, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (78, 5): Signal cannot be the target of a variable assignment.
+# Warning: COMP96_0119: AHS.vhd : (78, 9): The range is 'null range'.
+# Error: COMP96_0367: AHS.vhd : (78, 26): Improper array length (16). Expected length is 0.
+# Error: COMP96_0110: AHS.vhd : (82, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (84, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (88, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (90, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (94, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (96, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (100, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0110: AHS.vhd : (102, 5): Signal cannot be the target of a variable assignment.
+# Compile failure 18 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Error: COMP96_0367: AHS.vhd : (53, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (54, 52): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (58, 25): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (60, 25): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (64, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (66, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (70, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (72, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (76, 26): Improper array length (17). Expected length is 16.
+# Warning: COMP96_0119: AHS.vhd : (78, 9): The range is 'null range'.
+# Error: COMP96_0367: AHS.vhd : (78, 26): Improper array length (17). Expected length is 0.
+# Error: COMP96_0367: AHS.vhd : (82, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (84, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (88, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (90, 26): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (94, 27): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (96, 27): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (100, 28): Improper array length (17). Expected length is 16.
+# Error: COMP96_0367: AHS.vhd : (102, 28): Improper array length (17). Expected length is 16.
+# Compile failure 18 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Warning: COMP96_0119: AHS.vhd : (78, 9): The range is 'null range'.
+# Error: COMP96_0367: AHS.vhd : (78, 26): Improper array length (16). Expected length is 0.
+# Compile failure 1 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AND_128.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd
+# Compile Entity "AND_128"
+# Compile Architecture "behavioral" of Entity "AND_128"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd $dsn/src/SIMALS.vhd $dsn/src/SIMAHS.vhd $dsn/src/SIMSLS.vhd $dsn/src/SIMSHS.vhd $dsn/src/SLIMALS.vhd $dsn/src/SLIMAHS.vhd $dsn/src/SLIMSLS.vhd $dsn/src/SLIMSHS.vhd $dsn/src/NOP.vhd $dsn/src/AU.vhd $dsn/src/ABSDB.vhd $dsn/src/AHU.vhd $dsn/src/AHS.vhd $dsn/src/AND_128.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0329: ALU.vhd : (44, 2): Generate statement must have a label.
+# Error: COMP96_0019: ALU.vhd : (44, 24): Keyword 'generate' expected.
+# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'end' expected.
+# Error: COMP96_0016: ALU.vhd : (50, 11): Design unit declaration expected.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
 # File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
 # Compile Entity "SIMALS"
-# Compile Architecture "structural" of Entity "SIMALS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMAHS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile Architecture "behavioral" of Entity "SIMALS"
 # File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
 # Compile Entity "SIMAHS"
-# Compile Architecture "structural" of Entity "SIMAHS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMAHS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
-# Compile Entity "SIMAHS"
-# Compile Architecture "structural" of Entity "SIMAHS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMALS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
-# Compile Entity "SLIMALS"
-# Compile Architecture "structural" of Entity "SLIMALS"
-# Error: COMP96_0090: SLIMALS.vhd : (52, 81): Expected array type.
-# Error: COMP96_0090: SLIMALS.vhd : (53, 83): Expected array type.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMSHS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
+# Compile Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
 # File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
 # Compile Entity "SIMSHS"
-# Compile Architecture "structural" of Entity "SIMSHS"
+# Compile Architecture "behavioral" of Entity "SIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
+# Compile Entity "SLIMALS"
+# Compile Architecture "behavioral" of Entity "SLIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
+# Compile Entity "SLIMAHS"
+# Compile Architecture "behavioral" of Entity "SLIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
+# Compile Entity "SLIMSLS"
+# Compile Architecture "behavioral" of Entity "SLIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd
+# Compile Entity "SLIMSHS"
+# Compile Architecture "behavioral" of Entity "SLIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/NOP.vhd
+# Compile Entity "NOP"
+# Compile Architecture "behavioral" of Entity "NOP"
+# File: C:/My_Designs/SIMD/ALU/src/AU.vhd
+# Compile Entity "AU"
+# Compile Architecture "behavioral" of Entity "AU"
+# File: C:/My_Designs/SIMD/ALU/src/ABSDB.vhd
+# Compile Entity "ABSDB"
+# Compile Architecture "behavioral" of Entity "ABSDB"
+# File: C:/My_Designs/SIMD/ALU/src/AHU.vhd
+# Compile Entity "AHU"
+# Compile Architecture "behavioral" of Entity "AHU"
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd
+# Compile Entity "AND_128"
+# Compile Architecture "behavioral" of Entity "AND_128"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd $dsn/src/SIMALS.vhd $dsn/src/SIMAHS.vhd $dsn/src/SIMSLS.vhd $dsn/src/SIMSHS.vhd $dsn/src/SLIMALS.vhd $dsn/src/SLIMAHS.vhd $dsn/src/SLIMSLS.vhd $dsn/src/SLIMSHS.vhd $dsn/src/NOP.vhd $dsn/src/AU.vhd $dsn/src/ABSDB.vhd $dsn/src/AHU.vhd $dsn/src/AHS.vhd $dsn/src/AND_128.vhd $dsn/src/BCW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0329: ALU.vhd : (44, 2): Generate statement must have a label.
+# Error: COMP96_0019: ALU.vhd : (44, 24): Keyword 'generate' expected.
+# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'end' expected.
+# Error: COMP96_0016: ALU.vhd : (50, 11): Design unit declaration expected.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
+# Compile Entity "SIMAHS"
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
+# Compile Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
+# Compile Entity "SIMSHS"
+# Compile Architecture "behavioral" of Entity "SIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
+# Compile Entity "SLIMALS"
+# Compile Architecture "behavioral" of Entity "SLIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
+# Compile Entity "SLIMAHS"
+# Compile Architecture "behavioral" of Entity "SLIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
+# Compile Entity "SLIMSLS"
+# Compile Architecture "behavioral" of Entity "SLIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd
+# Compile Entity "SLIMSHS"
+# Compile Architecture "behavioral" of Entity "SLIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/NOP.vhd
+# Compile Entity "NOP"
+# Compile Architecture "behavioral" of Entity "NOP"
+# File: C:/My_Designs/SIMD/ALU/src/AU.vhd
+# Compile Entity "AU"
+# Compile Architecture "behavioral" of Entity "AU"
+# File: C:/My_Designs/SIMD/ALU/src/ABSDB.vhd
+# Compile Entity "ABSDB"
+# Compile Architecture "behavioral" of Entity "ABSDB"
+# File: C:/My_Designs/SIMD/ALU/src/AHU.vhd
+# Compile Entity "AHU"
+# Compile Architecture "behavioral" of Entity "AHU"
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd
+# Compile Entity "AND_128"
+# Compile Architecture "behavioral" of Entity "AND_128"
+# File: C:/My_Designs/SIMD/ALU/src/BCW.vhd
+# Compile Entity "BCW"
+# Compile Architecture "behavioral" of Entity "BCW"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/BCW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/BCW.vhd
+# Compile Entity "BCW"
+# Compile Architecture "behavioral" of Entity "BCW"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMALS.vhd
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd $dsn/src/SIMALS.vhd $dsn/src/SIMAHS.vhd $dsn/src/SIMSLS.vhd $dsn/src/SIMSHS.vhd $dsn/src/SLIMALS.vhd $dsn/src/SLIMAHS.vhd $dsn/src/SLIMSLS.vhd $dsn/src/SLIMSHS.vhd $dsn/src/NOP.vhd $dsn/src/AU.vhd $dsn/src/ABSDB.vhd $dsn/src/AHU.vhd $dsn/src/AHS.vhd $dsn/src/AND_128.vhd $dsn/src/BCW.vhd $dsn/src/MAXWS.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0329: ALU.vhd : (44, 2): Generate statement must have a label.
+# Error: COMP96_0019: ALU.vhd : (44, 24): Keyword 'generate' expected.
+# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'end' expected.
+# Error: COMP96_0016: ALU.vhd : (50, 11): Design unit declaration expected.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
+# Compile Entity "SIMAHS"
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
+# Compile Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
+# Compile Entity "SIMSHS"
+# Compile Architecture "behavioral" of Entity "SIMSHS"
 # File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
 # Compile Entity "SLIMALS"
-# Compile Architecture "structural" of Entity "SLIMALS"
-# Error: COMP96_0090: SLIMALS.vhd : (52, 81): Expected array type.
-# Error: COMP96_0090: SLIMALS.vhd : (53, 83): Expected array type.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMALS.vhd
+# Compile Architecture "behavioral" of Entity "SLIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
+# Compile Entity "SLIMAHS"
+# Compile Architecture "behavioral" of Entity "SLIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
+# Compile Entity "SLIMSLS"
+# Compile Architecture "behavioral" of Entity "SLIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd
+# Compile Entity "SLIMSHS"
+# Compile Architecture "behavioral" of Entity "SLIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/NOP.vhd
+# Compile Entity "NOP"
+# Compile Architecture "behavioral" of Entity "NOP"
+# File: C:/My_Designs/SIMD/ALU/src/AU.vhd
+# Compile Entity "AU"
+# Compile Architecture "behavioral" of Entity "AU"
+# File: C:/My_Designs/SIMD/ALU/src/ABSDB.vhd
+# Compile Entity "ABSDB"
+# Compile Architecture "behavioral" of Entity "ABSDB"
+# File: C:/My_Designs/SIMD/ALU/src/AHU.vhd
+# Compile Entity "AHU"
+# Compile Architecture "behavioral" of Entity "AHU"
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd
+# Compile Entity "AND_128"
+# Compile Architecture "behavioral" of Entity "AND_128"
+# File: C:/My_Designs/SIMD/ALU/src/BCW.vhd
+# Compile Entity "BCW"
+# Compile Architecture "behavioral" of Entity "BCW"
+# File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "behavioral" of Entity "MAXWS"
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MAXWS.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
-# Compile Entity "SLIMALS"
-# Compile Architecture "structural" of Entity "SLIMALS"
-# Error: COMP96_0090: SLIMALS.vhd : (53, 81): Expected array type.
-# Error: COMP96_0090: SLIMALS.vhd : (54, 83): Expected array type.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "behavioral" of Entity "MAXWS"
+# Error: COMP96_0019: MAXWS.vhd : (47, 9): Keyword 'end' expected.
+# Error: COMP96_0019: MAXWS.vhd : (53, 9): Keyword 'end' expected.
+# Error: COMP96_0019: MAXWS.vhd : (55, 8): Keyword 'process' expected.
+# Error: COMP96_0329: MAXWS.vhd : (57, 4): Generate statement must have a label.
+# Error: COMP96_0019: MAXWS.vhd : (57, 59): Keyword 'generate' expected.
+# Error: COMP96_0019: MAXWS.vhd : (59, 4): Keyword 'end' expected.
+# Error: COMP96_0016: MAXWS.vhd : (59, 9): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MAXWS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "behavioral" of Entity "MAXWS"
+# Error: COMP96_0019: MAXWS.vhd : (53, 9): Keyword 'end' expected.
+# Error: COMP96_0019: MAXWS.vhd : (59, 9): Keyword 'end' expected.
+# Error: COMP96_0019: MAXWS.vhd : (61, 8): Keyword 'process' expected.
+# Error: COMP96_0329: MAXWS.vhd : (63, 4): Generate statement must have a label.
+# Error: COMP96_0019: MAXWS.vhd : (63, 61): Keyword 'generate' expected.
+# Error: COMP96_0019: MAXWS.vhd : (65, 4): Keyword 'end' expected.
+# Error: COMP96_0016: MAXWS.vhd : (65, 9): Design unit declaration expected.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MAXWS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "behavioral" of Entity "MAXWS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MINWS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MINWS.vhd
+# Compile Entity "MINWS"
+# Compile Architecture "behavioral" of Entity "MINWS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MLHU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MLHU.vhd
+# Compile Entity "MLHU"
+# Compile Architecture "behavioral" of Entity "MLHU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MLHU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MLHU.vhd
+# Compile Entity "MLHU"
+# Compile Architecture "behavioral" of Entity "MLHU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMALS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMAHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
+# Compile Entity "SIMAHS"
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
 acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMSLS.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
 # Compile Entity "SIMSLS"
-# Compile Architecture "structural" of Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
 # Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMSHS.vhd
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd $dsn/src/SIMALS.vhd $dsn/src/SIMAHS.vhd $dsn/src/SIMSLS.vhd $dsn/src/SIMSHS.vhd $dsn/src/SLIMALS.vhd $dsn/src/SLIMAHS.vhd $dsn/src/SLIMSLS.vhd $dsn/src/SLIMSHS.vhd $dsn/src/NOP.vhd $dsn/src/AU.vhd $dsn/src/ABSDB.vhd $dsn/src/AHU.vhd $dsn/src/AHS.vhd $dsn/src/AND_128.vhd $dsn/src/BCW.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHU.vhd $dsn/src/MLHCU.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
-# Compile Entity "SIMSHS"
-# Compile Architecture "structural" of Entity "SIMSHS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMALS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
-# Compile Entity "SLIMALS"
-# Compile Architecture "structural" of Entity "SLIMALS"
-# Error: COMP96_0090: SLIMALS.vhd : (53, 81): Expected array type.
-# Error: COMP96_0090: SLIMALS.vhd : (54, 83): Expected array type.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMALS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
-# Compile Entity "SLIMALS"
-# Compile Architecture "structural" of Entity "SLIMALS"
-# Error: COMP96_0090: SLIMALS.vhd : (53, 81): Expected array type.
-# Error: COMP96_0090: SLIMALS.vhd : (54, 83): Expected array type.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMALS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
-# Compile Entity "SLIMALS"
-# Compile Architecture "structural" of Entity "SLIMALS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMAHS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
-# Compile Entity "SLIMAHS"
-# Compile Architecture "structural" of Entity "SLIMAHS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMSLS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
-# Compile Entity "SLIMSLS"
-# Compile Architecture "structural" of Entity "SLIMSLS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMAHS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0329: ALU.vhd : (44, 2): Generate statement must have a label.
+# Error: COMP96_0019: ALU.vhd : (44, 24): Keyword 'generate' expected.
+# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'end' expected.
+# Error: COMP96_0016: ALU.vhd : (50, 11): Design unit declaration expected.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
 # File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
 # Compile Entity "SIMAHS"
-# Compile Architecture "structural" of Entity "SIMAHS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SLIMSHS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
+# Compile Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
+# Compile Entity "SIMSHS"
+# Compile Architecture "behavioral" of Entity "SIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
+# Compile Entity "SLIMALS"
+# Compile Architecture "behavioral" of Entity "SLIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
+# Compile Entity "SLIMAHS"
+# Compile Architecture "behavioral" of Entity "SLIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
+# Compile Entity "SLIMSLS"
+# Compile Architecture "behavioral" of Entity "SLIMSLS"
 # File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd
 # Compile Entity "SLIMSHS"
-# Compile Architecture "structural" of Entity "SLIMSHS"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/NOP.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile Architecture "behavioral" of Entity "SLIMSHS"
 # File: C:/My_Designs/SIMD/ALU/src/NOP.vhd
 # Compile Entity "NOP"
 # Compile Architecture "behavioral" of Entity "NOP"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AU.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/SIMD/ALU/src/AU.vhd
 # Compile Entity "AU"
 # Compile Architecture "behavioral" of Entity "AU"
-# Error: COMP96_0078: AU.vhd : (43, 40): Unknown identifier "unsigned".
-# Error: COMP96_0078: AU.vhd : (43, 67): Unknown identifier "unsigned".
-# Error: COMP96_0133: AU.vhd : (43, 67): Cannot find object declaration.
-# Error: COMP96_0289: AU.vhd : (43, 67): Prefix of index must be an array.
-# Error: COMP96_0133: AU.vhd : (43, 40): Cannot find object declaration.
-# Error: COMP96_0289: AU.vhd : (43, 40): Prefix of index must be an array.
-# Error: COMP96_0149: AU.vhd : (43, 40): Explicit type conversions are allowed between closely related types only.
-# Error: COMP96_0078: AU.vhd : (44, 40): Unknown identifier "unsigned".
-# Error: COMP96_0078: AU.vhd : (44, 68): Unknown identifier "unsigned".
-# Error: COMP96_0133: AU.vhd : (44, 68): Cannot find object declaration.
-# Error: COMP96_0289: AU.vhd : (44, 68): Prefix of index must be an array.
-# Error: COMP96_0133: AU.vhd : (44, 40): Cannot find object declaration.
-# Error: COMP96_0289: AU.vhd : (44, 40): Prefix of index must be an array.
-# Error: COMP96_0149: AU.vhd : (44, 40): Explicit type conversions are allowed between closely related types only.
-# Error: COMP96_0078: AU.vhd : (45, 40): Unknown identifier "unsigned".
-# Error: COMP96_0078: AU.vhd : (45, 68): Unknown identifier "unsigned".
-# Error: COMP96_0133: AU.vhd : (45, 68): Cannot find object declaration.
-# Error: COMP96_0289: AU.vhd : (45, 68): Prefix of index must be an array.
-# Error: COMP96_0133: AU.vhd : (45, 40): Cannot find object declaration.
-# Error: COMP96_0289: AU.vhd : (45, 40): Prefix of index must be an array.
-# Error: COMP96_0149: AU.vhd : (45, 40): Explicit type conversions are allowed between closel
+# File: C:/My_Designs/SIMD/ALU/src/ABSDB.vhd
+# Compile Entity "ABSDB"
+# Compile Architecture "behavioral" of Entity "ABSDB"
+# File: C:/My_Designs/SIMD/ALU/src/AHU.vhd
+# Compile Entity "AHU"
+# Compile Architecture "behavioral" of Entity "AHU"
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd
+# Compile Entity "AND_128"
+# Compile Architecture "behavioral" of Entity "AND_128"
+# File: C:/My_Designs/SIMD/ALU/src/BCW.vhd
+# Compile Entity "BCW"
+# Compile Architecture "behavioral" of Entity "BCW"
+# File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "behavioral" of Entity "MAXWS"
+# File: C:/My_Designs/SIMD/ALU/src/MINWS.vhd
+# Compile Entity "MINWS"
+# Compile Architecture "behavioral" of Entity "MINWS"
+# File: C:/My_Designs/SIMD/ALU/src/MLHU.vhd
+# Compile Entity "MLHU"
+# Compile Architecture "behavioral" of Entity "MLHU"
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# Error: COMP96_0019: MLHCU.vhd : (43, 83): Keyword 'when' expected.
+# Error: COMP96_0015: MLHCU.vhd : (43, 83): ';' expected.
+# Error: COMP96_0019: MLHCU.vhd : (43, 83): Keyword 'end' expected.
+# Error: COMP96_0016: MLHCU.vhd : (43, 84): Design unit declaration expected.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MLHCU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# Warning: COMP96_0367: MLHCU.vhd : (43, 22): Improper array length (21). Expected length is 32.
+# Warning: COMP96_0367: MLHCU.vhd : (44, 23): Improper array length (21). Expected length is 32.
+# Warning: COMP96_0367: MLHCU.vhd : (45, 23): Improper array length (21). Expected length is 32.
+# Warning: COMP96_0367: MLHCU.vhd : (46, 24): Improper array length (21). Expected length is 32.
+# Compile success 0 Errors 4 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MLHCU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# Warning: COMP96_0367: MLHCU.vhd : (44, 23): Improper array length (21). Expected length is 32.
+# Warning: COMP96_0367: MLHCU.vhd : (45, 23): Improper array length (21). Expected length is 32.
+# Warning: COMP96_0367: MLHCU.vhd : (46, 24): Improper array length (21). Expected length is 32.
+# Compile success 0 Errors 3 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MLHCU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MLHCU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MLHCU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/PCNTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/PCNTW.vhd
+# Compile Entity "PCNTW"
+# Compile Architecture "behavioral" of Entity "PCNTW"
+# Error: COMP96_0019: PCNTW.vhd : (46, 24): Keyword 'end' expected.
+# Error: COMP96_0019: PCNTW.vhd : (48, 7): Keyword 'process' expected.
+# Error: COMP96_0015: PCNTW.vhd : (50, 6): ';' expected.
+# Error: COMP96_0016: PCNTW.vhd : (50, 13): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/PCNTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/PCNTW.vhd
+# Compile Entity "PCNTW"
+# Compile Architecture "behavioral" of Entity "PCNTW"
+# Error: COMP96_0019: PCNTW.vhd : (55, 24): Keyword 'end' expected.
+# Error: COMP96_0019: PCNTW.vhd : (57, 7): Keyword 'process' expected.
+# Error: COMP96_0015: PCNTW.vhd : (59, 6): ';' expected.
+# Error: COMP96_0016: PCNTW.vhd : (59, 13): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/PCNTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/PCNTW.vhd
+# Compile Entity "PCNTW"
+# Compile Architecture "behavioral" of Entity "PCNTW"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd $dsn/src/SIMALS.vhd $dsn/src/SIMAHS.vhd $dsn/src/SIMSLS.vhd $dsn/src/SIMSHS.vhd $dsn/src/SLIMALS.vhd $dsn/src/SLIMAHS.vhd $dsn/src/SLIMSLS.vhd $dsn/src/SLIMSHS.vhd $dsn/src/NOP.vhd $dsn/src/AU.vhd $dsn/src/ABSDB.vhd $dsn/src/AHU.vhd $dsn/src/AHS.vhd $dsn/src/AND_128.vhd $dsn/src/BCW.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHU.vhd $dsn/src/MLHCU.vhd $dsn/src/OR_128.vhd $dsn/src/PCNTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0329: ALU.vhd : (44, 2): Generate statement must have a label.
+# Error: COMP96_0019: ALU.vhd : (44, 24): Keyword 'generate' expected.
+# Error: COMP96_0019: ALU.vhd : (50, 6): Keyword 'end' expected.
+# Error: COMP96_0016: ALU.vhd : (50, 11): Design unit declaration expected.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
+# Compile Entity "SIMAHS"
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
+# Compile Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
+# Compile Entity "SIMSHS"
+# Compile Architecture "behavioral" of Entity "SIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
+# Compile Entity "SLIMALS"
+# Compile Architecture "behavioral" of Entity "SLIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
+# Compile Entity "SLIMAHS"
+# Compile Architecture "behavioral" of Entity "SLIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
+# Compile Entity "SLIMSLS"
+# Compile Architecture "behavioral" of Entity "SLIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd
+# Compile Entity "SLIMSHS"
+# Compile Architecture "behavioral" of Entity "SLIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/NOP.vhd
+# Compile Entity "NOP"
+# Compile Architecture "behavioral" of Entity "NOP"
+# File: C:/My_Designs/SIMD/ALU/src/AU.vhd
+# Compile Entity "AU"
+# Compile Architecture "behavioral" of Entity "AU"
+# File: C:/My_Designs/SIMD/ALU/src/ABSDB.vhd
+# Compile Entity "ABSDB"
+# Compile Architecture "behavioral" of Entity "ABSDB"
+# File: C:/My_Designs/SIMD/ALU/src/AHU.vhd
+# Compile Entity "AHU"
+# Compile Architecture "behavioral" of Entity "AHU"
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd
+# Compile Entity "AND_128"
+# Compile Architecture "behavioral" of Entity "AND_128"
+# File: C:/My_Designs/SIMD/ALU/src/BCW.vhd
+# Compile Entity "BCW"
+# Compile Architecture "behavioral" of Entity "BCW"
+# File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "behavioral" of Entity "MAXWS"
+# File: C:/My_Designs/SIMD/ALU/src/MINWS.vhd
+# Compile Entity "MINWS"
+# Compile Architecture "behavioral" of Entity "MINWS"
+# Error: COMP96_0019: MINWS.vhd : (42, 2): Keyword 'end' expected.
+# Error: COMP96_0016: MINWS.vhd : (42, 9): Design unit declaration expected.
+# File: C:/My_Designs/SIMD/ALU/src/MLHU.vhd
+# Compile Entity "MLHU"
+# Compile Architecture "behavioral" of Entity "MLHU"
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# File: C:/My_Designs/SIMD/ALU/src/OR_128.vhd
+# Compile Entity "OR_128"
+# Compile Architecture "behavioral" of Entity "OR_128"
+# File: C:/My_Designs/SIMD/ALU/src/PCNTW.vhd
+# Compile Entity "PCNTW"
+# Compile Architecture "behavioral" of Entity "PCNTW"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MINWS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MINWS.vhd
+# Compile Entity "MINWS"
+# Compile Architecture "behavioral" of Entity "MINWS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (43, 35): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (43, 51): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (43, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/PCNTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/PCNTW.vhd
+# Compile Entity "PCNTW"
+# Compile Architecture "behavioral" of Entity "PCNTW"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (43, 35): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (43, 51): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (43, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (43, 35): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (43, 61): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (43, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (43, 35): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (43, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (43, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (43, 35): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (43, 51): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (43, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (43, 52): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (43, 78): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0305: ROTW.vhd : (43, 78): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: ROTW.vhd : (43, 52): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (43, 78): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (44, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (45, 53): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0093: ROTW.vhd : (46, 55): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0015: ROTW.vhd : (44, 94): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0015: ROTW.vhd : (44, 94): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (43, 35): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (43, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0093: ROTW.vhd : (44, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (44, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (45, 36): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (45, 23): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: ROTW.vhd : (46, 37): Actual parameter types in subprogram call do not match subprogram formal parameter types.
+# Error: COMP96_0617: ROTW.vhd : (46, 24): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Error: COMP96_0015: ROTW.vhd : (46, 118): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ROTW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Warning: DAGGEN_0001: AHS.vhd : (54, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Warning: DAGGEN_0001: AHS.vhd : (63, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Warning: DAGGEN_0001: AHS.vhd : (72, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Warning: DAGGEN_0001: AHS.vhd : (81, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Warning: DAGGEN_0001: AHS.vhd : (90, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Warning: DAGGEN_0001: AHS.vhd : (99, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Warning: DAGGEN_0001: AHS.vhd : (108, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Warning: DAGGEN_0001: AHS.vhd : (117, 0): Process without explicit or implicit wait statement - possible infinite loop.
+# Compile success 0 Errors 8 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/AHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SFHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/SFHS.vhd
+# Compile Entity "SFHS"
+# Compile Architecture "behavioral" of Entity "SFHS"
+# Error: COMP96_0078: SFHS.vhd : (44, 39): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (44, 64): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (44, 64): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (44, 64): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (44, 39): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (44, 39): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (44, 39): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SFHS.vhd : (45, 40): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (45, 66): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (45, 66): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (45, 66): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (45, 40): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (45, 40): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (45, 40): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SFHS.vhd : (46, 40): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (46, 66): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (46, 66): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (46, 66): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (46, 40): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (46, 40): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (46, 40): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SFHS.vhd : (47, 40): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (47, 66): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (47, 66): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (47, 66): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (47, 40): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (47, 40): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (47, 40): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SFHS.vhd : (48, 40): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (48, 66): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (48, 66): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (48, 66): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (48, 40): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (48, 40): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (48, 40): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SFHS.vhd : (49, 40): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (49, 66): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (49, 66): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (49, 66): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (49, 40): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (49, 40): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (49, 40): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SFHS.vhd : (50, 41): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (50, 68): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (50, 68): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (50, 68): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (50, 41): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (50, 41): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (50, 41): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0078: SFHS.vhd : (51, 42): Unknown identifier "signed".
+# Error: COMP96_0078: SFHS.vhd : (51, 70): Unknown identifier "signed".
+# Error: COMP96_0133: SFHS.vhd : (51, 70): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (51, 70): Prefix of index must be an array.
+# Error: COMP96_0133: SFHS.vhd : (51, 42): Cannot find object declaration.
+# Error: COMP96_0289: SFHS.vhd : (51, 42): Prefix of index must be an array.
+# Error: COMP96_0149: SFHS.vhd : (51, 42): Explicit type conversions are allowed between closely related types only.
+# Compile failure 56 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SFHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/SFHS.vhd
+# Compile Entity "SFHS"
+# Compile Architecture "behavioral" of Entity "SFHS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_L.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SFHS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/SFHS.vhd
+# Compile Entity "SFHS"
+# Compile Architecture "behavioral" of Entity "SFHS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SFW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/SFW.vhd
+# Compile Entity "SFW"
+# Compile Architecture "behavioral" of Entity "SFW"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0329: ALU.vhd : (266, 2): Generate statement must have a label.
+# Error: COMP96_0019: ALU.vhd : (266, 24): Keyword 'generate' expected.
+# Error: COMP96_0019: ALU.vhd : (272, 6): Keyword 'end' expected.
+# Error: COMP96_0016: ALU.vhd : (272, 11): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  93.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0363: ALU.vhd : (265, 2): Component instantiation statement must have a label.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0207: ALU.vhd : (265, 2): No actual specified for local port "k".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Error: COMP96_0363: ALU.vhd : (265, 2): Component instantiation statement must have a label.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# Error: COMP96_0078: MULT_SUB_I.vhd : (52, 47): Unknown identifier "sum".
+# Error: COMP96_0078: MULT_SUB_I.vhd : (52, 59): Unknown identifier "sum".
+# Error: COMP96_0133: MULT_SUB_I.vhd : (52, 59): Cannot find object declaration.
+# Error: COMP96_0289: MULT_SUB_I.vhd : (52, 59): Prefix of index must be an array.
+# Error: COMP96_0133: MULT_SUB_I.vhd : (52, 47): Cannot find object declaration.
+# Error: COMP96_0289: MULT_SUB_I.vhd : (52, 47): Prefix of index must be an array.
+# Error: COMP96_0077: MULT_SUB_I.vhd : (52, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: MULT_SUB_I.vhd : (53, 4): Unknown identifier "sum".
+# Error: COMP96_0133: MULT_SUB_I.vhd : (53, 4): Cannot find object declaration.
+# Error: COMP96_0078: MULT_SUB_I.vhd : (54, 50): Unknown identifier "sum".
+# Error: COMP96_0078: MULT_SUB_I.vhd : (54, 62): Unknown identifier "sum".
+# Error: COMP96_0133: MULT_SUB_I.vhd : (54, 62): Cannot find object declaration.
+# Error: COMP96_0289: MULT_SUB_I.vhd : (54, 62): Prefix of index must be an array.
+# Error: COMP96_0133: MULT_SUB_I.vhd : (54, 50): Cannot find object declaration.
+# Error: COMP96_0289: MULT_SUB_I.vhd : (54, 50): Prefix of index must be an array.
+# Error: COMP96_0077: MULT_SUB_I.vhd : (54, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: MULT_SUB_I.vhd : (55, 4): Unknown identifier "sum".
+# Error: COMP96_0133: MULT_SUB_I.vhd : (55, 4): Cannot find object declaration.
+# Error: COMP96_0078: MULT_SUB_I.vhd : (57, 30): Unknown identifier "sum".
+# Error: COMP96_0133: MULT_SUB_I.vhd : (57, 30): Cannot find object declaration.
+# Error: COMP96_0149: MULT_SUB_I.vhd : (57, 30): Explicit type conversions are allowed between closely related types only.
+# Compile failure 21 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_I.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_ADD_L.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/MULT_SUB_L.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd $dsn/src/SIMALS.vhd $dsn/src/SIMAHS.vhd $dsn/src/SIMSLS.vhd $dsn/src/SIMSHS.vhd $dsn/src/SLIMALS.vhd $dsn/src/SLIMAHS.vhd $dsn/src/SLIMSLS.vhd $dsn/src/SLIMSHS.vhd $dsn/src/NOP.vhd $dsn/src/AU.vhd $dsn/src/ABSDB.vhd $dsn/src/AHU.vhd $dsn/src/AHS.vhd $dsn/src/AND_128.vhd $dsn/src/BCW.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHU.vhd $dsn/src/MLHCU.vhd $dsn/src/OR_128.vhd $dsn/src/PCNTW.vhd $dsn/src/ROTW.vhd $dsn/src/SFHS.vhd $dsn/src/SFW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
+# Compile Entity "SIMAHS"
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
+# Compile Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
+# Compile Entity "SIMSHS"
+# Compile Architecture "behavioral" of Entity "SIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
+# Compile Entity "SLIMALS"
+# Compile Architecture "behavioral" of Entity "SLIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
+# Compile Entity "SLIMAHS"
+# Compile Architecture "behavioral" of Entity "SLIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
+# Compile Entity "SLIMSLS"
+# Compile Architecture "behavioral" of Entity "SLIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd
+# Compile Entity "SLIMSHS"
+# Compile Architecture "behavioral" of Entity "SLIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/NOP.vhd
+# Compile Entity "NOP"
+# Compile Architecture "behavioral" of Entity "NOP"
+# File: C:/My_Designs/SIMD/ALU/src/AU.vhd
+# Compile Entity "AU"
+# Compile Architecture "behavioral" of Entity "AU"
+# File: C:/My_Designs/SIMD/ALU/src/ABSDB.vhd
+# Compile Entity "ABSDB"
+# Compile Architecture "behavioral" of Entity "ABSDB"
+# File: C:/My_Designs/SIMD/ALU/src/AHU.vhd
+# Compile Entity "AHU"
+# Compile Architecture "behavioral" of Entity "AHU"
+# File: C:/My_Designs/SIMD/ALU/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "behavioral" of Entity "AHS"
+# File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd
+# Compile Entity "AND_128"
+# Compile Architecture "behavioral" of Entity "AND_128"
+# File: C:/My_Designs/SIMD/ALU/src/BCW.vhd
+# Compile Entity "BCW"
+# Compile Architecture "behavioral" of Entity "BCW"
+# File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "behavioral" of Entity "MAXWS"
+# File: C:/My_Designs/SIMD/ALU/src/MINWS.vhd
+# Compile Entity "MINWS"
+# Compile Architecture "behavioral" of Entity "MINWS"
+# File: C:/My_Designs/SIMD/ALU/src/MLHU.vhd
+# Compile Entity "MLHU"
+# Compile Architecture "behavioral" of Entity "MLHU"
+# File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "behavioral" of Entity "MLHCU"
+# File: C:/My_Designs/SIMD/ALU/src/OR_128.vhd
+# Compile Entity "OR_128"
+# Compile Architecture "behavioral" of Entity "OR_128"
+# File: C:/My_Designs/SIMD/ALU/src/PCNTW.vhd
+# Compile Entity "PCNTW"
+# Compile Architecture "behavioral" of Entity "PCNTW"
+# File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd
+# Compile Entity "ROTW"
+# Compile Architecture "behavioral" of Entity "ROTW"
+# File: C:/My_Designs/SIMD/ALU/src/SFHS.vhd
+# Compile Entity "SFHS"
+# Compile Architecture "behavioral" of Entity "SFHS"
+# File: C:/My_Designs/SIMD/ALU/src/SFW.vhd
+# Compile Entity "SFW"
+# Compile Architecture "behavioral" of Entity "SFW"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/SIMALS.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work ALU -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/MULT_ADD_I.vhd $dsn/src/MULT_SUB_I.vhd $dsn/src/MULT_ADD_L.vhd $dsn/src/MULT_SUB_L.vhd $dsn/src/SIMALS.vhd $dsn/src/SIMAHS.vhd $dsn/src/SIMSLS.vhd $dsn/src/SIMSHS.vhd $dsn/src/SLIMALS.vhd $dsn/src/SLIMAHS.vhd $dsn/src/SLIMSLS.vhd $dsn/src/SLIMSHS.vhd $dsn/src/NOP.vhd $dsn/src/AU.vhd $dsn/src/ABSDB.vhd $dsn/src/AHU.vhd $dsn/src/AHS.vhd $dsn/src/AND_128.vhd $dsn/src/BCW.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHU.vhd $dsn/src/MLHCU.vhd $dsn/src/OR_128.vhd $dsn/src/PCNTW.vhd $dsn/src/ROTW.vhd $dsn/src/SFHS.vhd $dsn/src/SFW.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/SIMD/ALU/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "structural" of Entity "ALU"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd
+# Compile Entity "MULT_ADD_I"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd
+# Compile Entity "MULT_SUB_I"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_I"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd
+# Compile Entity "MULT_ADD_L"
+# Compile Architecture "behavioral" of Entity "MULT_ADD_L"
+# File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd
+# Compile Entity "MULT_SUB_L"
+# Compile Architecture "behavioral" of Entity "MULT_SUB_L"
+# File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd
+# Compile Entity "SIMALS"
+# Compile Architecture "behavioral" of Entity "SIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd
+# Compile Entity "SIMAHS"
+# Compile Architecture "behavioral" of Entity "SIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd
+# Compile Entity "SIMSLS"
+# Compile Architecture "behavioral" of Entity "SIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd
+# Compile Entity "SIMSHS"
+# Compile Architecture "behavioral" of Entity "SIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd
+# Compile Entity "SLIMALS"
+# Compile Architecture "behavioral" of Entity "SLIMALS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd
+# Compile Entity "SLIMAHS"
+# Compile Architecture "behavioral" of Entity "SLIMAHS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd
+# Compile Entity "SLIMSLS"
+# Compile Architecture "behavioral" of Entity "SLIMSLS"
+# File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd
+# Compile Entity "SLIMSHS"
+# Compile Architecture "behavioral" of Entity "SLIMSHS"
+# File: C:/My_Designs/SIMD/ALU/src/NOP.vhd
+# Compile Entity "NOP"

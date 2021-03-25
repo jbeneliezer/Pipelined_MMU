@@ -14,3 +14,16 @@
 .\src\NOP.vhd
 .\src\AU.vhd
 .\src\ABSDB.vhd
+.\src\AHU.vhd
+.\src\AHS.vhd
+.\src\AND_128.vhd
+.\src\BCW.vhd
+.\src\MAXWS.vhd
+.\src\MINWS.vhd
+.\src\MLHU.vhd
+.\src\MLHCU.vhd
+.\src\OR_128.vhd
+.\src\PCNTW.vhd
+.\src\ROTW.vhd
+.\src\SFHS.vhd
+.\src\SFW.vhd

@@ -34,6 +34,22 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
+[LocalVhdlSets]
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=0
+EnableVHDL2008Key=1
+EnableVHDL2018Key=0
+DisableVHDL87Key=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+CompileWithDebug=0
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
+
 [Files]
 /ALU.vhd=-1
 /MULT_ADD_I.vhd=-1
@@ -51,12 +67,24 @@ Selected=
 /NOP.vhd=-1
 /AU.vhd=-1
 /ABSDB.vhd=-1
+/AHU.vhd=-1
+/AHS.vhd=-1
+/AND_128.vhd=-1
+/BCW.vhd=-1
+/MAXWS.vhd=-1
+/MINWS.vhd=-1
+/MLHU.vhd=-1
+/MLHCU.vhd=-1
+/OR_128.vhd=-1
+/PCNTW.vhd=-1
+/ROTW.vhd=-1
+/SFHS.vhd=-1
+/SFW.vhd=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
 .\src\MULT_ADD_I.vhd=VHDL Source Code
 .\src\MULT_SUB_I.vhd=VHDL Source Code
-
 .\src\MULT_ADD_L.vhd=VHDL Source Code
 .\src\MULT_SUB_L.vhd=VHDL Source Code
 .\src\SIMALS.vhd=VHDL Source Code
@@ -70,18 +98,17 @@ Selected=
 .\src\NOP.vhd=VHDL Source Code
 .\src\AU.vhd=VHDL Source Code
 .\src\ABSDB.vhd=VHDL Source Code
-[LocalVhdlSets]
-NetlistCompilation=1
-EnableVHDL93Key=0
-EnableVHDL2002Key=0
-EnableVHDL2008Key=1
-EnableVHDL2018Key=0
-DisableVHDL87Key=1
-Syntax RelaxLRM=0
-MaxErrorsKey=100
-CompileWithDebug=0
-OptimizationLevel=3
-DisableRangeChecks=0
-ProtectLevel=0
-IncrementalCompilation=0
-AdditionalOptions=
+.\src\AHU.vhd=VHDL Source Code
+.\src\AHS.vhd=VHDL Source Code
+.\src\AND_128.vhd=VHDL Source Code
+
+.\src\BCW.vhd=VHDL Source Code
+.\src\MAXWS.vhd=VHDL Source Code
+.\src\MINWS.vhd=VHDL Source Code
+.\src\MLHU.vhd=VHDL Source Code
+.\src\MLHCU.vhd=VHDL Source Code
+.\src\OR_128.vhd=VHDL Source Code
+.\src\PCNTW.vhd=VHDL Source Code
+.\src\ROTW.vhd=VHDL Source Code
+.\src\SFHS.vhd=VHDL Source Code
+.\src\SFW.vhd=VHDL Source Code

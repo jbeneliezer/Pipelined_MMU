@@ -16,30 +16,23 @@
 --
 -- Description : 
 --
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {NOP} architecture {behavioral}}
+-------------------------------------------------------------------------------	   
 
 library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity NOP is
-	 port(
-		 clk : in STD_LOGIC;
-		 op : in STD_LOGIC_VECTOR(9 downto 0)
+	 port(				
+		 op : in STD_LOGIC_VECTOR(24 downto 0)
 	     );
-end NOP;
-
---}} End of automatically maintained section
+end NOP;								   
 
 architecture behavioral of NOP is
 begin
-	process (all)
+	process (op)
 	begin
-		if (clk'event and clk = '1' and op = "11----0000") then
-			null;
+		if (op = "11----0000---------------") then		   -- check for right opcode
+			null;										   -- do nothing
 		end if;
 	end process;
 end behavioral;

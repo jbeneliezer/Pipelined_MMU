@@ -16,11 +16,7 @@
 --
 -- Description : 
 --
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {MULT_SUB_L} architecture {behavioral}}
+-------------------------------------------------------------------------------			 
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -33,28 +29,27 @@ entity MULT_SUB_L is
 		 z : in STD_LOGIC_VECTOR(63 downto 0);
 		 result : out STD_LOGIC_VECTOR(63 downto 0)
 	     );
-end MULT_SUB_L;
-
---}} End of automatically maintained section
+end MULT_SUB_L;							
 
 architecture behavioral of MULT_SUB_L is  
-	constant max64 : signed := "0111111111111111111111111111111111111111111111111111111111111111";
-	constant min64 : signed := "1000000000000000000000000000000000000000000000000000000000000000";
-begin
-	process (all)
-		variable product: signed (63 downto 0);
-		variable sum: signed (63 downto 0);
-		variable sign: std_logic;
+	constant max64 : signed := "0111111111111111111111111111111111111111111111111111111111111111";		-- max 64 bit signed number
+	constant min64 : signed := "1000000000000000000000000000000000000000000000000000000000000000";		-- min 64 bit signed number
+	signal product: signed (63 downto 0);
+	signal dif: signed (63 downto 0);
+begin	  
+	compute: process (x, y, z)
 	begin
-		product := (signed(x) * signed(y));
-		sign :=  product(63);
-		sum := signed(z) - product;
-		if (sign = z(63) and not z(63) = sum(63) and sign = '1') then
-			sum := max64;
-		elsif (sign = z(63) and not z(63) = sum(63) and sign = '0') then
-			sum := min64;
-		end if;
-		result <= std_logic_vector(sum);
+		product <= signed(x) * signed(y);																-- compute x * y
+		dif <= signed(z) - product;																		-- compute z - product
 	end process;
-
+	
+	sat: process (dif)
+	begin							  
+		if (not product(63) = z(63) and not z(63) = dif(63) and dif(63) = '1') then						-- check for overflow
+			dif <= max64;
+		elsif (not product(63) = z(63) and not z(63) = dif(63) and dif(63) = '0') then					-- check for underflow
+			dif <= min64;
+		end if;
+		result <= std_logic_vector(dif);
+	end process;
 end behavioral;

@@ -16,11 +16,7 @@
 --
 -- Description : 
 --
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {ALU} architecture {behavior}}
+-------------------------------------------------------------------------------																						
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -34,116 +30,256 @@ entity ALU is
 		 C : in STD_LOGIC_VECTOR(127 downto 0);
 		 Rd : out STD_LOGIC_VECTOR(127 downto 0)
 	     );
-end ALU;
+end ALU;									   
 
---}} End of automatically maintained section
+architecture structural of ALU is
 
-architecture behavioral of ALU is
-	component MULT_ADD_I is
-	 	port(
-		 	x : in STD_LOGIC_VECTOR(15 downto 0);
-		 	y : in STD_LOGIC_VECTOR(15 downto 0);
-		 	z : in STD_LOGIC_VECTOR(31 downto 0);
-		 	result : out STD_LOGIC_VECTOR(31 downto 0)
-			);
-	end component;
-	
-	component MULT_SUB_I is
-	 	port(
-			x: in STD_LOGIC_VECTOR(15 downto 0);
-			y : in STD_LOGIC_VECTOR(15 downto 0);
-			z : in STD_LOGIC_VECTOR(31 downto 0);
-			result : out STD_LOGIC_VECTOR(31 downto 0)
-			);
-	end component;	
-	
-	component MULT_ADD_L is
-	 	port(
-		 	x : in STD_LOGIC_VECTOR(31 downto 0);
-		 	y : in STD_LOGIC_VECTOR(31 downto 0);
-		 	z : in STD_LOGIC_VECTOR(63 downto 0);
-		 	result : out STD_LOGIC_VECTOR(63 downto 0)
-			);
-	end component;	
-	
-	component MULT_SUB_L is
-	 	port(
-			x : in STD_LOGIC_VECTOR(31 downto 0);
-			y : in STD_LOGIC_VECTOR(31 downto 0);
-			z : in STD_LOGIC_VECTOR(63 downto 0);
-			result : out STD_LOGIC_VECTOR(63 downto 0)
-		    );
+component SIMALS is
+	port(	 			   
+		op: in STD_LOGIC_VECTOR(24 downto 0);
+		i : in STD_LOGIC_VECTOR(127 downto 0);
+		j : in STD_LOGIC_VECTOR(127 downto 0);
+		k : in STD_LOGIC_VECTOR(127 downto 0);
+		r : out STD_LOGIC_VECTOR(127 downto 0)
+		);
+end component; 
+
+component SIMAHS is
+	 port(					
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 k : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SIMSLS is
+	 port(					  
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 k : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SIMSHS is
+	 port(					 
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 k : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SLIMALS is
+	 port(				   
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 k : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SLIMAHS is
+	 port(					
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 k : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SLIMSLS is
+	 port(				   
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 k : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SLIMSHS is
+	 port(					   
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 k : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component NOP is
+	 port(				
+		 op : in STD_LOGIC_VECTOR(24 downto 0)
+	     );
+end component;
+
+component AU is
+	 port(					
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component ABSDB is
+	 port(				 
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component AHU is
+	 port(					
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component AHS is
+	 port(				   
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component AND_128 is
+	 port(				   
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component BCW is
+	 port(					 
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component MAXWS is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component MINWS is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component MLHU is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component MLHCU is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component OR_128 is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component PCNTW is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component ROTW is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SFHS is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
+end component;
+
+component SFW is
+	 port(
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
+		 i : in STD_LOGIC_VECTOR(127 downto 0);
+		 j : in STD_LOGIC_VECTOR(127 downto 0);
+		 r : out STD_LOGIC_VECTOR(127 downto 0)
+	     );
 end component;
 	
-begin					   
-	case Op(24 downto 15) is
-		when "0---------" => --li
-			process (all)
-			begin
-				case Op(23 downto 21) is
-					when "000" => Rd(15 downto 0) <= Op(20 downto 5);
-					when "001" => Rd(31 downto 16) <= Op(20 downto 5);
-					when "010" => Rd(47 downto 32) <= Op(20 downto 5);
-					when "011" => Rd(63 downto 48) <= Op(20 downto 5);
-					when "100" => Rd(79 downto 64) <= Op(20 downto 5);
-					when "101" => Rd(95 downto 80) <= Op(20 downto 5);
-					when "110" => Rd(111 downto 96) <= Op(20 downto 5);
-					when "111" => Rd(127 downto 112) <= Op(20 downto 5);
-				end case;
-			end process;
-		when "10000-----" => --SIMALS
-			SIMALS_0: MULT_ADD_I port map (x => A(15 downto 0), y => B(15 downto 0), z => C(31 downto 0), result => Rd(31 downto 0));
-			SIMALS_1: MULT_ADD_I port map (x => A(47 downto 32), y => B(47 downto 32), z => C(63 downto 32), result => Rd(63 downto 32));
-			SIMALS_2: MULT_ADD_I port map (x => A(79 downto 64), y => B(79 downto 64), z => C(95 downto 64), result => Rd(95 downto 64));
-			SIMALS_3: MULT_ADD_I port map (x => A(111 downto 96), y => B(111 downto 96), z => C(127 downto 96), result => Rd(127 downto 96));
-		when "10001-----" => --SIMAHS
-			SIMAHS_0: MULT_ADD_I port map (x => A(31 downto 16), y => B(31 downto 16), z => C(31 downto 0), result => Rd(31 downto 0));
-			SIMAHS_1: MULT_ADD_I port map (x => A(63 downto 48), y => B(63 downto 48), z => C(63 downto 32), result => Rd(63 downto 32));
-			SIMAHS_2: MULT_ADD_I port map (x => A(95 downto 80), y => B(95 downto 80), z => C(95 downto 64), result => Rd(95 downto 64));
-			SIMAHS_3: MULT_ADD_I port map (x => A(127 downto 112), y => B(127 downto 112), z => C(127 downto 96), result => Rd(127 downto 96));
-		when "10010-----" => --SIMSLS
-			SIMSLS_0: MULT_SUB_I port map (x => A(15 downto 0), y => B(15 downto 0), z => C(31 downto 0), result => Rd(31 downto 0));
-			SIMSLS_1: MULT_SUB_I port map (x => A(47 downto 32), y => B(47 downto 32), z => C(63 downto 32), result => Rd(63 downto 32));
-			SIMSLS_2: MULT_SUB_I port map (x => A(79 downto 64), y => B(79 downto 64), z => C(95 downto 64), result => Rd(95 downto 64));
-			SIMSLS_3: MULT_SUB_I port map (x => A(111 downto 96), y => B(111 downto 96), z => C(127 downto 96), result => Rd(127 downto 96));
-		when "10011-----" => --SIMSHS
-			SIMSHS_0: MULT_SUB_I port map (x => A(31 downto 16), y => B(31 downto 16), z => C(31 downto 0), result => Rd(31 downto 0));
-			SIMSHS_1: MULT_SUB_I port map (x => A(63 downto 48), y => B(63 downto 48), z => C(63 downto 32), result => Rd(63 downto 32));
-			SIMSHS_2: MULT_SUB_I port map (x => A(95 downto 80), y => B(95 downto 80), z => C(95 downto 64), result => Rd(95 downto 64));
-			SIMSHS_3: MULT_SUB_I port map (x => A(127 downto 112), y => B(127 downto 112), z => C(127 downto 96), result => Rd(127 downto 96));
-		when "10100-----" => --SLIMALS
-			SLIMALS_0: MULT_ADD_L port map (x => A(31 downto 0), y => B(31 downto 0), z => C(63 downto 0), result => Rd(63 downto 0));
-			SLIMALS_1: MULT_ADD_L port map (x => A(95 downto 64), y => B(95 downto 64), z => C(127 downto 64), result => Rd(127 downto 64));
-		when "10101-----" => --SLIMAHS
-			SLIMAHS_0: MULT_ADD_L port map (x => A(63 downto 32), y => B(63 downto 32), z => C(63 downto 0), result => Rd(63 downto 0));
-			SLIMAHS_1: MULT_ADD_L port map (x => A(127 downto 96), y => B(127 downto 96), z => C(127 downto 64), result => Rd(127 downto 64));
-		when "10110-----" => --SLIMSLS
-			SLIMSLS_0: MULT_SUB_L port map (x => A(31 downto 0), y => B(31 downto 0), z => C(63 downto 0), result => Rd(63 downto 0));
-			SLIMSLS_1: MULT_SUB_L port map (x => A(95 downto 64), y => B(95 downto 64), z => C(127 downto 64), result => Rd(127 downto 64));
-		when "10111-----" => --SLIMSHS
-			SLIMSHS_0: MULT_SUB_L port map (x => A(63 downto 32), y => B(63 downto 32), z => C(63 downto 0), result => Rd(63 downto 0));
-			SLIMSHS_1: MULT_SUB_L port map (x => A(127 downto 96), y => B(127 downto 96), z => C(127 downto 64), result => Rd(127 downto 64));
-		when "11----0000" => --NOP
-			null;
-		when "11----0001" => --AU
-			Rd(31 downto 0) <= std_logic_vector(unsigned(A(31 downto 0)) + unsigned(B(31 downto 0)));
-			Rd(63 downto 32) <= std_logic_vector(unsigned(A(63 downto 32)) + unsigned(B(63 downto 32)));
-			Rd(95 downto 64) <= std_logic_vector(unsigned(A(95 downto 64)) + unsigned(B(95 downto 64)));
-			Rd(127 downto 96) <= std_logic_vector(unsigned(A(127 downto 96)) + unsigned(B(127 downto 96)));
-		when "11----0010" => --ABSDB
-			
-		when "11----0011" => --AHU
-		when "11----0100" => --AHS
-		when "11----0101" => --AND
-		when "11----0110" => --BCW
-		when "11----0111" => --MAXWS
-		when "11----1000" => --MINWS
-		when "11----1001" => --MLHU
-		when "11----1010" => --MLHCU
-		when "11----1011" => --OR
-		when "11----1100" => --PCNTW
-		when "11----1101" => --ROTW
-		when "11----1110" => --SFHS
-		when "11----1111" => --SFW
-	end case;	
-end behavioral;
+begin  
+	
+	SIMALS_0: SIMALS port map (Op => op, i => A, j => B, k => C, r => Rd);				-- SIMALS
+	SIMAHS_0: SIMAHS port map (Op => op, i => A, j => B, k => C, r => Rd);				-- SIMAHS
+	SIMSLS_0: SIMSLS port map (Op => op, i => A, j => B, k => C, r => Rd);				-- SIMSLS
+	SIMSHS_0: SIMSHS port map (Op => op, i => A, j => B, k => C, r => Rd);				-- SIMSHS
+	SLIMALS_0: SLIMALS port map (Op => op, i => A, j => B, k => C, r => Rd);			-- SLIMALS
+	SLIMAHS_0: SLIMAHS port map (Op => op, i => A, j => B, k => C, r => Rd);			-- SLIMAHS
+	SLIMSLS_0: SLIMSLS port map (Op => op, i => A, j => B, k => C, r => Rd);			-- SLIMSLS
+	SLIMSHS_0: SLIMSHS port map (Op => op, i => A, j => B, k => C, r => Rd);			-- SLIMSHS
+	NOP_0: NOP port map (Op => op);														-- NOP
+	AU_0: AU port map (Op => op, i => A, j => B, r => Rd);								-- AU
+	ABSDB_0: ABSDB port map (Op => op, i => A, j => B, r => Rd);						-- ABSDB
+	AHU_0: AHU port map (Op => op, i => A, j => B, r => Rd);							-- AHU
+	AHS_0: AHS port map (Op => op, i => A, j => B, r => Rd);							-- AHS 
+	AND_128_0: AND_128 port map (Op => op, i => A, j => B, r => Rd);					-- AND
+	BCW_0: BCW port map (Op => op, i => A, j => B, r => Rd);							-- BCW
+	MAXWS_0: MAXWS port map (Op => op, i => A, j => B, r => Rd);						-- MAXWS
+	MINWS_0: MINWS port map (Op => op, i => A, j => B, r => Rd);						-- MINWS
+	MLHU_0: MLHU port map (Op => op, i => A, j => B, r => Rd);							-- MLHU
+	MLHCU_0: MLHCU port map (Op => op, i => A, j => B, r => Rd);						-- MLHCU
+	OR_128_0: OR_128 port map (Op => op, i => A, j => B, r => Rd);						-- OR
+	PCNTW_0: PCNTW port map (Op => op, i => A, j => B, r => Rd);						-- PCNTW
+	ROTW_0: ROTW port map (Op => op, i => A, j => B, r => Rd);							-- ROTW
+	SFHS_0: SFHS port map (Op => op, i => A, j => B, r => Rd);							-- SFHS
+	SFW_0: SFW port map (Op => op, i => A, j => B, r => Rd);							-- SFW
+	
+end structural;

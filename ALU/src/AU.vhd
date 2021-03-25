@@ -16,38 +16,32 @@
 --
 -- Description : 
 --
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {AU} architecture {behavioral}}
+-------------------------------------------------------------------------------		   
 
 library IEEE;
 use IEEE.std_logic_1164.all; 
 use IEEE.numeric_std.all;
 
 entity AU is
-	 port(
-		 clk : in STD_LOGIC;
-		 op : in STD_LOGIC_VECTOR(9 downto 0);
+	 port(					
+		 op : in STD_LOGIC_VECTOR(24 downto 0);
 		 i : in STD_LOGIC_VECTOR(127 downto 0);
 		 j : in STD_LOGIC_VECTOR(127 downto 0);
 		 r : out STD_LOGIC_VECTOR(127 downto 0)
 	     );
-end AU;
-
---}} End of automatically maintained section
+end AU;										
 
 architecture behavioral of AU is 
 	signal res: std_logic_vector(127 downto 0);
-begin
+begin	   -- add unsigned words of i and j
  	res(31 downto 0) <= std_logic_vector(unsigned(i(31 downto 0)) + unsigned(j(31 downto 0)));
 	res(63 downto 32) <= std_logic_vector(unsigned(i(63 downto 32)) + unsigned(j(63 downto 32)));
 	res(95 downto 64) <= std_logic_vector(unsigned(i(95 downto 64)) + unsigned(j(95 downto 64)));
-	res(127 downto 96) <= std_logic_vector(unsigned(i(127 downto 96)) + unsigned(j(127 downto 96)));
-	process (all)
+	res(127 downto 96) <= std_logic_vector(unsigned(i(127 downto 96)) + unsigned(j(127 downto 96)));	 
+	
+	process (op)
 	begin
-		if (clk'event and clk = '1' and op = "11----0000") then
+		if (op = "11----0001---------------") then			  -- check for right opcode
 			r <= res;
 		end if;
 	end process;

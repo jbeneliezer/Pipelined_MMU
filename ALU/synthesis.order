@@ -14,3 +14,16 @@ i<>.\src\SLIMSHS.vhd
 i<>.\src\NOP.vhd
 i<>.\src\AU.vhd
 i<>.\src\ABSDB.vhd
+i<>.\src\AHU.vhd
+i<>.\src\AHS.vhd
+i<>.\src\AND_128.vhd
+i<>.\src\BCW.vhd
+i<>.\src\MAXWS.vhd
+i<>.\src\MINWS.vhd
+i<>.\src\MLHU.vhd
+i<>.\src\MLHCU.vhd
+i<>.\src\OR_128.vhd
+i<>.\src\PCNTW.vhd
+i<>.\src\ROTW.vhd
+i<>.\src\SFHS.vhd
+i<>.\src\SFW.vhd

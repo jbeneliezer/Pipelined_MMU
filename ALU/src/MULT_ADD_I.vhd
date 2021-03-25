@@ -16,11 +16,7 @@
 --
 -- Description : 
 --
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {MULT_ADD_I} architecture {MULT_ADD_I}}
+-------------------------------------------------------------------------------				  
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -36,21 +32,23 @@ entity MULT_ADD_I is
 end MULT_ADD_I;								 
 
 architecture behavioral of MULT_ADD_I is
-	constant max32: signed := "01111111111111111111111111111111";
-	constant min32: signed := "10000000000000000000000000000000";
+	constant max32: signed := "01111111111111111111111111111111";		  			-- max 32 bit signed number
+	constant min32: signed := "10000000000000000000000000000000";		  			-- min 32 bit signed number
+	signal product: signed (31 downto 0);
+	signal sum: signed (31 downto 0);
 begin
-	process (all)
-		variable product: signed (31 downto 0);
-		variable sum: signed (31 downto 0);
-		variable sign: std_logic;
+	compute: process (x, y, z)
 	begin
-		product := signed(x) * signed(y);
-		sign :=  product(31);
-		sum := product + signed(z);
-		if (sign = z(31) and not z(31) = sum(31) and sign = '1') then
-			sum := max32;
-		elsif (sign = z(31) and not z(31) = sum(31) and sign = '0') then
-			sum := min32;
+		product <= signed(x) * signed(y);											-- compute x * y
+		sum <= product + signed(z);													-- compute product + z
+	end process;
+	
+	sat: process (sum)	  
+	begin					   												
+		if (product(31) = z(31) and not z(31) = sum(31) and sum(31) = '1') then		-- check for overflow
+			sum <= max32;															
+		elsif (product(31) = z(31) and not z(31) = sum(31) and sum(31) = '0') then	-- check for underflow
+			sum <= min32;															
 		end if;
 		result <= std_logic_vector(sum);
 	end process;
