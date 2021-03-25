@@ -1,0 +1,14 @@
+[Version]
+Version=11.1
+c:\My_Designs\SIMD\SIMD.aws
+[Designs]
+alu=.\ALU\ALU.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+alu=1
+c:\My_Designs\SIMD\ALU\ALU.adf

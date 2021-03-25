@@ -1,0 +1,16 @@
+i<>.\src\ALU.vhd
+i<>.\src\MULT_ADD.vhd
+i<>.\src\MULT_SUB.vhd
+i<>.\src\MULT_ADD_L.vhd
+i<>.\src\MULT_SUB_L.vhd
+i<>.\src\SIMALS.vhd
+i<>.\src\SIMAHS.vhd
+i<>.\src\SIMSLS.vhd
+i<>.\src\SIMSHS.vhd
+i<>.\src\SLIMALS.vhd
+i<>.\src\SLIMAHS.vhd
+i<>.\src\SLIMSLS.vhd
+i<>.\src\SLIMSHS.vhd
+i<>.\src\NOP.vhd
+i<>.\src\AU.vhd
+i<>.\src\ABSDB.vhd

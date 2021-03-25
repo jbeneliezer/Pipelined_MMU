@@ -1,0 +1,87 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=ALU
+
+[Library]
+ALU=.\ALU\ALU.lib
+
+[$LibMap$]
+ALU=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+
+[IMPLEMENTATION]
+UCF=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/ALU.vhd=-1
+/MULT_ADD_I.vhd=-1
+/MULT_SUB_I.vhd=-1
+/MULT_ADD_L.vhd=-1
+/MULT_SUB_L.vhd=-1
+/SIMALS.vhd=-1
+/SIMAHS.vhd=-1
+/SIMSLS.vhd=-1
+/SIMSHS.vhd=-1
+/SLIMALS.vhd=-1
+/SLIMAHS.vhd=-1
+/SLIMSLS.vhd=-1
+/SLIMSHS.vhd=-1
+/NOP.vhd=-1
+/AU.vhd=-1
+/ABSDB.vhd=-1
+
+[Files.Data]
+.\src\ALU.vhd=VHDL Source Code
+.\src\MULT_ADD_I.vhd=VHDL Source Code
+.\src\MULT_SUB_I.vhd=VHDL Source Code
+
+.\src\MULT_ADD_L.vhd=VHDL Source Code
+.\src\MULT_SUB_L.vhd=VHDL Source Code
+.\src\SIMALS.vhd=VHDL Source Code
+.\src\SIMAHS.vhd=VHDL Source Code
+.\src\SIMSLS.vhd=VHDL Source Code
+.\src\SIMSHS.vhd=VHDL Source Code
+.\src\SLIMALS.vhd=VHDL Source Code
+.\src\SLIMAHS.vhd=VHDL Source Code
+.\src\SLIMSLS.vhd=VHDL Source Code
+.\src\SLIMSHS.vhd=VHDL Source Code
+.\src\NOP.vhd=VHDL Source Code
+.\src\AU.vhd=VHDL Source Code
+.\src\ABSDB.vhd=VHDL Source Code
+[LocalVhdlSets]
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=0
+EnableVHDL2008Key=1
+EnableVHDL2018Key=0
+DisableVHDL87Key=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+CompileWithDebug=0
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=

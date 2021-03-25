@@ -1,0 +1,1 @@
+-w -erf C:/My_Designs/SIMD/ALU/compile/ALU.erf -d C:/My_Designs/SIMD/ALU/compile -s C:/My_Designs/SIMD/library.cfg -j C:/My_Designs/SIMD/ALU/projlib.cfg -work ALU -O3 -e 100 -work ALU -disable87 -2008 C:/My_Designs/SIMD/ALU/src/AU.vhd 
