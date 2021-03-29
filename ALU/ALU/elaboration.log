@@ -1,57 +1,28 @@
-Active-HDL 11.1.262.7351 2021-03-28 23:47:19
+Active-HDL 11.1.262.7351 2021-03-29 18:50:57
 
 Elaboration top modules:
-Architecture                  structural(ALU)
+Architecture                  behavioral(ALU)
 
 
--------------------------------------------------------------------------------------------
-Entity     | Architecture | Library | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------
-ALU        | structural   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-LI         | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SIMALS     | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SIMAHS     | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SIMSLS     | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SIMSHS     | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SLIMALS    | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SLIMAHS    | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SLIMSLS    | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SLIMSHS    | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-NOP        | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-AU         | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-ABSDB      | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-AHU        | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-AHS        | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-AND_128    | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-BCW        | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MAXWS      | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MINWS      | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MLHU       | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MLHCU      | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-OR_128     | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-PCNTW      | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-ROTW       | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SFHS       | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-SFW        | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MULT_ADD_I | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MULT_SUB_I | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MULT_ADD_L | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
-MULT_SUB_L | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
--------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+Entity   | Architecture | Library | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------
+ALU      | behavioral   | alu     |      | 11.1.262.7351 (Windows) | -dbg -2008
+-----------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------
-VHDL Package              | Library | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------
-standard                  | std     |      |                         | <unavailable>
-TEXTIO                    | std     |      |                         | <unavailable>
-std_logic_1164            | ieee    |      |                         | <unavailable>
-NUMERIC_STD               | ieee    |      |                         | <unavailable>
--------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+VHDL Package            | Library | Info | Compiler Version        | Compilation Options
+-----------------------------------------------------------------------------------------
+standard                | std     |      |                         | <unavailable>
+TEXTIO                  | std     |      |                         | <unavailable>
+std_logic_1164          | ieee    |      |                         | <unavailable>
+NUMERIC_STD             | ieee    |      |                         | <unavailable>
+-----------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------
-Library                   | Comment
--------------------------------------------------------------------------------------------
-alu                       | None
-ieee                      | Standard IEEE packages library
-std                       | Standard VHDL library
--------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+Library                 | Comment
+-----------------------------------------------------------------------------------------
+alu                     | None
+ieee                    | Standard IEEE packages library
+std                     | Standard VHDL library
+-----------------------------------------------------------------------------------------

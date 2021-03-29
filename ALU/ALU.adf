@@ -31,7 +31,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=alu|structural|0 mult_add_i|behavioral|0 simals|structural|0 
+HierarchyInformation=alu|structural|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -57,90 +57,6 @@ GenMultiplatformLib=0
 VhdlPreservePortComments=0
 VhdlChangeEvalAsynchronous=0
 VhdlDisableAssertionsProcessing=0
-
-[Files]
-/MULT_SUB_I.vhd=-1
-/OR_128.vhd=-1
-/SFHS.vhd=-1
-/SFW.vhd=-1
-/ROTW.vhd=-1
-/PCNTW.vhd=-1
-/NOP.vhd=-1
-/MULT_SUB_L.vhd=-1
-/BCW.vhd=-1
-/MLHU.vhd=-1
-/MULT_ADD_I.vhd=-1
-/MULT_ADD_L.vhd=-1
-/MINWS.vhd=-1
-/MLHCU.vhd=-1
-/MAXWS.vhd=-1
-/LI.vhd=-1
-/AU.vhd=-1
-/AND_128.vhd=-1
-/AHS.vhd=-1
-/AHU.vhd=-1
-/ABSDB.vhd=-1
-/SIMALS.vhd=-1
-/SIMAHS.vhd=-1
-/SIMSLS.vhd=-1
-/SLIMALS.vhd=-1
-/SLIMSLS.vhd=-1
-/SLIMSHS.vhd=-1
-/SLIMAHS.vhd=-1
-/SIMSHS.vhd=-1
-/ALU.vhd=-1
-/..\..\blocks\ALU.bde=-1
-/..\..\blocks\SIMAHS.bde=-1
-/..\..\blocks\SIMALS.bde=-1
-/..\..\blocks\SIMSHS.bde=-1
-/..\..\blocks\SIMSLS.bde=-1
-/..\..\blocks\SLIMAHS.bde=-1
-/..\..\blocks\SLIMALS.bde=-1
-/..\..\blocks\SLIMSHS.bde=-1
-/..\..\blocks\SLIMSLS.bde=-1
-/..\..\blocks\MULT_ADD_I.bde=-1
-
-[Files.Data]
-.\src\MULT_SUB_I.vhd=VHDL Source Code
-.\src\OR_128.vhd=VHDL Source Code
-.\src\SFHS.vhd=VHDL Source Code
-.\src\SFW.vhd=VHDL Source Code
-.\src\ROTW.vhd=VHDL Source Code
-.\src\PCNTW.vhd=VHDL Source Code
-.\src\NOP.vhd=VHDL Source Code
-.\src\MULT_SUB_L.vhd=VHDL Source Code
-.\src\BCW.vhd=VHDL Source Code
-.\src\MLHU.vhd=VHDL Source Code
-.\src\MULT_ADD_I.vhd=VHDL Source Code
-.\src\MULT_ADD_L.vhd=VHDL Source Code
-.\src\MINWS.vhd=VHDL Source Code
-.\src\MLHCU.vhd=VHDL Source Code
-.\src\MAXWS.vhd=VHDL Source Code
-.\src\LI.vhd=VHDL Source Code
-.\src\AU.vhd=VHDL Source Code
-.\src\AND_128.vhd=VHDL Source Code
-.\src\AHS.vhd=VHDL Source Code
-.\src\AHU.vhd=VHDL Source Code
-.\src\ABSDB.vhd=VHDL Source Code
-.\src\SIMALS.vhd=VHDL Source Code
-.\src\SIMAHS.vhd=VHDL Source Code
-.\src\SIMSLS.vhd=VHDL Source Code
-.\src\SLIMALS.vhd=VHDL Source Code
-.\src\SLIMSLS.vhd=VHDL Source Code
-.\src\SLIMSHS.vhd=VHDL Source Code
-.\src\SLIMAHS.vhd=VHDL Source Code
-.\src\SIMSHS.vhd=VHDL Source Code
-.\src\ALU.vhd=VHDL Source Code
-.\..\blocks\ALU.bde=Block Diagram
-.\..\blocks\SIMAHS.bde=Block Diagram
-.\..\blocks\SIMALS.bde=Block Diagram
-.\..\blocks\SIMSHS.bde=Block Diagram
-.\..\blocks\SIMSLS.bde=Block Diagram
-.\..\blocks\SLIMAHS.bde=Block Diagram
-.\..\blocks\SLIMALS.bde=Block Diagram
-.\..\blocks\SLIMSHS.bde=Block Diagram
-.\..\blocks\SLIMSLS.bde=Block Diagram
-.\..\blocks\MULT_ADD_I.bde=Block Diagram
 
 [file_out:/..\..\blocks\ALU.bde]
 /..\compile\ALU.vhd=-1
@@ -168,4 +84,24 @@ VhdlDisableAssertionsProcessing=0
 
 [file_out:/..\..\blocks\SLIMSLS.bde]
 /..\compile\SLIMSLS.vhd=-1
+
+[Files]
+/ALU.vhd=-1
+
+[Files.Data]
+.\src\MULT_SUB_I.vhd=VHDL Source Code
+.\src\OR_128.vhd=VHDL Source Code
+.\src\SFHS.vhd=VHDL Source Code
+.\src\SFW.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\..\blocks\ALU.bde=Block Diagram
+.\..\blocks\SIMAHS.bde=Block Diagram
+.\..\blocks\SIMALS.bde=Block Diagram
+.\..\blocks\SIMSHS.bde=Block Diagram
+.\..\blocks\SIMSLS.bde=Block Diagram
+.\..\blocks\SLIMAHS.bde=Block Diagram
+.\..\blocks\SLIMALS.bde=Block Diagram
+.\..\blocks\SLIMSHS.bde=Block Diagram
+.\..\blocks\SLIMSLS.bde=Block Diagram
+.\..\blocks\MULT_ADD_I.bde=Block Diagram
 

@@ -1,139 +1,17 @@
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_I.vhd" 
-MESSAGE "Compile Entity "MULT_SUB_I"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MULT_SUB_I"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/OR_128.vhd" 
-MESSAGE "Compile Entity "OR_128"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "OR_128"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SFHS.vhd" 
-MESSAGE "Compile Entity "SFHS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SFHS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SFW.vhd" 
-MESSAGE "Compile Entity "SFW"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SFW"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/ROTW.vhd" 
-MESSAGE "Compile Entity "ROTW"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "ROTW"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/PCNTW.vhd" 
-MESSAGE "Compile Entity "PCNTW"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "PCNTW"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/NOP.vhd" 
-MESSAGE "Compile Entity "NOP"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "NOP"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MULT_SUB_L.vhd" 
-MESSAGE "Compile Entity "MULT_SUB_L"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MULT_SUB_L"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/BCW.vhd" 
-MESSAGE "Compile Entity "BCW"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "BCW"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MLHU.vhd" 
-MESSAGE "Compile Entity "MLHU"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MLHU"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_I.vhd" 
-MESSAGE "Compile Entity "MULT_ADD_I"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MULT_ADD_I"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MULT_ADD_L.vhd" 
-MESSAGE "Compile Entity "MULT_ADD_L"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MULT_ADD_L"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MINWS.vhd" 
-MESSAGE "Compile Entity "MINWS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MINWS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MLHCU.vhd" 
-MESSAGE "Compile Entity "MLHCU"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MLHCU"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/MAXWS.vhd" 
-MESSAGE "Compile Entity "MAXWS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "MAXWS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/LI.vhd" 
-MESSAGE "Compile Entity "LI"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "LI"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/AU.vhd" 
-MESSAGE "Compile Entity "AU"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "AU"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/AND_128.vhd" 
-MESSAGE "Compile Entity "AND_128"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "AND_128"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/AHS.vhd" 
-MESSAGE "Compile Entity "AHS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "AHS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/AHU.vhd" 
-MESSAGE "Compile Entity "AHU"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "AHU"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/ABSDB.vhd" 
-MESSAGE "Compile Entity "ABSDB"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "ABSDB"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SIMALS.vhd" 
-MESSAGE "Compile Entity "SIMALS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SIMALS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SIMAHS.vhd" 
-MESSAGE "Compile Entity "SIMAHS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SIMAHS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SIMSLS.vhd" 
-MESSAGE "Compile Entity "SIMSLS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SIMSLS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SLIMALS.vhd" 
-MESSAGE "Compile Entity "SLIMALS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SLIMALS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SLIMSLS.vhd" 
-MESSAGE "Compile Entity "SLIMSLS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SLIMSLS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SLIMSHS.vhd" 
-MESSAGE "Compile Entity "SLIMSHS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SLIMSHS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SLIMAHS.vhd" 
-MESSAGE "Compile Entity "SLIMAHS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SLIMAHS"" 
-MESSAGE "File: C:/My_Designs/SIMD/ALU/src/SIMSHS.vhd" 
-MESSAGE "Compile Entity "SIMSHS"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "SIMSHS"" 
 MESSAGE "File: C:/My_Designs/SIMD/ALU/src/ALU.vhd" 
 BEGINPROGRESS C:/My_Designs/SIMD/ALU/src/ALU.vhd
 UPDATEPROGRESS 1
 MESSAGE "Compile Entity "ALU"" 
 UPDATEPROGRESS 3
+MESSAGE "Compile Architecture "behavioral" of Entity "ALU"" 
 UPDATEPROGRESS 4
-MESSAGE "Compile Architecture "structural" of Entity "ALU"" 
 UPDATEPROGRESS 5
 UPDATEPROGRESS 6
-UPDATEPROGRESS 7
-UPDATEPROGRESS 8
-UPDATEPROGRESS 9
-UPDATEPROGRESS 10
 UPDATEPROGRESS 11
-UPDATEPROGRESS 12
-UPDATEPROGRESS 14
-UPDATEPROGRESS 17
+UPDATEPROGRESS 15
 UPDATEPROGRESS 20
-UPDATEPROGRESS 23
-UPDATEPROGRESS 26
-UPDATEPROGRESS 29
-UPDATEPROGRESS 32
-UPDATEPROGRESS 35
-UPDATEPROGRESS 39
-UPDATEPROGRESS 40
-UPDATEPROGRESS 43
-UPDATEPROGRESS 46
-UPDATEPROGRESS 49
-UPDATEPROGRESS 51
-UPDATEPROGRESS 54
-UPDATEPROGRESS 57
-UPDATEPROGRESS 60
-UPDATEPROGRESS 62
-UPDATEPROGRESS 65
-UPDATEPROGRESS 68
-UPDATEPROGRESS 71
-UPDATEPROGRESS 73
-UPDATEPROGRESS 76
-UPDATEPROGRESS 79
-UPDATEPROGRESS 82
-UPDATEPROGRESS 83
-UPDATEPROGRESS 84
-UPDATEPROGRESS 85
-UPDATEPROGRESS 86
-UPDATEPROGRESS 87
-UPDATEPROGRESS 88
-UPDATEPROGRESS 89
-UPDATEPROGRESS 90
+UPDATEPROGRESS 24
 UPDATEPROGRESS 99
 UPDATEPROGRESS 100
 ENDPROGRESS C:/My_Designs/SIMD/ALU/src/ALU.vhd
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 
