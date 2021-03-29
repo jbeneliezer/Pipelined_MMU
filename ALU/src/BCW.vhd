@@ -41,7 +41,7 @@ begin  	   -- set each word of res to lowest word of j
 	
 	process (op)
 	begin
-		if (op = "11----0110---------------") then		   -- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "0110") then		   -- check for right opcode
 			r <= res;
 		end if;
 	end process;

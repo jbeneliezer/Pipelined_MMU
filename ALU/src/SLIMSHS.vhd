@@ -46,7 +46,7 @@ begin	  	-- multiply upper words of i and j longs, and subtract from k longs
 	SLIMSHS_1: MULT_SUB_L port map (x => i(127 downto 96), y => j(127 downto 96), z => k(127 downto 64), result => res(127 downto 64)); 
 	process (op)
 	begin
-		if (op = "10111--------------------") then		  -- check for right opcode
+		if (op(24 downto 20) = "10111") then		  -- check for right opcode
 			r <= res;
 		end if;
 	end process;

@@ -41,7 +41,7 @@ begin		   		-- compute unsigned subtraction for each word in i and j
 	
 	process (op) 
 	begin
-		if (op = "11----1111---------------") then			-- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "1111") then			-- check for right opcode
 			r <= res;
 		end if;
 	end process;

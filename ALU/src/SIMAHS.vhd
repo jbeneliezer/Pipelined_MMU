@@ -49,7 +49,7 @@ begin		-- multiply upper halves of i and j words, and add to k words
 	SIMAHS_3: MULT_ADD_I port map (x => i(127 downto 112), y => j(127 downto 112), z => k(127 downto 96), result => res(127 downto 96));
 	process (op)
 	begin
-		if (op = "10001--------------------") then		 -- check for right opcode
+		if (op(24 downto 20) = "10001") then		 -- check for right opcode
 			r <= res;
 		end if;
 	end process;

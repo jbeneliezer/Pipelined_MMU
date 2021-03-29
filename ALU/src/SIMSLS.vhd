@@ -50,7 +50,7 @@ begin		-- multiply lower halves of i and j words, and subtract from k words
 	
 	process (op)
 	begin
-		if (op = "10010--------------------") then		  -- check for right opcode
+		if (op(24 downto 20) = "10010") then		  -- check for right opcode
 			r <= res;
 		end if;
 	end process;

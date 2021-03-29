@@ -41,7 +41,7 @@ begin	   -- add unsigned words of i and j
 	
 	process (op)
 	begin
-		if (op = "11----0001---------------") then			  -- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "0001") then			  -- check for right opcode
 			r <= res;
 		end if;
 	end process;

@@ -46,7 +46,7 @@ begin			-- set each word in res to product of lower halfword of each j word and 
 	res(127 downto 96) <= "00000000000" & std_logic_vector(unsigned(j(111 downto 96)) * unsigned(op(14 downto 10)));
 	process (op)
 	begin
-		if (op = "11----1010---------------") then		   -- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "1010") then		   -- check for right opcode
 			r <= res;
 		end if;
 	end process;  

@@ -38,7 +38,7 @@ begin
 	
 	process (op)
 	begin
-		if (op = "11----0010---------------") then			  -- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "0010") then			  -- check for right opcode
 			r <= std_logic_vector(res);
 		end if;
 	end process;

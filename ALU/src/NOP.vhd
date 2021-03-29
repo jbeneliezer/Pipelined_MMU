@@ -31,7 +31,7 @@ architecture behavioral of NOP is
 begin
 	process (op)
 	begin
-		if (op = "11----0000---------------") then		   -- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "0000") then		   -- check for right opcode
 			null;										   -- do nothing
 		end if;
 	end process;

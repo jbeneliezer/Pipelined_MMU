@@ -1,4 +1,4 @@
-88
+257
 ~E 1 "../src/ABSDB.vhd" 29 ABSDB
 ~A 1 "../src/ABSDB.vhd" 34 behavioral
 ~E 1 "../src/AHS.vhd" 29 AHS
@@ -13,6 +13,8 @@
 ~A 1 "../src/AU.vhd" 34 behavioral
 ~E 1 "../src/BCW.vhd" 29 BCW
 ~A 1 "../src/BCW.vhd" 34 behavioral
+~E 1 "../src/LI.vhd" 24 LI
+~A 1 "../src/LI.vhd" 31 behavioral
 ~E 1 "../src/MAXWS.vhd" 29 MAXWS
 ~A 1 "../src/MAXWS.vhd" 34 behavioral
 ~E 1 "../src/MINWS.vhd" 29 MINWS

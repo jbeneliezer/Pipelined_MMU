@@ -72,7 +72,7 @@ begin		-- for each word in j, count the number of ones by looping through each b
 	
 	process (op)
 	begin
-		if (op = "11----1100---------------") then					-- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "1100") then					-- check for right opcode
 			r <= res;
 		end if;
 	end process;  

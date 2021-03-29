@@ -41,7 +41,7 @@ begin				-- set each word of res to product of lower halfwords of each word in i
 	
 	process (op)
 	begin
-		if (op = "11----1001---------------") then			   -- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "1001") then			   -- check for right opcode
 			r <= res;
 		end if;
 	end process;

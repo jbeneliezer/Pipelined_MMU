@@ -40,7 +40,7 @@ begin			  -- for each word in j, rotate by amount specified by lowest 5 bits i
 	res(127 downto 96) <= std_logic_vector(rotate_right(unsigned(j(127 downto 96)), to_integer(unsigned(i(4 downto 0)))));
 	process (op)
 	begin
-		if (op = "11----1101---------------") then			-- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "1101") then			-- check for right opcode
 			r <= res;
 		end if;
 	end process;

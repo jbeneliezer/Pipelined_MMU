@@ -72,7 +72,7 @@ begin		-- set each word of res to min of corresponding	i and j words
 		
 	process (op)
 	begin
-		if (op = "11----1000---------------") then		  -- check for right opcode
+		if (op(24 downto 23) = "11" and op(18 downto 15) = "1000") then		  -- check for right opcode
 			r <= res;  
 		end if;
 	end process;

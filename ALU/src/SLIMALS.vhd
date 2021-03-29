@@ -48,7 +48,7 @@ begin	   -- multiply lower words of i and j longs, and add to k longs
 	
 	process (op)
 	begin
-		if (op = "10100--------------------") then		  -- check for right opcode
+		if (op(24 downto 20) = "10100") then		  -- check for right opcode
 			r <= res;
 		end if;
 	end process;
