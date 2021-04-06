@@ -31,7 +31,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=alu|structural|0
+HierarchyInformation=alu|behavioral|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -58,9 +58,6 @@ VhdlPreservePortComments=0
 VhdlChangeEvalAsynchronous=0
 VhdlDisableAssertionsProcessing=0
 
-[file_out:/..\..\blocks\ALU.bde]
-/..\compile\ALU.vhd=-1
-
 [file_out:/..\..\blocks\SIMAHS.bde]
 /..\compile\SIMAHS.vhd=-1
 
@@ -85,23 +82,12 @@ VhdlDisableAssertionsProcessing=0
 [file_out:/..\..\blocks\SLIMSLS.bde]
 /..\compile\SLIMSLS.vhd=-1
 
+[file_out:/..\..\blocks\ALU.bde]
+/..\compile\ALU.vhd=-1
+
 [Files]
 /ALU.vhd=-1
 
 [Files.Data]
-.\src\MULT_SUB_I.vhd=VHDL Source Code
-.\src\OR_128.vhd=VHDL Source Code
-.\src\SFHS.vhd=VHDL Source Code
-.\src\SFW.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
-.\..\blocks\ALU.bde=Block Diagram
-.\..\blocks\SIMAHS.bde=Block Diagram
-.\..\blocks\SIMALS.bde=Block Diagram
-.\..\blocks\SIMSHS.bde=Block Diagram
-.\..\blocks\SIMSLS.bde=Block Diagram
-.\..\blocks\SLIMAHS.bde=Block Diagram
-.\..\blocks\SLIMALS.bde=Block Diagram
-.\..\blocks\SLIMSHS.bde=Block Diagram
-.\..\blocks\SLIMSLS.bde=Block Diagram
-.\..\blocks\MULT_ADD_I.bde=Block Diagram
 

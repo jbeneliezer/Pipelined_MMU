@@ -1,8 +1,8 @@
-341
+372
 ~E 1 "../src/ABSDB.vhd" 29 ABSDB
 ~E 1 "../src/AHS.vhd" 29 AHS
 ~E 1 "../src/AHU.vhd" 29 AHU
-~E 1 "../src/ALU.vhd" 29 ALU
+~E 1 "../src/ALU.vhd" 25 ALU
 ~A 1 "../src/ALU.vhd" 35 behavioral
 ~E 1 "../src/AND_128.vhd" 29 AND_128
 ~E 1 "../src/AU.vhd" 29 AU
@@ -20,6 +20,8 @@
 ~E 1 "../src/OR_128.vhd" 28 OR_128
 ~E 1 "../src/PCNTW.vhd" 29 PCNTW
 ~E 1 "../src/ROTW.vhd" 29 ROTW
+~E 1 "../src/ALU.vhd" 25 rs1LU
+~A 1 "../src/ALU.vhd" 35 behavioral
 ~E 1 "../src/SFHS.vhd" 29 SFHS
 ~E 1 "../src/SFW.vhd" 29 SFW
 ~E 1 "../src/SIMAHS.vhd" 29 SIMAHS
