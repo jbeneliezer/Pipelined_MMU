@@ -31,9 +31,17 @@ UCF=
 /ALU.vhd=-1
 /ALU_functions.vhd=-1
 /RF.vhd=-1
+/REG_file.vhd=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
 .\src\ALU_functions.vhd=VHDL Source Code
 .\src\RF.vhd=VHDL Source Code
+.\src\REG_file.vhd=VHDL Source Code
 
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

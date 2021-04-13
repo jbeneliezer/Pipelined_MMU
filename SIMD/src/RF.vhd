@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 --
 -- Title       : RF
--- Design      : ALU
+-- Design      : SIMD
 -- Author      : Judah Ben-Eliezer
 -- Company     : Stony Brook University
 --
@@ -21,18 +21,21 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
+library SIMD;
+use SIMD.REG_file.all;
+
 entity RF is
 	port(
+		clk: in std_logic;	  
+		write : in STD_LOGIC_VECTOR(127 downto 0);
 		read1 : out STD_LOGIC_VECTOR(127 downto 0);
 		read2 : out STD_LOGIC_VECTOR(127 downto 0);
-		read3 : out STD_LOGIC_VECTOR(127 downto 0);
-		write : in STD_LOGIC_VECTOR(127 downto 0)
+		read3 : out STD_LOGIC_VECTOR(127 downto 0) 
 		);	 		
 end RF;				  
 
-architecture behavioral of RF is   
-	type file is array (32 downto 0) of std_logic_vector(127 downto 0);
-	signal rf: file;
+architecture behavioral of RF is
+	signal f: REG_file;
 begin	
 	
 end behavioral;

@@ -1,0 +1,1 @@
+-w -erf c:/My_Designs/SIMD/SIMD/compile/SIMD.erf -d c:/My_Designs/SIMD/SIMD/compile -s c:/My_Designs/SIMD/library.cfg -j c:/My_Designs/SIMD/SIMD/projlib.cfg -work SIMD -dbg -e 100 -work SIMD -disable87 -2018 c:/My_Designs/SIMD/SIMD/src/ALU.vhd c:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd c:/My_Designs/SIMD/SIMD/src/RF.vhd c:/My_Designs/SIMD/SIMD/src/REG_file.vhd 

@@ -1,3 +1,4 @@
 .\src\ALU.vhd
 .\src\ALU_functions.vhd
 .\src\RF.vhd
+.\src\REG_file.vhd
