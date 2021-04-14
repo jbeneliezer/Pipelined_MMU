@@ -27,21 +27,25 @@ fileopenfolder=C:\My_Designs\SIMD\SIMD\src
 [IMPLEMENTATION]
 UCF=
 
-[Files]
-/ALU.vhd=-1
-/ALU_functions.vhd=-1
-/RF.vhd=-1
-/REG_file.vhd=-1
-
-[Files.Data]
-.\src\ALU.vhd=VHDL Source Code
-.\src\ALU_functions.vhd=VHDL Source Code
-.\src\RF.vhd=VHDL Source Code
-.\src\REG_file.vhd=VHDL Source Code
-
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+[Files]
+/ALU.vhd=-1
+/ALU_functions.vhd=-1
+/REGISTER_file.vhd=-1
+/MMU.vhd=-1
+/FU.vhd=-1
+
+[Files.Data]
+.\src\ALU.vhd=VHDL Source Code
+.\src\ALU_functions.vhd=VHDL Source Code
+.\src\REGISTER_file.vhd=VHDL Source Code
+.\src\MMU.vhd=VHDL Source Code
+.\src\FU.vhd=VHDL Source Code
+

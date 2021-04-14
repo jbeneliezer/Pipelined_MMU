@@ -1,5 +1,11 @@
-10
+41
 ~E 1 "../src/ALU.vhd" 28 ALU
 ~A 1 "../src/ALU.vhd" 38 behavioral
+~E 1 "../src/FU.vhd" 28 FU
+~A 1 "../src/FU.vhd" 38 behavioral
+~E 1 "../src/IB.vhd" 27 IB
+~E 1 "../src/MMU.vhd" 28 MMU
+~A 1 "../src/MMU.vhd" 34 structural
 ~E 1 "../src/RF.vhd" 27 RF
-~A 1 "../src/RF.vhd" 37 behavioral
+~E 1 "../src/top_level.vhd" 24 top_level
+~A 1 "../src/top_level.vhd" 30 structural

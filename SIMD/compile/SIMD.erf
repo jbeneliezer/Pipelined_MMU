@@ -1,20 +1,4 @@
-MESSAGE "File: c:/My_Designs/SIMD/SIMD/src/ALU.vhd" 
-BEGINPROGRESS c:/My_Designs/SIMD/SIMD/src/ALU.vhd
-UPDATEPROGRESS 2
-MESSAGE "Compile Entity "ALU"" 
-UPDATEPROGRESS 4
-UPDATEPROGRESS 5
-MESSAGE "Compile Architecture "behavioral" of Entity "ALU"" 
-UPDATEPROGRESS 6
-UPDATEPROGRESS 99
-UPDATEPROGRESS 100
-ENDPROGRESS c:/My_Designs/SIMD/SIMD/src/ALU.vhd
-MESSAGE "File: c:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd" 
-MESSAGE "Compile Package "ALU_functions"" 
-MESSAGE "Compile Package Body "ALU_functions"" 
-MESSAGE "File: c:/My_Designs/SIMD/SIMD/src/RF.vhd" 
-MESSAGE "Compile Entity "RF"" 
-MESSAGE "Compile Architecture "behavioral" of Entity "RF"" 
-MESSAGE "File: c:/My_Designs/SIMD/SIMD/src/REG_file.vhd" 
-MESSAGE "Compile Package "REG_file"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd" 
+MESSAGE "Compile Entity "MMU"" 
+MESSAGE "Compile Architecture "structural" of Entity "MMU"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

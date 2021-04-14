@@ -1,4 +1,5 @@
 i<>.\src\ALU.vhd
 i<>.\src\ALU_functions.vhd
-i<>.\src\RF.vhd
 i<>.\src\REGISTER_type.vhd
+i<>.\src\top_level.vhd
+i<>.\src\FU.vhd

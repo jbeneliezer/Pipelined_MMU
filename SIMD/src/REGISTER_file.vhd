@@ -21,6 +21,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-package REG_file is
- 	type REG_file is array(31 downto 0) of std_logic_vector(127 downto 0);	
-end package REG_file;
+package REGISTER_file is
+ 	type REGISTER_array is array(natural range<>) of std_logic_vector;
+ 	type REGISTER_array_3d is array(natural range<>) of REGISTER_array;
+end package REGISTER_file;

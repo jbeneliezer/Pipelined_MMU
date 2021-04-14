@@ -1,0 +1,66 @@
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/FU.vhd
+# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/REGISTER_file.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd
+# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/My_Designs/SIMD/SIMD/src/REGISTER_file.vhd
+# Compile Package "REGISTER_file"
+# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0015: MMU.vhd : (107, 1): ')' expected.
+# Error: COMP96_0019: MMU.vhd : (107, 5): Keyword 'then' expected.
+# Error: COMP96_0019: MMU.vhd : (108, 0): Keyword 'end' expected.
+# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  93.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0019: MMU.vhd : (108, 5): Keyword 'if' expected.
+# Error: COMP96_0358: MMU.vhd : (108, 5): Statement is not labeled.
+# Error: COMP96_0019: MMU.vhd : (109, 0): Keyword 'end' expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/REGISTER_file.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd
+# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/My_Designs/SIMD/SIMD/src/REGISTER_file.vhd
+# Compile Package "REGISTER_file"
+# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (76, 5): Unknown identifier "to_integer".
+# Error: COMP96_0078: MMU.vhd : (76, 16): Unknown identifier "unsigned".
+# Error: COMP96_0133: MMU.vhd : (76, 16): Cannot find object declaration.
+# Error: COMP96_0133: MMU.vhd : (76, 5): Cannot find object declaration.
+# Error: COMP96_0289: MMU.vhd : (76, 5): Prefix of index must be an array.
+# Error: COMP96_0138: MMU.vhd : (76, 5): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0259: MMU.vhd : (76, 55): Index value in the reference to the array object is out of the array type range.
+# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# Compile failure 7 Errors 0 Warnings  Analysis time :  93.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0259: MMU.vhd : (77, 55): Index value in the reference to the array object is out of the array type range.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
