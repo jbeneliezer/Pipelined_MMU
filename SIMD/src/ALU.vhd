@@ -21,9 +21,7 @@
 library IEEE; 
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-
-library SIMD;
-use SIMD.ALU_functions.all;
+use work.ALU_functions.all;
 
 entity ALU is
 	port(					
@@ -31,7 +29,8 @@ entity ALU is
 		rs1 : in STD_LOGIC_VECTOR(127 downto 0);
 		rs2 : in STD_LOGIC_VECTOR(127 downto 0);
 		rs3 : in STD_LOGIC_VECTOR(127 downto 0);
-		Rd : out STD_LOGIC_VECTOR(127 downto 0)
+		Rd : out STD_LOGIC_VECTOR(127 downto 0);
+		Op_out : out STD_LOGIC_VECTOR(24 downto 0)
 		);
 end ALU;
 
@@ -76,17 +75,17 @@ begin
 				Rd(95 downto 64) <= MULT_SUB_I(rs3(95 downto 80), rs2(95 downto 80), rs1(95 downto 64));
 				Rd(127 downto 96) <= MULT_SUB_I(rs3(127 downto 112), rs2(127 downto 112), rs1(127 downto 96));
 			when "10100--------------------" => 	-- SLIMALS
-				Rd(31 downto 0) <= MULT_ADD_L(rs3(31 downto 0), rs2(31 downto 0), rs1(63 downto 0));
-				Rd(63 downto 32) <= MULT_ADD_L(rs3(95 downto 64), rs2(95 downto 64), rs1(127 downto 64));
+				Rd(63 downto 0) <= MULT_ADD_L(rs3(31 downto 0), rs2(31 downto 0), rs1(63 downto 0));
+				Rd(127 downto 64) <= MULT_ADD_L(rs3(95 downto 64), rs2(95 downto 64), rs1(127 downto 64));
 			when "10101--------------------" => 	-- SLIMAHS
-				Rd(31 downto 0) <= MULT_ADD_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
-				Rd(63 downto 32) <= MULT_ADD_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
+				Rd(63 downto 0) <= MULT_ADD_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
+				Rd(127 downto 64) <= MULT_ADD_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
 			when "10110--------------------" => 	-- SLIMSLS
-				Rd(31 downto 0) <= MULT_SUB_L(rs3(31 downto 0), rs2(31 downto 0), rs1(63 downto 0));
-				Rd(63 downto 32) <= MULT_SUB_L(rs3(95 downto 64), rs2(95 downto 64), rs1(127 downto 64));
+				Rd(63 downto 0) <= MULT_SUB_L(rs3(31 downto 0), rs2(31 downto 0), rs1(63 downto 0));
+				Rd(127 downto 64) <= MULT_SUB_L(rs3(95 downto 64), rs2(95 downto 64), rs1(127 downto 64));
 			when "10111--------------------" =>  	-- SLIMSHS
-				Rd(31 downto 0) <= MULT_SUB_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
-				Rd(63 downto 32) <= MULT_SUB_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
+				Rd(63 downto 0) <= MULT_SUB_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
+				Rd(127 downto 64) <= MULT_SUB_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
 			when "11----0000---------------" => 	-- NOP
 				null;
 			when "11----0001---------------" =>   	-- AU
@@ -318,4 +317,5 @@ begin
 			when others => null;
 		end case?;
 	end process;
+	Op_out <= Op;
 end behavioral;

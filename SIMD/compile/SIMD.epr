@@ -1,2 +1,12 @@
-"C:/My_Designs/SIMD/SIMD/src/MMU.vhd" VHDL SIMD 1 0 0 -02 -08 -18
+"C:/My_Designs/SIMD/SIMD/src/ALU.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/data_types.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/MMU.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/FU.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/RF.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd" VHDL SIMD 1 0 0 -02 -08
+"C:/My_Designs/SIMD/SIMD/src/IB.vhd" VHDL SIMD 1 0 0 -02 -08
 . . 0 0 0

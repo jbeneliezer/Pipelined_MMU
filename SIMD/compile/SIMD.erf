@@ -1,4 +1,41 @@
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd" 
+BEGINPROGRESS C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "ALU"" 
+UPDATEPROGRESS 4
+UPDATEPROGRESS 5
+MESSAGE "Compile Architecture "behavioral" of Entity "ALU"" 
+UPDATEPROGRESS 6
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd" 
+MESSAGE "Compile Package "ALU_functions"" 
+MESSAGE "Compile Package Body "ALU_functions"" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd" 
+MESSAGE "Compile Package "data_types"" 
 MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd" 
 MESSAGE "Compile Entity "MMU"" 
 MESSAGE "Compile Architecture "structural" of Entity "MMU"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/FU.vhd" 
+MESSAGE "Compile Entity "FU"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "FU"" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/RF.vhd" 
+MESSAGE "Compile Entity "RF"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "RF"" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd" 
+MESSAGE "Compile Entity "IF_ID"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "IF_ID"" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd" 
+MESSAGE "Compile Entity "MMU_tb"" 
+MESSAGE "Compile Architecture "bench" of Entity "MMU_tb"" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd" 
+MESSAGE "Compile Entity "ID_EX"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "ID_EX"" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd" 
+MESSAGE "Compile Entity "EX_WB"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "EX_WB"" 
+MESSAGE "File: C:/My_Designs/SIMD/SIMD/src/IB.vhd" 
+MESSAGE "Compile Entity "IB"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "IB"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

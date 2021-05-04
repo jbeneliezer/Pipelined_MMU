@@ -31,21 +31,54 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=mmu|structural|0 
 ShowHide=ShowTopLevel
 Selected=
+.\src\FU.vhd=VHDL Source Code
+
+[LocalVhdlSets]
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=0
+EnableVHDL2008Key=1
+EnableVHDL2018Key=0
+DisableVHDL87Key=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+CompileWithDebug=1
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
 
 [Files]
 /ALU.vhd=-1
 /ALU_functions.vhd=-1
-/REGISTER_file.vhd=-1
+/data_types.vhd=-1
 /MMU.vhd=-1
 /FU.vhd=-1
+/mmu.asdb=-1
+/mmu.awc=-1
+/RF.vhd=-1
+/IF_ID.vhd=-1
+/MMU_tb.vhd=-1
+/ID_EX.vhd=-1
+/EX_WB.vhd=-1
+/IB.vhd=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
 .\src\ALU_functions.vhd=VHDL Source Code
-.\src\REGISTER_file.vhd=VHDL Source Code
+.\src\data_types.vhd=VHDL Source Code
 .\src\MMU.vhd=VHDL Source Code
 .\src\FU.vhd=VHDL Source Code
+.\src\mmu.asdb=Accelerated Waveform File
+.\src\mmu.awc=Accelerated Waveform Configuration
+.\src\RF.vhd=VHDL Source Code
+.\src\IF_ID.vhd=VHDL Source Code
+.\src\MMU_tb.vhd=VHDL Source Code
+.\src\ID_EX.vhd=VHDL Source Code
 
+.\src\EX_WB.vhd=VHDL Source Code
+.\src\IB.vhd=VHDL Source Code

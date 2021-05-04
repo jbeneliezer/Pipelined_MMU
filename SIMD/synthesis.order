@@ -1,5 +1,10 @@
 i<>.\src\ALU.vhd
 i<>.\src\ALU_functions.vhd
 i<>.\src\REGISTER_type.vhd
-i<>.\src\top_level.vhd
 i<>.\src\FU.vhd
+i<>.\src\RF.vhd
+i<>.\src\PIPE.vhd
+i<>.\src\MMU_tb.vhd
+i<>.\src\ID_EX.vhd
+i<>.\src\EX_WB.vhd
+i<>.\src\IB.vhd

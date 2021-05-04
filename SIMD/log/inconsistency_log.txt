@@ -1,0 +1,10 @@
+Repaired file: C:/My_Designs/SIMD/blocks/MMU.bde:
+
+____________________________________________________________________________________________________
+Repaired inconsistent taps:
+	net id=28
+	net id=29
+	net id=30
+	net id=31
+	net id=32
+
