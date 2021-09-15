@@ -1,1 +1,0 @@
- -w -cvi  -2018  -s "c:/My_Designs/SIMD/SIMD/hdl_assist/library.cfg"  -work SIMD  -e 100  "c:/My_Designs/SIMD/SIMD/hdl_assist/3ca4-5ae7-0e7f-aefb"

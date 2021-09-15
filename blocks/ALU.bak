@@ -1,0 +1,603 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 38
+ VARIABLES
+ {
+  #ARCHITECTURE="behavioral"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"op\"><left=\"24\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"rd\"><left=\"127\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"rs1\"><left=\"127\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"rs2\"><left=\"127\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"rs3\"><left=\"127\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="ALU"
+  #LANGUAGE="VHDL"
+  AUTHOR="Judah Ben-Eliezer"
+  COMPANY="Stony Brook University"
+  CREATIONDATE="5/1/2021"
+  SOURCE="..\\src\\ALU.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library simd;\n"+
+"use simd.ALU_functions.all;\n"+
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.NUMERIC_STD.all;"
+   RECT (220,260,620,538)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  ARCHITECTUREDECLARATIONS  2, 0, 0
+  {
+   LABEL "Architecture Declaration"
+   TEXT 
+"constant max16 : signed := x\"7FFF\";\n"+
+"constant min16 : signed := x\"8000\";\n"+
+""
+   RECT (220,538,620,750)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  3, 0, 0
+  {
+   LABEL "process_40"
+   TEXT 
+"process (Op,rs1,rs2,rs3(127 downto 96),rs3(63 downto 32),rs3(95 downto 64),rs3(31 downto 0),rs3(127 downto 112),rs3(95 downto 80),rs3(63 downto 48),rs3(31 downto 16),rs3(111 downto 96),rs3(79 downto 64),rs3(47 downto 32),rs3(15 downto 0),Rd(127),Rd(111),Rd(95),Rd(79),Rd(63),Rd(47),Rd(31),Rd(15))\n"+
+"                         variable count : unsigned(31 downto 0);\n"+
+"                       begin\n"+
+"                         case (Op) is \n"+
+"                           when \"0------------------------\" => \n"+
+"                              case (op(23 downto 21)) is \n"+
+"                                when \"000\" => \n"+
+"                                   Rd(15 downto 0) <= Op(20 downto 5);\n"+
+"                                when \"001\" => \n"+
+"                                   Rd(31 downto 16) <= Op(20 downto 5);\n"+
+"                                when \"010\" => \n"+
+"                                   Rd(47 downto 32) <= Op(20 downto 5);\n"+
+"                                when \"011\" => \n"+
+"                                   Rd(63 downto 48) <= Op(20 downto 5);\n"+
+"                                when \"100\" => \n"+
+"                                   Rd(79 downto 64) <= Op(20 downto 5);\n"+
+"                                when \"101\" => \n"+
+"                                   Rd(95 downto 80) <= Op(20 downto 5);\n"+
+"                                when \"110\" => \n"+
+"                                   Rd(111 downto 96) <= Op(20 downto 5);\n"+
+"                                when \"111\" => \n"+
+"                                   Rd(127 downto 112) <= Op(20 downto 5);\n"+
+"                                when others => \n"+
+"                                   null;\n"+
+"                              end case;\n"+
+"                           when \"10000--------------------\" => \n"+
+"                              Rd(31 downto 0) <= MULT_ADD_I(rs3(15 downto 0),rs2(15 downto 0),rs1(31 downto 0));\n"+
+"                              Rd(63 downto 32) <= MULT_ADD_I(rs3(47 downto 32),rs2(47 downto 32),rs1(63 downto 32));\n"+
+"                              Rd(95 downto 64) <= MULT_ADD_I(rs3(79 downto 64),rs2(79 downto 64),rs1(95 downto 64));\n"+
+"                              Rd(127 downto 96) <= MULT_ADD_I(rs3(111 downto 96),rs2(111 downto 96),rs1(127 downto 96));\n"+
+"                           when \"10001--------------------\" => \n"+
+"                              Rd(31 downto 0) <= MULT_ADD_I(rs3(31 downto 16),rs2(31 downto 16),rs1(31 downto 0));\n"+
+"                              Rd(63 downto 32) <= MULT_ADD_I(rs3(63 downto 48),rs2(63 downto 48),rs1(63 downto 32));\n"+
+"                              Rd(95 downto 64) <= MULT_ADD_I(rs3(95 downto 80),rs2(95 downto 80),rs1(95 downto 64));\n"+
+"                              Rd(127 downto 96) <= MULT_ADD_I(rs3(127 downto 112),rs2(127 downto 112),rs1(127 downto 96));\n"+
+"                           when \"10010--------------------\" => \n"+
+"                              Rd(31 downto 0) <= MULT_SUB_I(rs3(15 downto 0),rs2(15 downto 0),rs1(31 downto 0));\n"+
+"                              Rd(63 downto 32) <= MULT_SUB_I(rs3(47 downto 32),rs2(47 downto 32),rs1(63 downto 32));\n"+
+"                              Rd(95 downto 64) <= MULT_SUB_I(rs3(79 downto 64),rs2(79 downto 64),rs1(95 downto 64));\n"+
+"                              Rd(127 downto 96) <= MULT_SUB_I(rs3(111 downto 96),rs2(111 downto 96),rs1(127 downto 96));\n"+
+"                           when \"10011--------------------\" => \n"+
+"                              Rd(31 downto 0) <= MULT_SUB_I(rs3(31 downto 16),rs2(31 downto 16),rs1(31 downto 0));\n"+
+"                              Rd(63 downto 32) <= MULT_SUB_I(rs3(63 downto 48),rs2(63 downto 48),rs1(63 downto 32));\n"+
+"                              Rd(95 downto 64) <= MULT_SUB_I(rs3(95 downto 80),rs2(95 downto 80),rs1(95 downto 64));\n"+
+"                              Rd(127 downto 96) <= MULT_SUB_I(rs3(127 downto 112),rs2(127 downto 112),rs1(127 downto 96));\n"+
+"                           when \"10100--------------------\" => \n"+
+"                              Rd(63 downto 0) <= MULT_ADD_L(rs3(31 downto 0),rs2(31 downto 0),rs1(63 downto 0));\n"+
+"                              Rd(127 downto 64) <= MULT_ADD_L(rs3(95 downto 64),rs2(95 downto 64),rs1(127 downto 64));\n"+
+"                           when \"10101--------------------\" => \n"+
+"                              Rd(63 downto 0) <= MULT_ADD_L(rs3(63 downto 32),rs2(63 downto 32),rs1(63 downto 0));\n"+
+"                              Rd(127 downto 64) <= MULT_ADD_L(rs3(127 downto 96),rs2(127 downto 96),rs1(127 downto 64));\n"+
+"                           when \"10110--------------------\" => \n"+
+"                              Rd(63 downto 0) <= MULT_SUB_L(rs3(31 downto 0),rs2(31 downto 0),rs1(63 downto 0));\n"+
+"                              Rd(127 downto 64) <= MULT_SUB_L(rs3(95 downto 64),rs2(95 downto 64),rs1(127 downto 64));\n"+
+"                           when \"10111--------------------\" => \n"+
+"                              Rd(63 downto 0) <= MULT_SUB_L(rs3(63 downto 32),rs2(63 downto 32),rs1(63 downto 0));\n"+
+"                              Rd(127 downto 64) <= MULT_SUB_L(rs3(127 downto 96),rs2(127 downto 96),rs1(127 downto 64));\n"+
+"                           when \"11----0000---------------\" => \n"+
+"                              null;\n"+
+"                           when \"11----0001---------------\" => \n"+
+"                              Rd(31 downto 0) <= std_logic_vector(unsigned(rs1(31 downto 0)) + unsigned(rs2(31 downto 0)));\n"+
+"                              Rd(63 downto 32) <= std_logic_vector(unsigned(rs1(63 downto 32)) + unsigned(rs2(63 downto 32)));\n"+
+"                              Rd(95 downto 64) <= std_logic_vector(unsigned(rs1(95 downto 64)) + unsigned(rs2(95 downto 64)));\n"+
+"                              Rd(127 downto 96) <= std_logic_vector(unsigned(rs1(127 downto 96)) + unsigned(rs2(127 downto 96)));\n"+
+"                           when \"11----0010---------------\" => \n"+
+"                              Rd(7 downto 0) <= std_logic_vector(abs (signed(rs2(7 downto 0)) - signed(rs1(7 downto 0))));\n"+
+"                              Rd(15 downto 8) <= std_logic_vector(abs (signed(rs2(15 downto 8)) - signed(rs1(15 downto 8))));\n"+
+"                              Rd(23 downto 16) <= std_logic_vector(abs (signed(rs2(23 downto 16)) - signed(rs1(23 downto 16))));\n"+
+"                              Rd(31 downto 24) <= std_logic_vector(abs (signed(rs2(31 downto 24)) - signed(rs1(31 downto 24))));\n"+
+"                              Rd(39 downto 32) <= std_logic_vector(abs (signed(rs2(39 downto 32)) - signed(rs1(39 downto 32))));\n"+
+"                              Rd(47 downto 40) <= std_logic_vector(abs (signed(rs2(47 downto 40)) - signed(rs1(47 downto 40))));\n"+
+"                              Rd(55 downto 48) <= std_logic_vector(abs (signed(rs2(55 downto 48)) - signed(rs1(55 downto 48))));\n"+
+"                              Rd(63 downto 56) <= std_logic_vector(abs (signed(rs2(63 downto 56)) - signed(rs1(63 downto 56))));\n"+
+"                              Rd(71 downto 64) <= std_logic_vector(abs (signed(rs2(71 downto 64)) - signed(rs1(71 downto 64))));\n"+
+"                              Rd(79 downto 72) <= std_logic_vector(abs (signed(rs2(79 downto 72)) - signed(rs1(79 downto 72))));\n"+
+"                              Rd(87 downto 80) <= std_logic_vector(abs (signed(rs2(87 downto 80)) - signed(rs1(87 downto 80))));\n"+
+"                              Rd(95 downto 88) <= std_logic_vector(abs (signed(rs2(95 downto 88)) - signed(rs1(95 downto 88))));\n"+
+"                              Rd(103 downto 96) <= std_logic_vector(abs (signed(rs2(103 downto 96)) - signed(rs1(103 downto 96))));\n"+
+"                              Rd(111 downto 104) <= std_logic_vector(abs (signed(rs2(111 downto 104)) - signed(rs1(111 downto 104))));\n"+
+"                              Rd(119 downto 112) <= std_logic_vector(abs (signed(rs2(119 downto 112)) - signed(rs1(119 downto 112))));\n"+
+"                              Rd(127 downto 120) <= std_logic_vector(abs (signed(rs2(127 downto 120)) - signed(rs1(127 downto 120))));\n"+
+"                           when \"11----0011---------------\" => \n"+
+"                              Rd(15 downto 0) <= std_logic_vector(unsigned(rs1(15 downto 0)) + unsigned(rs2(15 downto 0)));\n"+
+"                              Rd(31 downto 16) <= std_logic_vector(unsigned(rs1(31 downto 16)) + unsigned(rs2(31 downto 16)));\n"+
+"                              Rd(47 downto 32) <= std_logic_vector(unsigned(rs1(47 downto 32)) + unsigned(rs2(47 downto 32)));\n"+
+"                              Rd(63 downto 48) <= std_logic_vector(unsigned(rs1(63 downto 48)) + unsigned(rs2(63 downto 48)));\n"+
+"                              Rd(79 downto 64) <= std_logic_vector(unsigned(rs1(79 downto 64)) + unsigned(rs2(79 downto 64)));\n"+
+"                              Rd(95 downto 80) <= std_logic_vector(unsigned(rs1(95 downto 80)) + unsigned(rs2(95 downto 80)));\n"+
+"                              Rd(111 downto 96) <= std_logic_vector(unsigned(rs1(111 downto 96)) + unsigned(rs2(111 downto 96)));\n"+
+"                              Rd(127 downto 112) <= std_logic_vector(unsigned(rs1(127 downto 112)) + unsigned(rs2(127 downto 112)));\n"+
+"                           when \"11----0100---------------\" => \n"+
+"                              Rd(15 downto 0) <= std_logic_vector(signed(rs1(15 downto 0)) + signed(rs2(15 downto 0)));\n"+
+"                              Rd(31 downto 16) <= std_logic_vector(signed(rs1(31 downto 16)) + signed(rs2(31 downto 16)));\n"+
+"                              Rd(47 downto 32) <= std_logic_vector(signed(rs1(47 downto 32)) + signed(rs2(47 downto 32)));\n"+
+"                              Rd(63 downto 48) <= std_logic_vector(signed(rs1(63 downto 48)) + signed(rs2(63 downto 48)));\n"+
+"                              Rd(79 downto 64) <= std_logic_vector(signed(rs1(79 downto 64)) + signed(rs2(79 downto 64)));\n"+
+"                              Rd(95 downto 80) <= std_logic_vector(signed(rs1(95 downto 80)) + signed(rs2(95 downto 80)));\n"+
+"                              Rd(111 downto 96) <= std_logic_vector(signed(rs1(111 downto 96)) + signed(rs2(111 downto 96)));\n"+
+"                              Rd(127 downto 112) <= std_logic_vector(signed(rs1(127 downto 112)) + signed(rs2(127 downto 112)));\n"+
+"                              if (rs1(15) = rs2(15) and not rs1(15) = Rd(15) and Rd(15) = '1') then\n"+
+"                                 Rd(15 downto 0) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(15) = rs2(15) and not rs1(15) = Rd(15) and Rd(15) = '0') then\n"+
+"                                 Rd(15 downto 0) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (rs1(31) = rs2(31) and not rs1(31) = Rd(31) and Rd(31) = '1') then\n"+
+"                                 Rd(31 downto 16) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(31) = rs2(31) and not rs1(31) = Rd(31) and Rd(31) = '0') then\n"+
+"                                 Rd(31 downto 16) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (rs1(47) = rs2(47) and not rs1(47) = Rd(47) and Rd(47) = '1') then\n"+
+"                                 Rd(47 downto 32) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(47) = rs2(47) and not rs1(47) = Rd(47) and Rd(47) = '0') then\n"+
+"                                 Rd(47 downto 32) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (rs1(63) = rs2(63) and not rs1(63) = Rd(63) and Rd(63) = '1') then\n"+
+"                                 Rd(63 downto 48) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(63) = rs2(63) and not rs1(63) = Rd(63) and Rd(63) = '0') then\n"+
+"                                 Rd(63 downto 48) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (rs1(79) = rs2(79) and not rs1(79) = Rd(79) and Rd(79) = '1') then\n"+
+"                                 Rd(79 downto 64) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(79) = rs2(79) and not rs1(79) = Rd(79) and Rd(79) = '0') then\n"+
+"                                 Rd(79 downto 64) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (rs1(95) = rs2(95) and not rs1(95) = Rd(95) and Rd(95) = '1') then\n"+
+"                                 Rd(95 downto 80) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(95) = rs2(95) and not rs1(95) = Rd(95) and Rd(95) = '0') then\n"+
+"                                 Rd(95 downto 80) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (rs1(111) = rs2(111) and not rs1(111) = Rd(111) and Rd(111) = '1') then\n"+
+"                                 Rd(111 downto 96) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(111) = rs2(111) and not rs1(111) = Rd(111) and Rd(111) = '0') then\n"+
+"                                 Rd(111 downto 96) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (rs1(127) = rs2(127) and not rs1(127) = Rd(127) and Rd(127) = '1') then\n"+
+"                                 Rd(127 downto 112) <= std_logic_vector(max16);\n"+
+"                              elsif (rs1(127) = rs2(127) and not rs1(127) = Rd(127) and Rd(127) = '0') then\n"+
+"                                 Rd(127 downto 112) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                           when \"11----0101---------------\" => \n"+
+"                              Rd <= rs1 and rs2;\n"+
+"                           when \"11----0110---------------\" => \n"+
+"                              Rd(31 downto 0) <= rs1(31 downto 0);\n"+
+"                              Rd(63 downto 32) <= rs1(31 downto 0);\n"+
+"                              Rd(95 downto 64) <= rs1(31 downto 0);\n"+
+"                              Rd(127 downto 96) <= rs1(31 downto 0);\n"+
+"                           when \"11----0111---------------\" => \n"+
+"                              if (signed(rs1(31 downto 0)) > signed(rs2(31 downto 0))) then\n"+
+"                                 Rd(31 downto 0) <= rs1(31 downto 0);\n"+
+"                              else \n"+
+"                                 Rd(31 downto 0) <= rs2(31 downto 0);\n"+
+"                              end if;\n"+
+"                              if (signed(rs1(63 downto 32)) > signed(rs2(63 downto 32))) then\n"+
+"                                 Rd(63 downto 32) <= rs1(63 downto 32);\n"+
+"                              else \n"+
+"                                 Rd(63 downto 32) <= rs2(63 downto 32);\n"+
+"                              end if;\n"+
+"                              if (signed(rs1(95 downto 64)) > signed(rs2(95 downto 64))) then\n"+
+"                                 Rd(95 downto 64) <= rs1(95 downto 64);\n"+
+"                              else \n"+
+"                                 Rd(95 downto 64) <= rs2(95 downto 64);\n"+
+"                              end if;\n"+
+"                              if (signed(rs1(127 downto 96)) > signed(rs2(127 downto 96))) then\n"+
+"                                 Rd(127 downto 96) <= rs1(127 downto 96);\n"+
+"                              else \n"+
+"                                 Rd(127 downto 96) <= rs2(127 downto 96);\n"+
+"                              end if;\n"+
+"                           when \"11----1000---------------\" => \n"+
+"                              if (signed(rs1(31 downto 0)) < signed(rs2(31 downto 0))) then\n"+
+"                                 Rd(31 downto 0) <= rs1(31 downto 0);\n"+
+"                              else \n"+
+"                                 Rd(31 downto 0) <= rs2(31 downto 0);\n"+
+"                              end if;\n"+
+"                              if (signed(rs1(63 downto 32)) < signed(rs2(63 downto 32))) then\n"+
+"                                 Rd(63 downto 32) <= rs1(63 downto 32);\n"+
+"                              else \n"+
+"                                 Rd(63 downto 32) <= rs2(63 downto 32);\n"+
+"                              end if;\n"+
+"                              if (signed(rs1(95 downto 64)) < signed(rs2(95 downto 64))) then\n"+
+"                                 Rd(95 downto 64) <= rs1(95 downto 64);\n"+
+"                              else \n"+
+"                                 Rd(95 downto 64) <= rs2(95 downto 64);\n"+
+"                              end if;\n"+
+"                              if (signed(rs1(127 downto 96)) < signed(rs2(127 downto 96))) then\n"+
+"                                 Rd(127 downto 96) <= rs1(127 downto 96);\n"+
+"                              else \n"+
+"                                 Rd(127 downto 96) <= rs2(127 downto 96);\n"+
+"                              end if;\n"+
+"                           when \"11----1001---------------\" => \n"+
+"                              Rd(31 downto 0) <= std_logic_vector(unsigned(rs1(15 downto 0)) * unsigned(rs2(15 downto 0)));\n"+
+"                              Rd(63 downto 32) <= std_logic_vector(unsigned(rs1(47 downto 32)) * unsigned(rs2(47 downto 32)));\n"+
+"                              Rd(95 downto 64) <= std_logic_vector(unsigned(rs1(79 downto 64)) * unsigned(rs2(79 downto 64)));\n"+
+"                              Rd(127 downto 96) <= std_logic_vector(unsigned(rs1(111 downto 96)) * unsigned(rs2(111 downto 96)));\n"+
+"                           when \"11----1010---------------\" => \n"+
+"                              Rd(31 downto 0) <= b\"00000000000\" & std_logic_vector(unsigned(rs2(15 downto 0)) * unsigned(op(14 downto 10)));\n"+
+"                              Rd(63 downto 32) <= b\"00000000000\" & std_logic_vector(unsigned(rs2(47 downto 32)) * unsigned(op(14 downto 10)));\n"+
+"                              Rd(95 downto 64) <= b\"00000000000\" & std_logic_vector(unsigned(rs2(79 downto 64)) * unsigned(op(14 downto 10)));\n"+
+"                              Rd(127 downto 96) <= b\"00000000000\" & std_logic_vector(unsigned(rs2(111 downto 96)) * unsigned(op(14 downto 10)));\n"+
+"                           when \"11----1011---------------\" => \n"+
+"                              Rd <= rs1 or rs2;\n"+
+"                           when \"11----1100---------------\" => \n"+
+"                              count := x\"00000000\";\n"+
+"                              for i in 0 to 31 loop\n"+
+"                                  count := count + (\"0000000000000000000000000000000\" & rs1(i));\n"+
+"                              end loop;\n"+
+"                              Rd(31 downto 0) <= std_logic_vector(count);\n"+
+"                              count := x\"00000000\";\n"+
+"                              for i in 32 to 63 loop\n"+
+"                                  count := count + (\"0000000000000000000000000000000\" & rs1(i));\n"+
+"                              end loop;\n"+
+"                              Rd(63 downto 32) <= std_logic_vector(count);\n"+
+"                              count := x\"00000000\";\n"+
+"                              for i in 64 to 95 loop\n"+
+"                                  count := count + (\"0000000000000000000000000000000\" & rs1(i));\n"+
+"                              end loop;\n"+
+"                              Rd(95 downto 64) <= std_logic_vector(count);\n"+
+"                              count := x\"00000000\";\n"+
+"                              for i in 96 to 127 loop\n"+
+"                                  count := count + (\"0000000000000000000000000000000\" & rs1(i));\n"+
+"                              end loop;\n"+
+"                              Rd(127 downto 96) <= std_logic_vector(count);\n"+
+"                           when \"11----1101---------------\" => \n"+
+"                              Rd(31 downto 0) <= std_logic_vector(rotate_right(unsigned(rs1(31 downto 0)),to_integer(unsigned(rs2(4 downto 0)))));\n"+
+"                              Rd(63 downto 32) <= std_logic_vector(rotate_right(unsigned(rs1(63 downto 32)),to_integer(unsigned(rs2(4 downto 0)))));\n"+
+"                              Rd(95 downto 64) <= std_logic_vector(rotate_right(unsigned(rs1(95 downto 64)),to_integer(unsigned(rs2(4 downto 0)))));\n"+
+"                              Rd(127 downto 96) <= std_logic_vector(rotate_right(unsigned(rs1(127 downto 96)),to_integer(unsigned(rs2(4 downto 0)))));\n"+
+"                           when \"11----1110---------------\" => \n"+
+"                              Rd(15 downto 0) <= std_logic_vector(signed(rs2(15 downto 0)) - signed(rs1(15 downto 0)));\n"+
+"                              Rd(31 downto 16) <= std_logic_vector(signed(rs2(31 downto 16)) - signed(rs1(31 downto 16)));\n"+
+"                              Rd(47 downto 32) <= std_logic_vector(signed(rs2(47 downto 32)) - signed(rs1(47 downto 32)));\n"+
+"                              Rd(63 downto 48) <= std_logic_vector(signed(rs2(63 downto 48)) - signed(rs1(63 downto 48)));\n"+
+"                              Rd(79 downto 64) <= std_logic_vector(signed(rs2(79 downto 64)) - signed(rs1(79 downto 64)));\n"+
+"                              Rd(95 downto 80) <= std_logic_vector(signed(rs2(95 downto 80)) - signed(rs1(95 downto 80)));\n"+
+"                              Rd(111 downto 96) <= std_logic_vector(signed(rs2(111 downto 96)) - signed(rs1(111 downto 96)));\n"+
+"                              Rd(127 downto 112) <= std_logic_vector(signed(rs2(127 downto 112)) - signed(rs1(127 downto 112)));\n"+
+"                              if (not rs1(15) = rs2(15) and not rs1(15) = Rd(15) and Rd(15) = '1') then\n"+
+"                                 Rd(15 downto 0) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(15) = rs2(15) and not rs1(15) = Rd(15) and Rd(15) = '0') then\n"+
+"                                 Rd(15 downto 0) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (not rs1(31) = rs2(31) and not rs1(31) = Rd(31) and Rd(31) = '1') then\n"+
+"                                 Rd(31 downto 16) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(31) = rs2(31) and not rs1(31) = Rd(31) and Rd(31) = '0') then\n"+
+"                                 Rd(31 downto 16) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (not rs1(47) = rs2(47) and not rs1(47) = Rd(47) and Rd(47) = '1') then\n"+
+"                                 Rd(47 downto 32) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(47) = rs2(47) and not rs1(47) = Rd(47) and Rd(47) = '0') then\n"+
+"                                 Rd(47 downto 32) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (not rs1(63) = rs2(63) and not rs1(63) = Rd(63) and Rd(63) = '1') then\n"+
+"                                 Rd(63 downto 48) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(63) = rs2(63) and not rs1(63) = Rd(63) and Rd(63) = '0') then\n"+
+"                                 Rd(63 downto 48) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (not rs1(79) = rs2(79) and not rs1(79) = Rd(79) and Rd(79) = '1') then\n"+
+"                                 Rd(79 downto 64) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(79) = rs2(79) and not rs1(79) = Rd(79) and Rd(79) = '0') then\n"+
+"                                 Rd(79 downto 64) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (not rs1(95) = rs2(95) and not rs1(95) = Rd(95) and Rd(95) = '1') then\n"+
+"                                 Rd(95 downto 80) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(95) = rs2(95) and not rs1(95) = Rd(95) and Rd(95) = '0') then\n"+
+"                                 Rd(95 downto 80) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (not rs1(111) = rs2(111) and not rs1(111) = Rd(111) and Rd(111) = '1') then\n"+
+"                                 Rd(111 downto 96) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(111) = rs2(111) and not rs1(111) = Rd(111) and Rd(111) = '0') then\n"+
+"                                 Rd(111 downto 96) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                              if (not rs1(127) = rs2(127) and not rs1(127) = Rd(127) and Rd(127) = '1') then\n"+
+"                                 Rd(127 downto 112) <= std_logic_vector(max16);\n"+
+"                              elsif (not rs1(127) = rs2(127) and not rs1(127) = Rd(127) and Rd(127) = '0') then\n"+
+"                                 Rd(127 downto 112) <= std_logic_vector(min16);\n"+
+"                              end if;\n"+
+"                           when \"11----1111---------------\" => \n"+
+"                              Rd(31 downto 0) <= std_logic_vector(unsigned(rs2(31 downto 0)) - unsigned(rs1(31 downto 0)));\n"+
+"                              Rd(63 downto 32) <= std_logic_vector(unsigned(rs2(63 downto 32)) - unsigned(rs1(63 downto 32)));\n"+
+"                              Rd(95 downto 64) <= std_logic_vector(unsigned(rs2(95 downto 64)) - unsigned(rs1(95 downto 64)));\n"+
+"                              Rd(127 downto 96) <= std_logic_vector(unsigned(rs2(127 downto 96)) - unsigned(rs1(127 downto 96)));\n"+
+"                           when others => \n"+
+"                              null;\n"+
+"                         end case;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1020,240,1421,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  19, 23, 25, 29, 31 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  19, 23, 25, 29, 31 )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Op(24:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (860,420)
+   VERTEXES ( (2,20) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rs1(127:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (860,260)
+   VERTEXES ( (2,22) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rs2(127:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (860,380)
+   VERTEXES ( (2,26) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rs3(127:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (860,300)
+   VERTEXES ( (2,28) )
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Rd(127:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1020,660)
+   VERTEXES ( (2,34) )
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (809,420,809,420)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (809,260,809,260)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (809,380,809,380)
+   ALIGN 6
+   PARENT 6
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (809,300,809,300)
+   ALIGN 6
+   PARENT 7
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1071,660,1071,660)
+   ALIGN 4
+   PARENT 8
+  }
+  NET BUS  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Op(24:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  15, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Rd(127:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  16, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rs1(127:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rs2(127:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rs3(127:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  19, 0, 0
+  {
+   COORD (1020,420)
+  }
+  VTX  20, 0, 0
+  {
+   COORD (860,420)
+  }
+  BUS  21, 0, 0
+  {
+   NET 14
+   VTX 19, 20
+  }
+  VTX  22, 0, 0
+  {
+   COORD (860,260)
+  }
+  VTX  23, 0, 0
+  {
+   COORD (1020,260)
+  }
+  BUS  24, 0, 0
+  {
+   NET 16
+   VTX 22, 23
+  }
+  VTX  25, 0, 0
+  {
+   COORD (1020,380)
+  }
+  VTX  26, 0, 0
+  {
+   COORD (860,380)
+  }
+  BUS  27, 0, 0
+  {
+   NET 17
+   VTX 25, 26
+  }
+  VTX  28, 0, 0
+  {
+   COORD (860,300)
+  }
+  VTX  29, 0, 0
+  {
+   COORD (1020,300)
+  }
+  BUS  30, 0, 0
+  {
+   NET 18
+   VTX 28, 29
+  }
+  VTX  31, 0, 0
+  {
+   COORD (1020,340)
+  }
+  VTX  32, 0, 0
+  {
+   COORD (1000,340)
+  }
+  BUS  33, 0, 0
+  {
+   NET 15
+   VTX 31, 32
+  }
+  VTX  34, 0, 0
+  {
+   COORD (1020,660)
+  }
+  VTX  35, 0, 0
+  {
+   COORD (1000,660)
+  }
+  BUS  36, 0, 0
+  {
+   NET 15
+   VTX 34, 35
+  }
+  BUS  37, 0, 0
+  {
+   NET 15
+   VTX 32, 35
+  }
+ }
+ 
+}
+
