@@ -1,1297 +1,151 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/data_types.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# Error: COMP96_0018: data_types.vhd : (26, 51): Identifier expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/data_types.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# Error: COMP96_0015: data_types.vhd : (26, 68): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# Error: COMP96_0019: data_types.vhd : (26, 47): Keyword 'of' expected.
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0019: MMU.vhd : (70, 2): Keyword 'begin' expected.
-# Error: COMP96_0016: MMU.vhd : (70, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# Compile failure 3 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0019: MMU.vhd : (70, 2): Keyword 'begin' expected.
-# Error: COMP96_0016: MMU.vhd : (70, 11): Design unit declaration expected.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# Compile failure 2 Errors 0 Warnings  Analysis time :  78.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/data_types.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "rtl" of Entity "PIPE"
-# Error: COMP96_0015: PIPE.vhd : (42, 206): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: FU.vhd : (29, 0): Unknown identifier "REGISTER_array".
-# Error: COMP96_0064: FU.vhd : (29, 0): Unknown type.
-# Warning: ELAB1_0026: MMU.vhd : (64, 0): There is no default binding for component "FU". (No entity named "FU" was found).
-# Error: COMP96_0078: MMU.vhd : (132, 10): Unknown identifier "inc".
-# Error: COMP96_0133: MMU.vhd : (132, 10): Cannot find object declaration.
-# Error: COMP96_0289: MMU.vhd : (132, 10): Prefix of index must be an array.
-# Error: COMP96_0077: MMU.vhd : (132, 10): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Error: COMP96_0078: FU.vhd : (29, 10): Unknown identifier "REGISTER_array".
-# Error: COMP96_0064: FU.vhd : (29, 10): Unknown type.
-# Compile Architecture "behavioral" of Entity "FU"
-# Error: VLM_0009: FU.vhd : (36, 1): Entity "simd.FU" must be recompiled because package "simd.data_types" has changed.
-# Error: COMP96_0056: FU.vhd : (36, 1): Cannot find referenced entity declaration "FU".
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 10 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: FU.vhd : (29, 0): Unknown identifier "REGISTER_array".
-# Error: COMP96_0064: FU.vhd : (29, 0): Unknown type.
-# Warning: ELAB1_0026: MMU.vhd : (64, 0): There is no default binding for component "FU". (No entity named "FU" was found).
-# Error: COMP96_0078: MMU.vhd : (132, 10): Unknown identifier "inc".
-# Error: COMP96_0133: MMU.vhd : (132, 10): Cannot find object declaration.
-# Error: COMP96_0289: MMU.vhd : (132, 10): Prefix of index must be an array.
-# Error: COMP96_0077: MMU.vhd : (132, 10): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 6 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: MMU.vhd : (132, 10): Unknown identifier "inc".
-# Error: COMP96_0133: MMU.vhd : (132, 10): Cannot find object declaration.
-# Error: COMP96_0289: MMU.vhd : (132, 10): Prefix of index must be an array.
-# Error: COMP96_0077: MMU.vhd : (132, 10): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 4 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/RF.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0015: MMU.vhd : (99, 7): ';' expected.
-# Error: COMP96_0016: MMU.vhd : (99, 9): Design unit declaration expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Warning: ELAB1_0026: MMU.vhd : (82, 0): There is no default binding for component "FU". (Port "Rd" is not on the entity).
-# Error: COMP96_0078: MMU.vhd : (89, 72): Unknown identifier "fu_rs3".
-# Error: COMP96_0078: MMU.vhd : (89, 91): Unknown identifier "fu_Rd".
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0018: MMU.vhd : (53, 4): Identifier expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: MMU.vhd : (81, 120): Unknown identifier "Rd".
-# Error: COMP96_0133: MMU.vhd : (81, 120): Cannot find object declaration.
-# Error: COMP96_0112: MMU.vhd : (81, 120): "Rd" does not match the formal name.
-# Error: COMP96_0078: MMU.vhd : (88, 72): Unknown identifier "fu_rs3".
-# Error: COMP96_0078: MMU.vhd : (88, 91): Unknown identifier "fu_Rd".
-# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: MMU.vhd : (81, 120): Unknown identifier "Rd".
-# Error: COMP96_0133: MMU.vhd : (81, 120): Cannot find object declaration.
-# Error: COMP96_0112: MMU.vhd : (81, 120): "Rd" does not match the formal name.
-# Error: COMP96_0228: MMU.vhd : (86, 19): The actual must be denoted by a static signal name, if the actual is associated with a signal parameter of any mode.
-# Error: COMP96_0788: MMU.vhd : (88, 8): Individual associations for formal "D" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (90, 8): Individual associations for formal "D" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (89, 8): Individual associations for formal "Q" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (91, 8): Individual associations for formal "Q" are not in contiguous sequence.
-# Compile failure 8 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0228: MMU.vhd : (86, 19): The actual must be denoted by a static signal name, if the actual is associated with a signal parameter of any mode.
-# Error: COMP96_0788: MMU.vhd : (88, 8): Individual associations for formal "D" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (90, 8): Individual associations for formal "D" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (89, 8): Individual associations for formal "Q" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (91, 8): Individual associations for formal "Q" are not in contiguous sequence.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 5 Errors 0 Warnings  Analysis time :  94.0 [ms]
-asim -O5 +access +r +m+MMU MMU structural
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of package 'simd.data_types' referenced in architecture 'structural.MMU' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# Error: VSIM: cannot select specified top-level
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0788: MMU.vhd : (89, 8): Individual associations for formal "D" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (91, 8): Individual associations for formal "D" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (90, 8): Individual associations for formal "Q" are not in contiguous sequence.
-# Error: COMP96_0788: MMU.vhd : (92, 8): Individual associations for formal "Q" are not in contiguous sequence.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 4 Errors 0 Warnings  Analysis time :  94.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: ELBWRITE_0018: MMU.vhd : (88, 0): Missing one or more actuals for elements of formal "D".
-# Error: ELBWRITE_0018: MMU.vhd : (91, 0): Missing one or more actuals for elements of formal "Q".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: ELBWRITE_0018: MMU.vhd : (88, 0): Missing one or more actuals for elements of formal "D".
-# Error: ELBWRITE_0018: MMU.vhd : (91, 0): Missing one or more actuals for elements of formal "Q".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: MMU.vhd : (87, 17): Unknown identifier "Q".
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: ELBWRITE_0018: MMU.vhd : (91, 0): Missing one or more actuals for elements of formal "Q".
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0015: MMU.vhd : (75, 17): ':' expected.
-# Error: COMP96_0015: MMU.vhd : (93, 27): ')' expected.
-# Error: COMP96_0015: MMU.vhd : (95, 1): ';' expected.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0015: MMU.vhd : (93, 27): ')' expected.
-# Error: COMP96_0015: MMU.vhd : (95, 1): ';' expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: MMU.vhd : (88, 17): Unknown identifier "opstage".
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: MMU.vhd : (88, 17): Unknown identifier "opstage".
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0152: MMU.vhd : (91, 16): Formal "Q" of class signal must be associated with a signal.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0152: MMU.vhd : (91, 16): Formal "Q" of class signal must be associated with a signal.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/RF.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: ELAB1_0011: MMU.vhd : (85, 0): Port "write" is on entity "RF" but not on the component declaration.
-# Error: ELAB1_0011: MMU.vhd : (85, 0): Port "index" is on entity "RF" but not on the component declaration.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: ELAB1_0011: MMU.vhd : (85, 0): Port "write" is on entity "RF" but not on the component declaration.
-# Error: ELAB1_0011: MMU.vhd : (85, 0): Port "index" is on entity "RF" but not on the component declaration.
-# Error: ELAB1_0011: MMU.vhd : (85, 0): Port "d_in" is on entity "RF" but not on the component declaration.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile failure 3 Errors 0 Warnings  Analysis time :  93.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/RF.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/PIPE.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/PIPE.vhd
-# Compile Entity "PIPE"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+MMU MMU structural
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7318 kB (elbread=1280 elab2=5886 kernel=151 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\SIMD\SIMD\src\wave.asdb
-#  8:28 PM, Monday, May 3, 2021
-#  Simulation has been initialized
-# add wave -noreg {/MMU/clk}
-# add wave -noreg {/MMU/reset}
-# add wave -noreg {/MMU/IB}
-# add wave -noreg {/MMU/PC}
-# add wave -noreg {/MMU/op_stage}
-# add wave -noreg {/MMU/fu_stage}
-# add wave -noreg {/MMU/alu_stage}
-# add wave -noreg {/MMU/write_stage}
-# add wave -noreg {/MMU/rf_in}
-# add wave -noreg {/MMU/rf_out}
-# add wave -noreg {/MMU/op}
-# add wave -noreg {/MMU/~ANONYMOUS~0}
-# add wave -noreg {/MMU/~ANONYMOUS~24}
-# add wave -noreg {/MMU/~ANONYMOUS~25}
-# 14 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/SIMD/SIMD/src/wave.asdb'.
-run 3000 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU,  Process: line__96.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU/forward,  Process: line__39.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU/forward,  Process: line__39.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU/forward,  Process: line__39.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: stopped at time: 3 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7318 kB (elbread=1280 elab2=5886 kernel=151 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\SIMD\SIMD\src\wave.asdb
-#  8:29 PM, Monday, May 3, 2021
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/SIMD/SIMD/src/wave.asdb'.
-run 4000 ns
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU,  Process: line__96.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU/forward,  Process: line__39.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU/forward,  Process: line__39.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU/forward,  Process: line__39.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 1750 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 1850 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-# KERNEL: Time: 2350 ns,  Iteration: 1,  Instance: /MMU/logic,  Process: line__40.
-# KERNEL: stopped at time: 4 us
-endsim
-# VSIM: Simulation has finished.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/IF_ID.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/data_types.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/IF_ID.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "PIPE"
-# Error: VLM_0009: IF_ID.vhd : (34, 1): Entity "simd.PIPE" must be recompiled because package "simd.data_types" has changed.
-# Error: COMP96_0056: IF_ID.vhd : (34, 1): Cannot find referenced entity declaration "PIPE".
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/IF_ID.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/EX_WB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# Error: COMP96_0078: EX_WB.vhd : (43, 9): Unknown identifier "z128".
-# Error: COMP96_0133: EX_WB.vhd : (43, 9): Cannot find object declaration.
-# Error: COMP96_0077: EX_WB.vhd : (43, 9): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0078: MMU.vhd : (82, 103): Unknown identifier "write_stage".
-# Error: COMP96_0078: MMU.vhd : (88, 40): Unknown identifier "write_stage".
-# Error: COMP96_0078: MMU.vhd : (91, 16): Unknown identifier "write_stage".
-# Error: COMP96_0078: MMU.vhd : (95, 28): Unknown identifier "write_stage".
-# Error: COMP96_0133: MMU.vhd : (95, 28): Cannot find object declaration.
-# Error: COMP96_0149: MMU.vhd : (95, 28): Explicit type conversions are allowed between closely related types only.
-# Error: COMP96_0078: MMU.vhd : (95, 61): Unknown identifier "write_stage".
-# Error: COMP96_0133: MMU.vhd : (95, 61): Cannot find object declaration.
-# Error: COMP96_0077: MMU.vhd : (95, 61): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# Compile failure 9 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: COMP96_0122: MMU.vhd : (57, 2): Symbol "IB" has already been declared in this scope.
-# Error: COMP96_0078: MMU.vhd : (107, 40): Unknown identifier "rst".
-# Error: COMP96_0133: MMU.vhd : (107, 40): Cannot find object declaration.
-# Error: COMP96_0112: MMU.vhd : (107, 40): "rst" does not match the formal name.
-# Error: COMP96_0207: MMU.vhd : (107, 2): No actual specified for local port "index".
-# Error: COMP96_0207: MMU.vhd : (107, 2): No actual specified for local port "D".
-# Error: COMP96_0078: MMU.vhd : (109, 43): Unknown identifier "rf_out".
-# Error: COMP96_0078: MMU.vhd : (110, 29): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 47): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 66): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 85): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 103): Unknown identifier "write_stage".
-# Error: COMP96_0078: MMU.vhd : (111, 37): Unknown identifier "rf_in".
-# Error: COMP96_0078: MMU.vhd : (111, 49): Unknown identifier "rf_out".
-# Error: COMP96_0078: MMU.vhd : (112, 12): Unknown identifier "PIPE".
-# Error: COMP96_0134: MMU.vhd : (112, 12): Cannot find component declaration.
-# Error: COMP96_0289: MMU.vhd : (122, 8): Prefix of index must be an array.
-# Error: COMP96_0077: MMU.vhd : (122, 8): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# Error: COMP96_0078: MMU.vhd : (123, 2): Unknown identifier "rf_in".
-# Error: COMP96_0078: MMU.vhd : (123, 28): Unknown identifier "write_stage".
-# Error: COMP96_0133: MMU.vhd : (123, 28): Cannot find object declaration.
-# Error: COMP96_0133: MMU.vhd : (123, 2): Cannot find object declaration.
-# Error: COMP96_0078: MMU.vhd : (123, 61): Unknown identifier "write_stage".
-# Compile failure 23 Errors 0 Warnings  Analysis time :  15.0 [ms]
-# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\My_Designs\SIMD\SIMD/src/MMU.vhd'.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: ELAB1_0021: MMU.vhd : (107, 0): Types do not match for port "index".
-# Error: ELAB1_0021: MMU.vhd : (107, 0): Types do not match for port "Q".
-# Error: COMP96_0078: MMU.vhd : (107, 40): Unknown identifier "rst".
-# Error: COMP96_0133: MMU.vhd : (107, 40): Cannot find object declaration.
-# Error: COMP96_0112: MMU.vhd : (107, 40): "rst" does not match the formal name.
-# Error: COMP96_0207: MMU.vhd : (107, 2): No actual specified for local port "index".
-# Error: COMP96_0207: MMU.vhd : (107, 2): No actual specified for local port "D".
-# Error: COMP96_0078: MMU.vhd : (109, 43): Unknown identifier "rf_out".
-# Error: COMP96_0078: MMU.vhd : (110, 29): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 47): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 66): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 85): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 103): Unknown identifier "write_stage".
-# Error: COMP96_0078: MMU.vhd : (111, 37): Unknown identifier "rf_in".
-# Error: COMP96_0078: MMU.vhd : (111, 49): Unknown identifier "rf_out".
-# Error: COMP96_0078: MMU.vhd : (112, 12): Unknown identifier "PIPE".
-# Error: COMP96_0134: MMU.vhd : (112, 12): Cannot find component declaration.
-# Error: COMP96_0289: MMU.vhd : (122, 8): Prefix of index must be an array.
-# Error: COMP96_0077: MMU.vhd : (122, 8): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# Error: COMP96_0078: MMU.vhd : (123, 2): Unknown identifier "rf_in".
-# Error: COMP96_0078: MMU.vhd : (123, 28): Unknown identifier "write_stage".
-# Error: COMP96_0133: MMU.vhd : (123, 28): Cannot find object declaration.
-# Error: COMP96_0133: MMU.vhd : (123, 2): Cannot find object declaration.
-# Error: COMP96_0078: MMU.vhd : (123, 61): Unknown identifier "write_stage".
-# Compile failure 24 Errors 0 Warnings  Analysis time :  15.0 [ms]
-# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\My_Designs\SIMD\SIMD/src/MMU.vhd'.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# Error: ELAB1_0021: MMU.vhd : (107, 0): Types do not match for port "index".
-# Error: ELAB1_0021: MMU.vhd : (107, 0): Types do not match for port "Q".
-# Error: COMP96_0078: MMU.vhd : (107, 40): Unknown identifier "rst".
-# Error: COMP96_0133: MMU.vhd : (107, 40): Cannot find object declaration.
-# Error: COMP96_0112: MMU.vhd : (107, 40): "rst" does not match the formal name.
-# Error: COMP96_0207: MMU.vhd : (107, 2): No actual specified for local port "index".
-# Error: COMP96_0207: MMU.vhd : (107, 2): No actual specified for local port "D".
-# Error: COMP96_0078: MMU.vhd : (109, 43): Unknown identifier "rf_out".
-# Error: COMP96_0078: MMU.vhd : (110, 29): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 47): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 66): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 85): Unknown identifier "alu_in".
-# Error: COMP96_0078: MMU.vhd : (110, 103): Unknown identifier "write_stage".
-# Error: COMP96_0078: MMU.vhd : (111, 37): Unknown identifier "rf_in".
-# Error: COMP96_0078: MMU.vhd : (111, 49): Unknown identifier "rf_out".
-# Error: COMP96_0078: MMU.vhd : (112, 12): Unknown identifier "PIPE".
-# Error: COMP96_0134: MMU.vhd : (112, 12): Cannot find component declaration.
-# Error: COMP96_0289: MMU.vhd : (122, 8): Prefix of index must be an array.
-# Error: COMP96_0077: MMU.vhd : (122, 8): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
-# Error: COMP96_0078: MMU.vhd : (123, 2): Unknown identifier "rf_in".
-# Error: COMP96_0078: MMU.vhd : (123, 28): Unknown identifier "write_stage".
-# Error: COMP96_0133: MMU.vhd : (123, 28): Cannot find object declaration.
-# Error: COMP96_0133: MMU.vhd : (123, 2): Cannot find object declaration.
-# Error: COMP96_0078: MMU.vhd : (123, 61): Unknown identifier "write_stage".
-# Compile failure 24 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\My_Designs\SIMD\SIMD/src/MMU.vhd'.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/RF.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# Error: COMP96_0143: RF.vhd : (40, 4): Object "Q" cannot be written.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
-# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\My_Designs\SIMD\SIMD/src/MMU.vhd'.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/RF.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
-# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\My_Designs\SIMD\SIMD/src/MMU.vhd'.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/RF.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\My_Designs\SIMD\SIMD/src/MMU.vhd'.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/RF.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\My_Designs\SIMD\SIMD/src/MMU.vhd'.
+# ELBREAD: Elaboration time 0.1 [s].
+# Design Explorer: Shortcut to "C:\Users\hp\Documents\repos\SIMD\SIMD.aws" workspace added.
 acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
+# Error: COMP96_0019: ALU.vhd : (39, 1): Keyword 'begin' expected.
+# Error: COMP96_0016: ALU.vhd : (39, 8): Design unit declaration expected.
+# Compile Architecture "behavioral" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (333, 2): Unknown identifier "Op_out".
+# Error: COMP96_0133: ALU.vhd : (333, 2): Cannot find object declaration.
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
 # Compile Package "ALU_functions"
 # Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
 # Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
 # Compile Entity "MMU"
 # Compile Architecture "structural" of Entity "MMU"
-# Warning: ELAB1_0026: MMU.vhd : (124, 0): There is no default binding for component "IB". (Port "rst" is not on the entity).
-# Warning: ELAB1_0026: MMU.vhd : (126, 0): There is no default binding for component "FU". (Port "i_rs1" is not on the entity).
-# Warning: ELAB1_0026: MMU.vhd : (127, 0): There is no default binding for component "RF". (Port "en" is not on the entity).
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
 # Compile Entity "FU"
 # Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
 # Compile Entity "RF"
 # Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
 # Compile Entity "IF_ID"
 # Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
 # Compile Entity "MMU_tb"
 # Compile Architecture "bench" of Entity "MMU_tb"
-# Warning: ELAB1_0026: MMU_tb.vhd : (46, 0): There is no default binding for component "MMU". (Port "reset" is not on the entity).
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
 # Compile Entity "ID_EX"
 # Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
 # Compile Entity "EX_WB"
 # Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
 # Compile Entity "IB"
 # Compile Architecture "behavioral" of Entity "IB"
-# Compile success 0 Errors 4 Warnings  Analysis time :  0.2 [s]
+# Compile failure 4 Errors 1 Warnings  Analysis time :  1.0 [s]
 acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
+# Error: COMP96_0019: ALU.vhd : (38, 1): Keyword 'begin' expected.
+# Error: COMP96_0016: ALU.vhd : (38, 8): Design unit declaration expected.
+# Compile Architecture "behavioral" of Entity "ALU"
+# Error: COMP96_0078: ALU.vhd : (332, 2): Unknown identifier "Op_out".
+# Error: COMP96_0133: ALU.vhd : (332, 2): Cannot find object declaration.
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
 # Compile Package "ALU_functions"
 # Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
 # Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
 # Compile Entity "MMU"
 # Compile Architecture "structural" of Entity "MMU"
-# Error: ELAB1_0028: MMU.vhd : (124, 0): Entity port length is 5. index length is 6.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
 # Compile Entity "FU"
 # Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
 # Compile Entity "RF"
 # Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
 # Compile Entity "IF_ID"
 # Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
 # Compile Entity "MMU_tb"
 # Compile Architecture "bench" of Entity "MMU_tb"
-# Warning: ELAB1_0026: MMU_tb.vhd : (46, 0): There is no default binding for component "MMU". (Port "reset" is not on the entity).
-# Error: COMP96_0078: MMU_tb.vhd : (46, 42): Unknown identifier "rst".
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
 # Compile Entity "ID_EX"
 # Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
 # Compile Entity "EX_WB"
 # Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
 # Compile Entity "IB"
 # Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
+# Compile failure 4 Errors 1 Warnings  Analysis time :  0.7 [s]
 acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
 # Compile Package "ALU_functions"
 # Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
 # Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
 # Compile Entity "MMU"
 # Compile Architecture "structural" of Entity "MMU"
-# Error: ELAB1_0028: MMU.vhd : (124, 0): Entity port length is 5. index length is 6.
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
 # Compile Entity "FU"
 # Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
 # Compile Entity "RF"
 # Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
 # Compile Entity "IF_ID"
 # Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
 # Compile Entity "MMU_tb"
 # Compile Architecture "bench" of Entity "MMU_tb"
-# Warning: ELAB1_0026: MMU_tb.vhd : (46, 0): There is no default binding for component "MMU". (Port "reset" is not on the entity).
-# Error: COMP96_0078: MMU_tb.vhd : (46, 42): Unknown identifier "rst".
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
 # Compile Entity "ID_EX"
 # Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
 # Compile Entity "EX_WB"
 # Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
 # Compile Entity "IB"
 # Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
 acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
 # Compile Package "ALU_functions"
 # Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
 # Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
 # Compile Entity "MMU"
 # Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
 # Compile Entity "FU"
 # Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
 # Compile Entity "RF"
 # Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
 # Compile Entity "IF_ID"
 # Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
 # Compile Entity "MMU_tb"
 # Compile Architecture "bench" of Entity "MMU_tb"
-# Warning: ELAB1_0026: MMU_tb.vhd : (46, 0): There is no default binding for component "MMU". (Port "reset" is not on the entity).
-# Error: COMP96_0078: MMU_tb.vhd : (46, 42): Unknown identifier "rst".
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
 # Compile Entity "ID_EX"
 # Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
 # Compile Entity "EX_WB"
 # Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
+# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
 # Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 1 Errors 1 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: ELAB1_0011: MMU_tb.vhd : (46, 0): Port "input" is on entity "MMU" but not on the component declaration.
-# Error: COMP96_0078: MMU_tb.vhd : (46, 42): Unknown identifier "rst".
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU_tb.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: ELAB1_0011: MMU_tb.vhd : (49, 0): Port "input" is on entity "MMU" but not on the component declaration.
-# Error: COMP96_0078: MMU_tb.vhd : (49, 45): Unknown identifier "input".
-# Error: COMP96_0133: MMU_tb.vhd : (49, 45): Cannot find object declaration.
-# Error: COMP96_0112: MMU_tb.vhd : (49, 45): "input" does not match the formal name.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU_tb.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Warning: DAGGEN_0001: MMU_tb.vhd : (52, 0): Process without explicit or implicit wait statement - possible infinite loop.
-# Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU_tb.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: COMP96_0015: MMU_tb.vhd : (73, 10): ';' expected.
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: COMP96_0618: MMU_tb.vhd : (72, 11): Assignment target incompatible with right side. Cannot convert access value to 'vec_array'.
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: COMP96_0123: MMU_tb.vhd : (73, 3): Variable or constant cannot be the target of a signal assignment.
-# Error: COMP96_0143: MMU_tb.vhd : (73, 3): Object "dout" cannot be written.
-# Error: COMP96_0078: MMU_tb.vhd : (96, 21): Unknown identifier "dout".
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU_tb.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: ELBWRITE_0028: MMU_tb.vhd : (73, 0): The unresolved signal "stop_the_clock" received values from multiple sources at 73 and 54 lines.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: COMP96_0617: MMU_tb.vhd : (76, 21): Assignment target incompatible with right side. Cannot convert 'BOOLEAN' to 'BIT'.
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Error: ELBWRITE_0028: MMU_tb.vhd : (73, 0): The unresolved signal "stop_the_clock" received values from multiple sources at 73 and 54 lines.
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/MMU_tb.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/My_Designs/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/My_Designs/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/My_Designs/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/My_Designs/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/My_Designs/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/My_Designs/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/My_Designs/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# File: C:/My_Designs/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/My_Designs/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/My_Designs/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-asim -O5 +access +r +m+MMU MMU structural
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7833 kB (elbread=1280 elab2=6401 kernel=151 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\SIMD\SIMD\src\wave.asdb
-#  11:28 PM, Monday, May 3, 2021
-#  Simulation has been initialized
-# add wave -noreg {/MMU/clk}
-# add wave -noreg {/MMU/rst}
-# add wave -noreg {/MMU/input}
-# add wave -noreg {/MMU/output}
-# add wave -noreg {/MMU/PC}
-# add wave -noreg {/MMU/op}
-# add wave -noreg {/MMU/fu_in}
-# add wave -noreg {/MMU/fu_out}
-# add wave -noreg {/MMU/fu_out_op}
-# add wave -noreg {/MMU/rf_out}
-# add wave -noreg {/MMU/alu_in}
-# add wave -noreg {/MMU/alu_out}
-# add wave -noreg {/MMU/alu_out_op}
-# add wave -noreg {/MMU/write}
-# add wave -noreg {/MMU/i_write}
-# add wave -noreg {/MMU/write_enable}
-# add wave -noreg {/MMU/~ANONYMOUS~0}
-# 17 signal(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/SIMD/SIMD/src/wave.asdb'.
-# add wave -noreg {/MMU/clk}
-# add wave -noreg {/MMU/rst}
-# add wave -noreg {/MMU/input}
-# add wave -noreg {/MMU/output}
-# add wave -noreg {/MMU/PC}
-# add wave -noreg {/MMU/op}
-# add wave -noreg {/MMU/fu_in}
-# add wave -noreg {/MMU/fu_out}
-# add wave -noreg {/MMU/fu_out_op}
-# add wave -noreg {/MMU/rf_out}
-# add wave -noreg {/MMU/alu_in}
-# add wave -noreg {/MMU/alu_out}
-# add wave -noreg {/MMU/alu_out_op}
-# add wave -noreg {/MMU/write}
-# add wave -noreg {/MMU/i_write}
-# add wave -noreg {/MMU/write_enable}
-# add wave -noreg {/MMU/~ANONYMOUS~0}
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/clk' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/rst' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/input' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/output' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/PC' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/op' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/fu_in' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/fu_out' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/fu_out_op' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/rf_out' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/alu_in' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/alu_out' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/alu_out_op' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/write' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/i_write' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/write_enable' has already been traced.
-# KERNEL: Warning: KERNEL_0291 Signal '/MMU/~ANONYMOUS~0' has already been traced.
-# 0 signal(s) traced.
+# Compile 

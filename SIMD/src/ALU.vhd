@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 --
 -- Title       : ALU
--- Design      : ALU
+-- Design      : SIMD
 -- Author      : Judah Ben-Eliezer
 -- Company     : Stony Brook University
 --
@@ -21,23 +21,6 @@
 library IEEE; 
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-<<<<<<< HEAD
-
-library SIMD;
-use SIMD.ALU_functions.all;
-
-entity ALU is
-	port(					
-		Op : in std_logic_vector(24 downto 0);
-		rs1 : in std_logic_vector(127 downto 0);
-		rs2 : in std_logic_vector(127 downto 0);
-		rs3 : in std_logic_vector(127 downto 0);
-		Rd : out std_logic_vector(127 downto 0)
-		);
-end ALU;
-
-architecture behavioral of ALU is	
-=======
 use work.ALU_functions.all;
 
 entity ALU is
@@ -46,13 +29,11 @@ entity ALU is
 		rs1 : in STD_LOGIC_VECTOR(127 downto 0);
 		rs2 : in STD_LOGIC_VECTOR(127 downto 0);
 		rs3 : in STD_LOGIC_VECTOR(127 downto 0);
-		Rd : out STD_LOGIC_VECTOR(127 downto 0);
-		Op_out : out STD_LOGIC_VECTOR(24 downto 0)
+		Rd : out STD_LOGIC_VECTOR(127 downto 0)
 		);
 end ALU;
 
 architecture behavioral of ALU is
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 	constant max16: signed := x"7FFF";									 								-- max 16 bit signed number
 	constant min16: signed := x"8000";									 								-- min 16 bit signed number
 begin  		
@@ -76,34 +57,21 @@ begin
 				Rd(31 downto 0) <= MULT_ADD_I(rs3(15 downto 0), rs2(15 downto 0), rs1(31 downto 0));
 				Rd(63 downto 32) <= MULT_ADD_I(rs3(47 downto 32), rs2(47 downto 32), rs1(63 downto 32));
 				Rd(95 downto 64) <= MULT_ADD_I(rs3(79 downto 64), rs2(79 downto 64), rs1(95 downto 64));
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= MULT_ADD_I(rs3(111 downto 96), rs2(111 downto 96), rs1(127 downto 96));
-=======
-				Rd(127 downto 96) <= MULT_ADD_I(rs3(111 downto 96), rs2(111 downto 96), rs1(127 downto 96));
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "10001--------------------" =>		-- SIMAHS
 				Rd(31 downto 0) <= MULT_ADD_I(rs3(31 downto 16), rs2(31 downto 16), rs1(31 downto 0));
 				Rd(63 downto 32) <= MULT_ADD_I(rs3(63 downto 48), rs2(63 downto 48), rs1(63 downto 32));
 				Rd(95 downto 64) <= MULT_ADD_I(rs3(95 downto 80), rs2(95 downto 80), rs1(95 downto 64));
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= MULT_ADD_I(rs3(127 downto 112), rs2(127 downto 112), rs1(127 downto 96));
-=======
-				Rd(127 downto 96) <= MULT_ADD_I(rs3(127 downto 112), rs2(127 downto 112), rs1(127 downto 96));
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "10010--------------------" => 	-- SIMSLS
 				Rd(31 downto 0) <= MULT_SUB_I(rs3(15 downto 0), rs2(15 downto 0), rs1(31 downto 0));
 				Rd(63 downto 32) <= MULT_SUB_I(rs3(47 downto 32), rs2(47 downto 32), rs1(63 downto 32));
 				Rd(95 downto 64) <= MULT_SUB_I(rs3(79 downto 64), rs2(79 downto 64), rs1(95 downto 64));
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= MULT_SUB_I(rs3(111 downto 96), rs2(111 downto 96), rs1(127 downto 96));
-=======
-				Rd(127 downto 96) <= MULT_SUB_I(rs3(111 downto 96), rs2(111 downto 96), rs1(127 downto 96));
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "10011--------------------" => 	-- SIMSHS
 				Rd(31 downto 0) <= MULT_SUB_I(rs3(31 downto 16), rs2(31 downto 16), rs1(31 downto 0));
 				Rd(63 downto 32) <= MULT_SUB_I(rs3(63 downto 48), rs2(63 downto 48), rs1(63 downto 32));
 				Rd(95 downto 64) <= MULT_SUB_I(rs3(95 downto 80), rs2(95 downto 80), rs1(95 downto 64));
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= MULT_SUB_I(rs3(127 downto 112), rs2(127 downto 112), rs1(127 downto 96));
 			when "10100--------------------" => 	-- SLIMALS
 				Rd(31 downto 0) <= MULT_ADD_L(rs3(31 downto 0), rs2(31 downto 0), rs1(63 downto 0));
@@ -118,33 +86,12 @@ begin
 				Rd(31 downto 0) <= MULT_SUB_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
 			    Rd(63 downto 32) <= MULT_SUB_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
 			when "11----0000---------------" => 	-- NOP
-			    null;
-=======
-				Rd(127 downto 96) <= MULT_SUB_I(rs3(127 downto 112), rs2(127 downto 112), rs1(127 downto 96));
-			when "10100--------------------" => 	-- SLIMALS
-				Rd(63 downto 0) <= MULT_ADD_L(rs3(31 downto 0), rs2(31 downto 0), rs1(63 downto 0));
-				Rd(127 downto 64) <= MULT_ADD_L(rs3(95 downto 64), rs2(95 downto 64), rs1(127 downto 64));
-			when "10101--------------------" => 	-- SLIMAHS
-				Rd(63 downto 0) <= MULT_ADD_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
-				Rd(127 downto 64) <= MULT_ADD_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
-			when "10110--------------------" => 	-- SLIMSLS
-				Rd(63 downto 0) <= MULT_SUB_L(rs3(31 downto 0), rs2(31 downto 0), rs1(63 downto 0));
-				Rd(127 downto 64) <= MULT_SUB_L(rs3(95 downto 64), rs2(95 downto 64), rs1(127 downto 64));
-			when "10111--------------------" =>  	-- SLIMSHS
-				Rd(63 downto 0) <= MULT_SUB_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
-				Rd(127 downto 64) <= MULT_SUB_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
-			when "11----0000---------------" => 	-- NOP
 				null;
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----0001---------------" =>   	-- AU
 				Rd(31 downto 0) <= std_logic_vector(unsigned(rs1(31 downto 0)) + unsigned(rs2(31 downto 0)));
 				Rd(63 downto 32) <= std_logic_vector(unsigned(rs1(63 downto 32)) + unsigned(rs2(63 downto 32)));
 				Rd(95 downto 64) <= std_logic_vector(unsigned(rs1(95 downto 64)) + unsigned(rs2(95 downto 64)));
-<<<<<<< HEAD
-			    Rd(127 downto 96) <= std_logic_vector(unsigned(rs1(127 downto 96)) + unsigned(rs2(127 downto 96)));	
-=======
-				Rd(127 downto 96) <= std_logic_vector(unsigned(rs1(127 downto 96)) + unsigned(rs2(127 downto 96)));	
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
+			    Rd(127 downto 96) <= std_logic_vector(unsigned(rs1(127 downto 96)) + unsigned(rs2(127 downto 96)));
 			when "11----0010---------------" =>		-- ABSDB
 				Rd(7 downto 0) <= std_logic_vector(abs(signed(rs2(7 downto 0)) - signed(rs1(7 downto 0))));					  -- compute absolute difference between rs1 and rs2 bytes 
 				Rd(15 downto 8) <= std_logic_vector(abs(signed(rs2(15 downto 8)) - signed(rs1(15 downto 8))));	
@@ -161,11 +108,7 @@ begin
 				Rd(103 downto 96) <= std_logic_vector(abs(signed(rs2(103 downto 96)) - signed(rs1(103 downto 96))));
 				Rd(111 downto 104) <= std_logic_vector(abs(signed(rs2(111 downto 104)) - signed(rs1(111 downto 104))));
 				Rd(119 downto 112) <= std_logic_vector(abs(signed(rs2(119 downto 112)) - signed(rs1(119 downto 112))));
-<<<<<<< HEAD
 			    Rd(127 downto 120) <= std_logic_vector(abs(signed(rs2(127 downto 120)) - signed(rs1(127 downto 120))));
-=======
-				Rd(127 downto 120) <= std_logic_vector(abs(signed(rs2(127 downto 120)) - signed(rs1(127 downto 120))));
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----0011---------------" =>		-- AHU   
 				Rd(15 downto 0) <= std_logic_vector(unsigned(rs1(15 downto 0)) + unsigned(rs2(15 downto 0)));
 				Rd(31 downto 16) <= std_logic_vector(unsigned(rs1(31 downto 16)) + unsigned(rs2(31 downto 16)));
@@ -174,11 +117,7 @@ begin
 				Rd(79 downto 64) <= std_logic_vector(unsigned(rs1(79 downto 64)) + unsigned(rs2(79 downto 64)));
 				Rd(95 downto 80) <= std_logic_vector(unsigned(rs1(95 downto 80)) + unsigned(rs2(95 downto 80)));
 				Rd(111 downto 96) <= std_logic_vector(unsigned(rs1(111 downto 96)) + unsigned(rs2(111 downto 96)));
-<<<<<<< HEAD
-			    Rd(127 downto 112) <= std_logic_vector(unsigned(rs1(127 downto 112)) + unsigned(rs2(127 downto 112)));
-=======
 				Rd(127 downto 112) <= std_logic_vector(unsigned(rs1(127 downto 112)) + unsigned(rs2(127 downto 112)));
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----0100---------------" =>		-- AHS 
 				Rd(15 downto 0) <= std_logic_vector(signed(rs1(15 downto 0)) + signed(rs2(15 downto 0)));
 				Rd(31 downto 16) <= std_logic_vector(signed(rs1(31 downto 16)) + signed(rs2(31 downto 16)));
@@ -229,21 +168,13 @@ begin
 				elsif (rs1(127) = rs2(127) and not rs1(127) = Rd(127) and Rd(127) = '0')	then					   -- check for underflow
 					Rd(127 downto 112) <= std_logic_vector(min16);
 			    end if;
-			when "11----0101---------------" =>		-- AND  
-<<<<<<< HEAD
+			when "11----0101---------------" =>		-- AND
 			    Rd <= rs1 and rs2;											-- compute i and j
-=======
-				Rd <= rs1 and rs2;											-- compute i and j
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----0110---------------" =>		-- BCW  
 				Rd(31 downto 0) <= rs1(31 downto 0);
 				Rd(63 downto 32) <= rs1(31 downto 0);
 				Rd(95 downto 64) <= rs1(31 downto 0);
-<<<<<<< HEAD
-			    Rd(127 downto 96) <= rs1(31 downto 0); 
-=======
-				Rd(127 downto 96) <= rs1(31 downto 0); 
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
+			    Rd(127 downto 96) <= rs1(31 downto 0);
 			when "11----0111---------------" =>		-- MAXWS
 				if (signed(rs1(31 downto 0)) > signed(rs2(31 downto 0))) then
 					Rd(31 downto 0) <= rs1(31 downto 0);
@@ -264,11 +195,7 @@ begin
 					Rd(127 downto 96) <= rs1(127 downto 96);
 				else
 					Rd(127 downto 96) <= rs2(127 downto 96);
-<<<<<<< HEAD
-			    end if;	
-=======
-				end if;	
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
+			    end if;
 			when "11----1000---------------" =>		-- MINWS
 				if (signed(rs1(31 downto 0)) < signed(rs2(31 downto 0))) then
 					Rd(31 downto 0) <= rs1(31 downto 0);
@@ -294,24 +221,14 @@ begin
 				Rd(31 downto 0) <= std_logic_vector(unsigned(rs1(15 downto 0)) * unsigned(rs2(15 downto 0)));
 				Rd(63 downto 32) <= std_logic_vector(unsigned(rs1(47 downto 32)) * unsigned(rs2(47 downto 32)));
 				Rd(95 downto 64) <= std_logic_vector(unsigned(rs1(79 downto 64)) * unsigned(rs2(79 downto 64)));
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= std_logic_vector(unsigned(rs1(111 downto 96)) * unsigned(rs2(111 downto 96)));
-=======
-				Rd(127 downto 96) <= std_logic_vector(unsigned(rs1(111 downto 96)) * unsigned(rs2(111 downto 96)));
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----1010---------------" =>		-- MLHCU
 				Rd(31 downto 0) <= b"00000000000" & std_logic_vector(unsigned(rs2(15 downto 0)) * unsigned(op(14 downto 10)));
 				Rd(63 downto 32) <= b"00000000000" & std_logic_vector(unsigned(rs2(47 downto 32)) * unsigned(op(14 downto 10)));
 				Rd(95 downto 64) <= b"00000000000" & std_logic_vector(unsigned(rs2(79 downto 64)) * unsigned(op(14 downto 10)));
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= b"00000000000" & std_logic_vector(unsigned(rs2(111 downto 96)) * unsigned(op(14 downto 10)));
 			when "11----1011---------------" =>		-- OR
 			    Rd <= rs1 or rs2;										    -- compute rs1 or rs2
-=======
-				Rd(127 downto 96) <= b"00000000000" & std_logic_vector(unsigned(rs2(111 downto 96)) * unsigned(op(14 downto 10)));
-			when "11----1011---------------" =>		-- OR
-				Rd <= rs1 or rs2;										    -- compute rs1 or rs2
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----1100---------------" =>		-- PCNTW
 				count := x"00000000";
 				for i in 0 to 31 loop
@@ -335,20 +252,12 @@ begin
 				for i in 96 to 127 loop
 					count := count + ("0000000000000000000000000000000" & rs1(i));
 				end loop;
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= std_logic_vector(count);
-=======
-				Rd(127 downto 96) <= std_logic_vector(count);
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----1101---------------" =>		-- ROTW
 				Rd(31 downto 0) <= std_logic_vector(rotate_right(unsigned(rs1(31 downto 0)), to_integer(unsigned(rs2(4 downto 0)))));
 				Rd(63 downto 32) <= std_logic_vector(rotate_right(unsigned(rs1(63 downto 32)), to_integer(unsigned(rs2(4 downto 0)))));
 				Rd(95 downto 64) <= std_logic_vector(rotate_right(unsigned(rs1(95 downto 64)), to_integer(unsigned(rs2(4 downto 0)))));
-<<<<<<< HEAD
 			    Rd(127 downto 96) <= std_logic_vector(rotate_right(unsigned(rs1(127 downto 96)), to_integer(unsigned(rs2(4 downto 0)))));
-=======
-				Rd(127 downto 96) <= std_logic_vector(rotate_right(unsigned(rs1(127 downto 96)), to_integer(unsigned(rs2(4 downto 0)))));
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----1110---------------" =>		-- SFHS
 				Rd(15 downto 0) <= std_logic_vector(signed(rs2(15 downto 0)) - signed(rs1(15 downto 0)));
 				Rd(31 downto 16) <= std_logic_vector(signed(rs2(31 downto 16)) - signed(rs1(31 downto 16)));
@@ -398,22 +307,13 @@ begin
 					Rd(127 downto 112) <= std_logic_vector(max16);
 				elsif (not rs1(127) = rs2(127) and not rs1(127) = Rd(127) and Rd(127) = '0') then					 	-- check for underflow
 					Rd(127 downto 112) <= std_logic_vector(min16);
-<<<<<<< HEAD
 			    end if;
-=======
-				end if;
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
 			when "11----1111---------------" =>		-- SFW
 				Rd(31 downto 0) <= std_logic_vector(unsigned(rs2(31 downto 0)) - unsigned(rs1(31 downto 0)));
 				Rd(63 downto 32) <= std_logic_vector(unsigned(rs2(63 downto 32)) - unsigned(rs1(63 downto 32)));
 				Rd(95 downto 64) <= std_logic_vector(unsigned(rs2(95 downto 64)) - unsigned(rs1(95 downto 64)));
-<<<<<<< HEAD
-			    Rd(127 downto 96) <= std_logic_vector(unsigned(rs2(127 downto 96)) - unsigned(rs1(127 downto 96))); 
-=======
-				Rd(127 downto 96) <= std_logic_vector(unsigned(rs2(127 downto 96)) - unsigned(rs1(127 downto 96))); 
->>>>>>> 8d045eae4a6d1f804e4077b1c0a674da8a31a3c3
+			    Rd(127 downto 96) <= std_logic_vector(unsigned(rs2(127 downto 96)) - unsigned(rs1(127 downto 96)));
 			when others => null;
 		end case?;
 	end process;
-	Op_out <= Op;
 end behavioral;

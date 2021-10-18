@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------
 --
--- Title       : REG_file
+-- Title       : data_types
 -- Design      : SIMD
 -- Author      : Judah Ben-Eliezer
 -- Company     : Stony Brook University
