@@ -9,3 +9,4 @@
 .\src\ID_EX.vhd
 .\src\EX_WB.vhd
 .\src\IB.vhd
+.\src\ALU_tb.vhd

@@ -1,151 +1,1223 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.1 [s].
-# Design Explorer: Shortcut to "C:\Users\hp\Documents\repos\SIMD\SIMD.aws" workspace added.
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# ELBREAD: Elaboration time 0.2 [s].
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (39, 1): Keyword 'begin' expected.
-# Error: COMP96_0016: ALU.vhd : (39, 8): Design unit declaration expected.
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0078: ALU.vhd : (333, 2): Unknown identifier "Op_out".
-# Error: COMP96_0133: ALU.vhd : (333, 2): Cannot find object declaration.
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Too many errors - compilation terminated
+# Error: COMP96_0078: ALU.vhd : (100, 24): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (100, 24): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (100, 24): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (100, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (101, 25): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (101, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (101, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (101, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (102, 25): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (102, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (102, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (102, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (103, 25): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (103, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (103, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (103, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (104, 25): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (104, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (104, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (104, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (105, 25): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (105, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (105, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (105, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (106, 26): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (106, 26): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (106, 26): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (106, 26): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (107, 27): Unknown identifier "SAT".
+# Error: COMP96_0133: ALU.vhd : (107, 27): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (107, 27): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (107, 27): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (114, 24): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (114, 24): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (114, 24): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (114, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (115, 25): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (115, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (115, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (115, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (116, 25): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (116, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (116, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (116, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (117, 25): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (117, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (117, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (117, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (118, 25): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (118, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (118, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (118, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (119, 25): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (119, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (119, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (119, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (120, 26): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (120, 26): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (120, 26): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (120, 26): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (121, 27): Unknown identifier "CGH".
+# Error: COMP96_0133: ALU.vhd : (121, 27): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (121, 27): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (121, 27): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (123, 24): Unknown identifier "CLZ".
+# Error: COMP96_0133: ALU.vhd : (123, 24): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (123, 24): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (123, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (124, 25): Unknown identifier "CLZ".
+# Error: COMP96_0133: ALU.vhd : (124, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (124, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (124, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (125, 25): Unknown identifier "CLZ".
+# Error: COMP96_0133: ALU.vhd : (125, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (125, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (125, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (126, 29): Unknown identifier "CLZ".
+# Error: COMP96_0133: ALU.vhd : (126, 29): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (126, 29): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (126, 29): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (170, 24): Unknown identifier "MSGN".
+# Error: COMP96_0133: ALU.vhd : (170, 24): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (170, 24): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (170, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (171, 25): Unknown identifier "MSGN".
+# Error: COMP96_0133: ALU.vhd : (171, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (171, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (171, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (172, 25): Unknown identifier "MSGN".
+# Error: COMP96_0133: ALU.vhd : (172, 25): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (172, 25): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (172, 25): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (173, 29): Unknown identifier "MSGN".
+# Error: COMP96_0133: ALU.vhd : (173, 29): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (173, 29): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (173, 29): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: ALU.vhd : (175, 24): Unknown identifier "COUNT_ONES".
+# Error: COMP96_0133: ALU.vhd : (175, 24): Cannot find object declaration.
+# Error: COMP96_0289: ALU.vhd : (175, 24): Prefix of index must be an array.
+# Error: COMP96_0077: ALU.vhd : (175, 24): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Compile failure 100 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
 # Compile Package "ALU_functions"
 # Compile Package Body "ALU_functions"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Error: COMP96_0015: ALU_functions.vhd : (205, 1): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# Warning: COMP96_0367: ALU_functions.vhd : (157, 10): Improper array length (16). Expected length is 17.
+# Warning: COMP96_0421: ALU_functions.vhd : (177, 7): Array comparison is always FALSE.
+# Error: COMP96_0077: ALU_functions.vhd : (192, 45): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Compile failure 1 Errors 2 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# Error: COMP96_0071: ALU_functions.vhd : (157, 15): Operator "&" is not defined for such operands.
+# Error: COMP96_0077: ALU_functions.vhd : (157, 10): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Warning: COMP96_0421: ALU_functions.vhd : (177, 7): Array comparison is always FALSE.
+# Error: COMP96_0077: ALU_functions.vhd : (192, 45): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Compile failure 3 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# Error: COMP96_0071: ALU_functions.vhd : (157, 44): Operator "&" is not defined for such operands.
+# Error: COMP96_0149: ALU_functions.vhd : (157, 40): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0071: ALU_functions.vhd : (157, 24): Operator "&" is not defined for such operands.
+# Error: COMP96_0149: ALU_functions.vhd : (157, 20): Explicit type conversions are allowed between closely related types only.
+# Warning: COMP96_0421: ALU_functions.vhd : (177, 7): Array comparison is always FALSE.
+# Error: COMP96_0077: ALU_functions.vhd : (192, 45): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Compile failure 5 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# Warning: COMP96_0421: ALU_functions.vhd : (177, 7): Array comparison is always FALSE.
+# Error: COMP96_0077: ALU_functions.vhd : (192, 45): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Compile failure 1 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# Error: COMP96_0077: ALU_functions.vhd : (192, 45): Undefined type of expression. Expected type 'UNRESOLVED_UNSIGNED'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# Error: COMP96_0596: ALU.vhd : (113, 9): Each choice in a matching case statement can be represented only once. (IEEE 1076-2008, 10.9)
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# Error: COMP96_0596: ALU.vhd : (99, 9): Each choice in a matching case statement can be represented only once. (IEEE 1076-2008, 10.9)
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
 # Compile Package "data_types"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
 # Compile Entity "MMU"
 # Compile Architecture "structural" of Entity "MMU"
 # Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
 # Compile Entity "FU"
 # Compile Architecture "behavioral" of Entity "FU"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
 # Compile Entity "RF"
 # Compile Architecture "behavioral" of Entity "RF"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
 # Compile Entity "IF_ID"
 # Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
 # Compile Entity "MMU_tb"
 # Compile Architecture "bench" of Entity "MMU_tb"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
 # Compile Entity "ID_EX"
 # Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
 # Compile Entity "EX_WB"
 # Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
 # Compile Entity "IB"
 # Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 4 Errors 1 Warnings  Analysis time :  1.0 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/data_types.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# Error: COMP96_0111: data_types.vhd : (43, 13): Labels do not match.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/data_types.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Error: COMP96_0669: ALU_tb.vhd : (54, 19): Type for "index" is not fully constrained. (IEEE 1076-2008, 5.3.2.2)
+# Error: COMP96_0263: ALU_tb.vhd : (61, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (61, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (63, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (63, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (65, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (65, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (67, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (67, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (69, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (69, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0242: ALU_tb.vhd : (73, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Compile failure 12 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Error: COMP96_0263: ALU_tb.vhd : (61, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (61, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (63, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (63, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (65, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (65, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (67, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (67, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0263: ALU_tb.vhd : (69, 15): Type names are not allowed as primaries.
+# Error: COMP96_0153: ALU_tb.vhd : (69, 15): Formal "VALUE" of class variable must be associated with a variable.
+# Error: COMP96_0242: ALU_tb.vhd : (73, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Error: COMP96_0242: ALU_tb.vhd : (73, 5): Wait statement in process with explicit sensitivity list is not allowed.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim -O5 +access +r +m+MMU MMU structural
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'EX_WB' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:31 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:32 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:32 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# add wave -noreg {/ALU_tb/current_test}
+# add wave -noreg {/ALU_tb/result}
+# 2 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:32 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0019: ALU.vhd : (38, 1): Keyword 'begin' expected.
-# Error: COMP96_0016: ALU.vhd : (38, 8): Design unit declaration expected.
-# Compile Architecture "behavioral" of Entity "ALU"
-# Error: COMP96_0078: ALU.vhd : (332, 2): Unknown identifier "Op_out".
-# Error: COMP96_0133: ALU.vhd : (332, 2): Cannot find object declaration.
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
 # Compile Package "ALU_functions"
 # Compile Package Body "ALU_functions"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
 # Compile Package "data_types"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
 # Compile Entity "MMU"
 # Compile Architecture "structural" of Entity "MMU"
 # Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
 # Compile Entity "FU"
 # Compile Architecture "behavioral" of Entity "FU"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
 # Compile Entity "RF"
 # Compile Architecture "behavioral" of Entity "RF"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
 # Compile Entity "IF_ID"
 # Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
 # Compile Entity "MMU_tb"
 # Compile Architecture "bench" of Entity "MMU_tb"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
 # Compile Entity "ID_EX"
 # Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
 # Compile Entity "EX_WB"
 # Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
 # Compile Entity "IB"
 # Compile Architecture "behavioral" of Entity "IB"
-# Compile failure 4 Errors 1 Warnings  Analysis time :  0.7 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:33 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
 # Compile Entity "ALU"
 # Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
 # Compile Package "ALU_functions"
 # Compile Package Body "ALU_functions"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
 # Compile Package "data_types"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
-# Compile Entity "MMU"
-# Compile Architecture "structural" of Entity "MMU"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
-# Compile Entity "FU"
-# Compile Architecture "behavioral" of Entity "FU"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
-# Compile Entity "RF"
-# Compile Architecture "behavioral" of Entity "RF"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
-# Compile Entity "IF_ID"
-# Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
-# Compile Entity "MMU_tb"
-# Compile Architecture "bench" of Entity "MMU_tb"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
-# Compile Entity "ID_EX"
-# Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
-# Compile Entity "EX_WB"
-# Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
-# Compile Entity "IB"
-# Compile Architecture "behavioral" of Entity "IB"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
-acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "behavioral" of Entity "ALU"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
-# Compile Package "ALU_functions"
-# Compile Package Body "ALU_functions"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/data_types.vhd
-# Compile Package "data_types"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
 # Compile Entity "MMU"
 # Compile Architecture "structural" of Entity "MMU"
 # Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/FU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
 # Compile Entity "FU"
 # Compile Architecture "behavioral" of Entity "FU"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/RF.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
 # Compile Entity "RF"
 # Compile Architecture "behavioral" of Entity "RF"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
 # Compile Entity "IF_ID"
 # Compile Architecture "behavioral" of Entity "IF_ID"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
 # Compile Entity "MMU_tb"
 # Compile Architecture "bench" of Entity "MMU_tb"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
 # Compile Entity "ID_EX"
 # Compile Architecture "behavioral" of Entity "ID_EX"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
 # Compile Entity "EX_WB"
 # Compile Architecture "behavioral" of Entity "EX_WB"
-# File: C:/Users/hp/Documents/repos/SIMD/SIMD/src/IB.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
 # Compile Entity "IB"
-# Compile 
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:33 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# add wave -noreg {/ALU_tb/current_test}
+# 1 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+# add wave -noreg {/ALU_tb/result}
+# 1 signal(s) traced.
+run @3us
+# RUNTIME: Fatal Error: RUNTIME_0050 ALU_tb.vhd (61): EOF reached while reading file "C:\Users\jb\Documents\repos\SIMD\SIMD\src\stimulus.txt".
+# KERNEL: Time: 120 ns,  Iteration: 0,  Instance: /ALU_tb,  Process: read_file.
+# KERNEL: Stopped at time 120 ns + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:34 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# RUNTIME: Fatal Error: RUNTIME_0050 ALU_tb.vhd (61): EOF reached while reading file "C:\Users\jb\Documents\repos\SIMD\SIMD\src\stimulus.txt".
+# KERNEL: Time: 120 ns,  Iteration: 0,  Instance: /ALU_tb,  Process: read_file.
+# KERNEL: Stopped at time 120 ns + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+run @3.12us
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:35 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+# add wave -noreg {/ALU_tb/current_test}
+# add wave -noreg {/ALU_tb/result}
+# KERNEL: Warning: KERNEL_0291 Signal '/ALU_tb/current_test' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/ALU_tb/result' has already been traced.
+# 0 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:35 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# add wave -noreg {/ALU_tb/current_test}
+# add wave -noreg {/ALU_tb/result}
+# 2 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# RUNTIME: Fatal Error: RUNTIME_0055 ALU_tb.vhd (59): Cannot read from not open file.
+# KERNEL: Time: 120 ns,  Iteration: 0,  Instance: /ALU_tb,  Process: read_file.
+# KERNEL: Stopped at time 120 ns + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+run @500ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6256 kB (elbread=1280 elab2=4826 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:36 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @500ns
+# RUNTIME: Fatal Error: RUNTIME_0055 ALU_tb.vhd (59): Cannot read from not open file.
+# KERNEL: Time: 120 ns,  Iteration: 0,  Instance: /ALU_tb,  Process: read_file.
+# KERNEL: Stopped at time 120 ns + 0.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  6:38 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @1us
+# KERNEL: stopped at time: 1 us
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  7:07 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @3us
+# EXECUTION:: ERROR  : Error for input 1000100000000000000000000
+# EXECUTION:: Time: 60 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1001100000000000000000000
+# EXECUTION:: Time: 180 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# RUNTIME: Fatal Error: RUNTIME_0046 ALU.vhd (77): Incompatible ranges; left: (31 downto 0), right: (63 downto 0).
+# KERNEL: Time: 240 ns,  Iteration: 1,  Instance: /ALU_tb/uut,  Process: line__40.
+# KERNEL: Stopped at time 240 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  7:12 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @3us
+# EXECUTION:: ERROR  : Error for input 1000100000000000000000000
+# EXECUTION:: Time: 60 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1001100000000000000000000
+# EXECUTION:: Time: 180 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010000000000000000000000
+# EXECUTION:: Time: 240 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010100000000000000000000
+# EXECUTION:: Time: 300 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011000000000000000000000
+# EXECUTION:: Time: 360 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011100000000000000000000
+# EXECUTION:: Time: 420 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000010000000000000000
+# EXECUTION:: Time: 600 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000011000000000000000
+# EXECUTION:: Time: 660 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000100000000000000000
+# EXECUTION:: Time: 720 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000101000000000000000
+# EXECUTION:: Time: 780 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000110000000000000000
+# EXECUTION:: Time: 840 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000111000000000000000
+# EXECUTION:: Time: 900 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# RUNTIME: Fatal Error: RUNTIME_0046 ALU.vhd (172): Incompatible ranges; left: (95 downto 64), right: (0 to 15).
+# KERNEL: Time: 960 ns,  Iteration: 1,  Instance: /ALU_tb/uut,  Process: line__40.
+# KERNEL: Stopped at time 960 ns + 1.
+# VSIM: Error: Fatal error occurred during simulation.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op_out" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  7:14 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @3us
+# EXECUTION:: ERROR  : Error for input 1000100000000000000000000
+# EXECUTION:: Time: 60 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1001100000000000000000000
+# EXECUTION:: Time: 180 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010000000000000000000000
+# EXECUTION:: Time: 240 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010100000000000000000000
+# EXECUTION:: Time: 300 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011000000000000000000000
+# EXECUTION:: Time: 360 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011100000000000000000000
+# EXECUTION:: Time: 420 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000010000000000000000
+# EXECUTION:: Time: 600 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000011000000000000000
+# EXECUTION:: Time: 660 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000100000000000000000
+# EXECUTION:: Time: 720 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000101000000000000000
+# EXECUTION:: Time: 780 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000110000000000000000
+# EXECUTION:: Time: 840 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000111000000000000000
+# EXECUTION:: Time: 900 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001000000000000000000
+# EXECUTION:: Time: 960 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001001000000000000000
+# EXECUTION:: Time: 1020 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001010000000000000000
+# EXECUTION:: Time: 1080 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001011000000000000000
+# EXECUTION:: Time: 1140 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001100000000000000000
+# EXECUTION:: Time: 1200 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001101000000000000000
+# EXECUTION:: Time: 1260 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001110000000000000000
+# EXECUTION:: Time: 1320 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001111000000000000000
+# EXECUTION:: Time: 1380 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1000100000000000000000000
+# EXECUTION:: Time: 1500 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1001100000000000000000000
+# EXECUTION:: Time: 1620 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010000000000000000000000
+# EXECUTION:: Time: 1680 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010100000000000000000000
+# EXECUTION:: Time: 1740 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011000000000000000000000
+# EXECUTION:: Time: 1800 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011100000000000000000000
+# EXECUTION:: Time: 1860 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000010000000000000000
+# EXECUTION:: Time: 2040 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000011000000000000000
+# EXECUTION:: Time: 2100 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000100000000000000000
+# EXECUTION:: Time: 2160 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000101000000000000000
+# EXECUTION:: Time: 2220 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000110000000000000000
+# EXECUTION:: Time: 2280 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000111000000000000000
+# EXECUTION:: Time: 2340 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001000000000000000000
+# EXECUTION:: Time: 2400 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001001000000000000000
+# EXECUTION:: Time: 2460 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001010000000000000000
+# EXECUTION:: Time: 2520 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001011000000000000000
+# EXECUTION:: Time: 2580 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001100000000000000000
+# EXECUTION:: Time: 2640 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001101000000000000000
+# EXECUTION:: Time: 2700 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001110000000000000000
+# EXECUTION:: Time: 2760 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001111000000000000000
+# EXECUTION:: Time: 2820 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1000100000000000000000000
+# EXECUTION:: Time: 2940 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# KERNEL: stopped at time: 3 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  7:15 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @1400ns
+# EXECUTION:: ERROR  : Error for input 1000100000000000000000000
+# EXECUTION:: Time: 60 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1001100000000000000000000
+# EXECUTION:: Time: 180 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010000000000000000000000
+# EXECUTION:: Time: 240 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1010100000000000000000000
+# EXECUTION:: Time: 300 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011000000000000000000000
+# EXECUTION:: Time: 360 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1011100000000000000000000
+# EXECUTION:: Time: 420 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000010000000000000000
+# EXECUTION:: Time: 600 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000011000000000000000
+# EXECUTION:: Time: 660 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000100000000000000000
+# EXECUTION:: Time: 720 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000101000000000000000
+# EXECUTION:: Time: 780 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000110000000000000000
+# EXECUTION:: Time: 840 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100000111000000000000000
+# EXECUTION:: Time: 900 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001000000000000000000
+# EXECUTION:: Time: 960 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001001000000000000000
+# EXECUTION:: Time: 1020 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001010000000000000000
+# EXECUTION:: Time: 1080 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001011000000000000000
+# EXECUTION:: Time: 1140 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001100000000000000000
+# EXECUTION:: Time: 1200 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001101000000000000000
+# EXECUTION:: Time: 1260 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001110000000000000000
+# EXECUTION:: Time: 1320 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# EXECUTION:: ERROR  : Error for input 1100001111000000000000000
+# EXECUTION:: Time: 1380 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# KERNEL: stopped at time: 1400 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  7:28 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @1600ns
+# EXECUTION:: ERROR  : Error for input 1100000110000000000000000
+# EXECUTION:: Time: 840 ns,  Iteration: 2,  Instance: /ALU_tb,  Process: verify.
+# KERNEL: stopped at time: 1600 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  7:32 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run
+endsim
+# KERNEL: stopped at time: 286080 ns
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6255 kB (elbread=1280 elab2=4825 kernel=149 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  7:32 PM, Monday, October 25, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run @1600ns
+# KERNEL: stopped at time: 1600 ns
+# Waveform file 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/alu_waveform.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/alu_waveform.asdb'.
+# Adding file C:\Users\jb\Documents\repos\SIMD\SIMD\src\alu_waveform.asdb ... Done
+# Adding file C:\Users\jb\Documents\repos\SIMD\SIMD\src\alu_waveform.awc ... Done

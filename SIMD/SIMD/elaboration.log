@@ -1,20 +1,14 @@
-Active-HDL 11.1.262.7351 2021-10-18 18:08:22
+Active-HDL 11.1.262.7351 2021-10-25 19:32:34
 
 Elaboration top modules:
-Architecture                  structural(MMU)
+Architecture                  ALU_tb(ALU_tb)
 
 
 -------------------------------------------------------------------------------------------
 Entity   | Architecture | Library | Info | Compiler Version        | Compilation Options
 -------------------------------------------------------------------------------------------
-MMU      | structural   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
-IB       | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
-IF_ID    | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
-FU       | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
-RF       | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
-ID_EX    | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+ALU_tb   | ALU_tb       | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
 ALU      | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
-EX_WB    | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
 -------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------
@@ -25,8 +19,6 @@ TEXTIO                  | std     |      |                         | <unavailabl
 std_logic_1164          | ieee    |      |                         | <unavailable>
 data_types              | simd    |      |                         | <unavailable>
 NUMERIC_STD             | ieee    |      |                         | <unavailable>
-std_logic_arith         | ieee    |      |                         | <unavailable>
-STD_LOGIC_UNSIGNED      | ieee    |      |                         | <unavailable>
 ALU_functions           | simd    |      |                         | <unavailable>
 -------------------------------------------------------------------------------------------
 
@@ -37,3 +29,9 @@ ieee                    | Standard IEEE packages library
 simd                    | None
 std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+ALU_tb ALU_tb ALU_tb
+
+
+The performance of simulation is reduced. Version Student Edition
