@@ -8,3 +8,4 @@ i<>.\src\MMU_tb.vhd
 i<>.\src\ID_EX.vhd
 i<>.\src\EX_WB.vhd
 i<>.\src\IB.vhd
+i<>.\src\ALU_tb.vhd

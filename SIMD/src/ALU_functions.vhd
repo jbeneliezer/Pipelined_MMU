@@ -38,7 +38,21 @@ package ALU_functions is
 		
 	function MULT_SUB_L(x: std_logic_vector(31 downto 0);
 		y: std_logic_vector(31 downto 0);
-		z: std_logic_vector(63 downto 0)) return std_logic_vector;
+		z: std_logic_vector(63 downto 0)) return std_logic_vector;		
+		
+	function SAT(x: std_logic;
+		y: std_logic;
+		z: std_logic_vector(15 downto 0)) return std_logic_vector;
+			
+	function CGH(x: std_logic_vector(15 downto 0);
+		y: std_logic_vector(15 downto 0)) return std_logic_vector;	
+			
+	function CLZ(x: std_logic_vector(31 downto 0)) return std_logic_vector;
+	
+	function MSGN(x: std_logic_vector(31 downto 0);
+		y: std_logic_vector(31 downto 0)) return std_logic_vector;	
+	
+	function COUNT_ONES(x: std_logic_vector(15 downto 0)) return std_logic_vector;
 	
 end package ALU_functions;	  
 
@@ -117,4 +131,73 @@ package body ALU_functions is
 		end if;
 		return std_logic_vector(dif);
 	end function MULT_SUB_L;
+	
+	function SAT(x: std_logic;
+		y: std_logic;
+		z: std_logic_vector(15 downto 0)) return std_logic_vector is
+		constant max16: std_logic_vector := x"7FFF";
+		constant min16: std_logic_vector := x"8000";
+	begin
+		if (x = y) then
+			if (not x = z(15)) then
+				if (z(15) = '1') then
+					return max16;
+				elsif (z(15) = '0') then
+					return min16;
+				end if;
+			end if;
+		end if;
+		return z;
+	end function SAT;	 
+	
+	function CGH(x: std_logic_vector(15 downto 0);
+		y: std_logic_vector(15 downto 0)) return std_logic_vector is
+		variable sum: unsigned(16 downto 0) := "00000000000000000";
+	begin
+		sum := (unsigned('0' & x)) + (unsigned('0' & y));
+		return "000000000000000" & sum(16);
+	end function CGH;  
+			
+	function CLZ(x: std_logic_vector(31 downto 0)) return std_logic_vector is	
+	begin
+		for i in 0 to 31 loop
+			if (x(31 - i) = '1') then
+				return std_logic_vector(to_unsigned(i, 32));
+			end if;
+		end loop;
+		return std_logic_vector(to_unsigned(32, 32));
+	end function CLZ;	 
+	
+	
+	function MSGN(x: std_logic_vector(31 downto 0);
+		y: std_logic_vector(31 downto 0)) return std_logic_vector is
+		constant min32: std_logic_vector(31 downto 0) := x"80000000";
+		constant max32: std_logic_vector(31 downto 0) := x"7FFFFFFF";
+	begin
+		if (y = x"00000000") then
+			return x"00000000";
+		elsif (y(31) = '1') then
+			if (x = min32) then
+				return max32;
+			else
+				return std_logic_vector(0 - unsigned(x));
+			end if;
+		else
+			return x;
+		end if;
+	end function MSGN;
+	
+	
+	function COUNT_ONES(x: std_logic_vector(15 downto 0)) return std_logic_vector is
+		variable count : unsigned(15 downto 0) := x"0000";
+	begin
+		for i in 0 to 15 loop
+			if (x(i) = '1') then
+				count := count + 1;
+			end if;
+		end loop;
+		return std_logic_vector(count);
+	end function COUNT_ONES;
+					   
+			
 end package body ALU_functions;

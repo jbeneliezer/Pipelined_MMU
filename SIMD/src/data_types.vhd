@@ -32,6 +32,16 @@ package data_types is
 		rs3	:	std_logic_vector(127 downto 0);
 	end record idex;
 	
+	type int_array is array(integer range<>) of integer;
+	
+	type test is record
+		Op	:	std_logic_vector(24 downto 0);
+		rs1	:	std_logic_vector(127 downto 0);
+		rs2	:	std_logic_vector(127 downto 0);
+		rs3	:	std_logic_vector(127 downto 0);
+		Rd	:	std_logic_vector(127 downto 0);
+	end record test;
+	
 	constant z128: std_logic_vector(127 downto 0) := (others => '0');
 	
 	constant nop: std_logic_vector(24 downto 0) := "1100000000000000000000000";

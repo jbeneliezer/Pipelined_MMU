@@ -1,6 +1,8 @@
-175
+190
 ~E 1 "../src/ALU.vhd" 26 ALU
 ~A 1 "../src/ALU.vhd" 36 behavioral
+~E 1 "../src/ALU_tb.vhd" 28 ALU_tb
+~A 1 "../src/ALU_tb.vhd" 31 ALU_tb
 ~E 1 "../src/EX_WB.vhd" 29 EX_WB
 ~A 1 "../src/EX_WB.vhd" 34 behavioral
 ~E 1 "../src/FU.vhd" 26 FU
