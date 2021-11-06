@@ -27,8 +27,8 @@ entity IB is
 		 clk : in std_logic;
 		 rst: in std_logic;
 		 index: std_logic_vector(5 downto 0);
-		 D: in vec_array(0 to 63)(24 downto 0);
-		 Q: out std_logic_vector(24 downto 0)
+		 instruction_in: in vec_array(0 to 63)(24 downto 0);
+		 instruction_out: out std_logic_vector(24 downto 0)
 	     );
 end IB;
 
@@ -38,9 +38,9 @@ begin
 	process(clk, rst)
 	begin
 		if rst = '1' then
-			f <= D;
+			f <= instruction_in;
 		elsif rising_edge(clk) then
-			Q <= D(to_integer(unsigned(index)));
+			instruction_out <= instruction_in(to_integer(unsigned(index)));
 		end if;
 	end process; 
 end behavioral;

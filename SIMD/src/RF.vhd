@@ -26,29 +26,29 @@ use work.data_types.all;
 entity RF is
 	port(
 		clk: in std_logic;
-		en: in std_logic;
-		i_get0: in std_logic_vector(4 downto 0);
-		i_get1: in std_logic_vector(4 downto 0);
-		i_get2: in std_logic_vector(4 downto 0); 
-		i_send: in std_logic_vector(4 downto 0);
-		D: in std_logic_vector(127 downto 0);
-		Q0: out std_logic_vector(127 downto 0);
-		Q1: out std_logic_vector(127 downto 0);
-		Q2: out std_logic_vector(127 downto 0)
+		write_en: in std_logic;
+		read_addr_0: in std_logic_vector(4 downto 0);
+		read_addr_1: in std_logic_vector(4 downto 0);
+		read_addr_2: in std_logic_vector(4 downto 0); 
+		write_addr: in std_logic_vector(4 downto 0);
+		write_data: in std_logic_vector(127 downto 0);
+		read_data_0: out std_logic_vector(127 downto 0);
+		read_data_1: out std_logic_vector(127 downto 0);
+		read_data_2: out std_logic_vector(127 downto 0)
 		);
 end RF;									   
 
 architecture behavioral of RF is
 	signal f: vec_array(0 to 31)(127 downto 0);
 begin
-	process(clk)
+	write: process
 	begin
-		if rising_edge(clk) and en = '1' then
-			f(to_integer(unsigned(i_send))) <= D;
+		if write_en = '1' then
+			f(to_integer(unsigned(write_addr))) <= write_data;
 		end if;
 	end process;
 		  
-	Q0 <= f(to_integer(unsigned(i_get0)));
-	Q1 <= f(to_integer(unsigned(i_get1)));
-	Q2 <= f(to_integer(unsigned(i_get2)));
+	read_data_0 <= f(to_integer(unsigned(read_addr_0)));
+	read_data_1 <= f(to_integer(unsigned(read_addr_1)));
+	read_data_2 <= f(to_integer(unsigned(read_addr_2)));
 end behavioral;

@@ -34,11 +34,8 @@ entity ALU is
 end ALU;
 
 architecture behavioral of ALU is
-	constant max16: signed := x"7FFF";									 								-- max 16 bit signed number
-	constant min16: signed := x"8000";									 								-- min 16 bit signed number
 begin  		
-	process(all) 
-		variable count: unsigned (31 downto 0);
+	process(all)
 	begin
 		case? (Op) is
 			when "0------------------------" =>		-- LI

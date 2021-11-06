@@ -23,6 +23,12 @@ ON_SERVERFARM_SYNTH=0
 ON_SERVERFARM_IMPL=0
 ON_SERVERFARM_SIM=0
 fileopenfolder=C:\My_Designs\SIMD\SIMD\src
+PCBINTERFACE_STATUS=ERRORS
+IMPL_TOOL=
+SYNTH_TOOL=
+CSYNTH_TOOL=
+PHYSSYNTH_TOOL=
+FAMILY=
 
 [IMPLEMENTATION]
 UCF=
@@ -31,7 +37,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=alu_tb|ALU_tb|0 mmu|structural|0  
+HierarchyInformation=alu_tb|ALU_tb|0    
 ShowHide=ShowTopLevel
 Selected=
 .\src\FU.vhd=VHDL Source Code

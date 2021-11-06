@@ -26,9 +26,9 @@ use work.data_types.all;
 entity FU is
 	port( 
 		Op: in std_logic_vector(24 downto 0);
-		i_rs1: out std_logic_vector(4 downto 0);
-		i_rs2: out std_logic_vector(4 downto 0);
-		i_rs3: out std_logic_vector(4 downto 0);
+		rs1: out std_logic_vector(4 downto 0);
+		rs2: out std_logic_vector(4 downto 0);
+		rs3: out std_logic_vector(4 downto 0);
 		Op_out: out std_logic_vector(24 downto 0)
 		);
 end FU;
@@ -41,10 +41,10 @@ begin
 			null;
 		else
 			if (Op(23) = '0') then
-				i_rs3 <= Op(19 downto 15);
+				rs3 <= Op(19 downto 15);
 			end if;	 
-			i_rs2 <= Op(14 downto 10);
-			i_rs1 <= Op(9 downto 5);
+			rs2 <= Op(14 downto 10);
+			rs1 <= Op(9 downto 5);
 		end if;
 		Op_out <= Op;
 	end	process;  

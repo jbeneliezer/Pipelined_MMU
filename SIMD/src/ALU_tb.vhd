@@ -22,7 +22,6 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use std.textio.all;
-use work.all; 
 use work.data_types.all;
 
 entity ALU_tb is
@@ -52,7 +51,6 @@ begin
 	read_file: process
 		file input : text;
 		variable row: line;
-		variable index: int_array(0 to 24);
 		variable test_input: test;
 		variable space: character;
 	begin
@@ -71,10 +69,13 @@ begin
 			
 			current_test <= test_input;
 			
-			wait for 60 ns;
+			wait for 20 ns;
 		end loop; 
 		
 		file_close(input);
+		
+		wait;
+		
 	end process;
 	
 	verify: process(result)
