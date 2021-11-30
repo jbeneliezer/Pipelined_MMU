@@ -11,7 +11,6 @@ ops = {
     "slimahs": "10101",
     "slimsls": "10110",
     "slimshs": "10111",
-    "nop": "1100000000",
     "ah": "1100000001",
     "ahs": "1100000010",
     "bcw": "1100000011",
@@ -52,6 +51,10 @@ with open("program2.txt", "r") as input:
         # op rd, rs1, rs2
         elif len(lst) == 4:
             op = ops[lst[0]] + format(int(lst[3][1:])%0x1F, "b").zfill(5) + format(int(lst[2][1:])%0x1F, "b").zfill(5) + format(int(lst[1][1:])%0x1F, "b").zfill(5)
+
+        # nop
+        elif len(lst) == 1:
+            op = "11".ljust(25, "0")
 
         tests.append(op)
 
