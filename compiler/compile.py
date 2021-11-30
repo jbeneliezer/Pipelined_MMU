@@ -38,18 +38,18 @@ with open("program2.txt", "r") as input:
         # li format
         # li imm, offset(rd)
         if instr[0] == "li":
-            op = "0" + format(int(instr[2])%0x8, "b").zfill(3) + format(int(instr[1])%0xFFFF, "b").zfill(16) + format(int(instr[3][1:])%0x1F, "b").zfill(5)
+            op = "0" + format(int(instr[2]) % 0x8, "b").zfill(3) + format(int(instr[1]) % 0xFFFF, "b").zfill(16) + format(int(instr[3][1:]) % 0x1F, "b").zfill(5)
 
         # r4 format
         # op rd, rs1, rs2, rs3
         elif len(instr) == 5:
-            op = ops[instr[0]] + format(int(instr[4][1:])%0x1F, "b").zfill(5) + format(int(instr[3][1:])%0x1F, "b").zfill(5) + format(int(instr[2][1:])%0x1F, "b").zfill(5) + \
-                format(int(instr[1][1:])%0x1F, "b").zfill(5)
+            op = ops[instr[0]] + format(int(instr[4][1:]) % 0x1F, "b").zfill(5) + format(int(instr[3][1:]) % 0x1F, "b").zfill(5) + format(int(instr[2][1:]) % 0x1F, "b").zfill(5) + \
+                format(int(instr[1][1:]) % 0x1F, "b").zfill(5)
 
         # r3 format
         # op rd, rs1, rs2
         elif len(instr) == 4:
-            op = ops[instr[0]] + format(int(instr[3][1:])%0x1F, "b").zfill(5) + format(int(instr[2][1:])%0x1F, "b").zfill(5) + format(int(instr[1][1:])%0x1F, "b").zfill(5)
+            op = ops[instr[0]] + format(int(instr[3][1:]) % 0x1F, "b").zfill(5) + format(int(instr[2][1:]) % 0x1F, "b").zfill(5) + format(int(instr[1][1:]) % 0x1F, "b").zfill(5)
 
         # nop
         elif len(instr) == 1:
