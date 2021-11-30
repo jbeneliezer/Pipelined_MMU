@@ -1,0 +1,64 @@
+li 23, 7(r3)
+li 324, 3(r0)
+li 837492, 4(r1)
+li 832974, 2(r2)
+li 98234, 0(r6)
+li 18298, 6(r23)
+li 234, 5(r15)
+li 23423, 3(r12)
+li 622, 1(r22)
+li 2342, 0(r1)
+li 2342, 0(r3)
+li 25435, 0(r4)
+li 7655, 0(r14)
+li 567, 0(r13)
+li 4, 0(r22)
+li 6767, 2(r22)
+li 5765, 3(r12)
+li 4567, 3(r13)
+li 3456, 0(r16)
+li 4534, 5(r17)
+li 2345, 5(r18)
+li 6757, 0(r9)
+li 4356, 7(r0)
+li 7564, 0(r12)
+li 8675, 1(r11)
+li 1431, 0(r8)
+li 1234, 1(r27)
+li 453, 0(r2)
+li 2324, 1(r15)
+li 834, 4(r15)
+li 9283, 7(r15)
+li 2345, 3(r12)
+li 9823, 2(r19)
+simals r2, r4, r8, r3
+simahs r4, r14, r3, r7
+simsls r2, r1, r0, r5
+simshs r11, r23, r16, r18
+slimals r29, r28, r17, r13
+slimahs r31, r19, r22, r19
+slimsls r20, r30, r10, r10
+slimshs r20, r11, r0, r1
+nop
+ah r3, r4, r5
+ahs r16, r15, r12
+bcw r28, r21, r6
+cgh r9, r24, r25
+clz r26, r27, r2
+max r1, r2, r3
+min r2, r9, r22
+msgn r14, r22, r18
+popcnth r3, r5, r9
+rot r14, r9, r0
+rotw r18, r19, r11
+shlhi r0, r28, r22
+sfh r1, r2, r7
+sfhs r0, r0, r0
+xor r19, r31, r30
+nop
+nop
+nop
+nop
+nop
+nop
+nop

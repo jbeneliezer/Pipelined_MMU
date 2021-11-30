@@ -31,7 +31,7 @@ ops = {
 
 tests = []
 
-with open("program.txt", "r") as input:
+with open("program2.txt", "r") as input:
     data = input.readlines()
     for line in data:
         lst = list(filter(None, (re.split('\W+', line))))
