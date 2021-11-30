@@ -1,9 +1,48 @@
-Active-HDL 11.1.262.7351 2021-11-30 11:19:14
+Active-HDL 11.1.262.7351 2021-11-30 14:00:31
 
 Elaboration top modules:
+Architecture                  bench(MMU_tb)
 
 
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Entity   | Architecture | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------
+MMU_tb   | bench        | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+MMU      | structural   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+IB       | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+IF_ID    | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+RF       | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+ID_EX    | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+FU       | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+ALU      | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+EX_WB    | behavioral   | simd    |      | 11.1.262.7351 (Windows) | -dbg -disable87 -2008
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+VHDL Package            | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------
+standard                | std     |      |                         | <unavailable>
+TEXTIO                  | std     |      |                         | <unavailable>
+std_logic_1164          | ieee    |      |                         | <unavailable>
+data_types              | simd    |      |                         | <unavailable>
+ENV                     | std     |      |                         | <unavailable>
+NUMERIC_STD             | ieee    |      |                         | <unavailable>
+std_logic_arith         | ieee    |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED      | ieee    |      |                         | <unavailable>
+MATH_REAL               | ieee    |      |                         | <unavailable>
+ALU_functions           | simd    |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
 Library                 | Comment
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+ieee                    | Standard IEEE packages library
+simd                    | None
+std                     | Standard VHDL library
+-------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+MMU_tb MMU_tb bench
+
+
+The performance of simulation is reduced. Version Student Edition
