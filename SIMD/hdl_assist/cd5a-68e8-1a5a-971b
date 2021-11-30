@@ -29,7 +29,6 @@ entity EX_WB is
 		 Op : in std_logic_vector(24 downto 0);
 		 Rd: in std_logic_vector(127 downto 0);
 		 write_en: out std_logic;
-		 li: out std_logic;
 		 addr: out std_logic_vector(4 downto 0);
 		 data: out std_logic_vector(127 downto 0)
 	     );
@@ -48,12 +47,7 @@ begin
 				write_en <= '0';
 			else
 				write_en <= '1';
-			end if;
-			if Op(24) = '0' then
-				li <= '1';
-			else
-				li <= '0';
-			end if;
+			end if;	
 			addr <= Op(4 downto 0);
 			data <= Rd;
 		end if;

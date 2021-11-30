@@ -20,22 +20,19 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all; 
-use IEEE.numeric_std.all;
-use IEEE.math_real.all;
+use IEEE.numeric_std.all;  
 use work.data_types.all;
 
 entity RF is
 	port(				  
 		write_en: in std_logic;
-		li: in std_logic;
-		read_addr_0: in std_logic_vector(4 downto 0);
-		read_addr_1: in std_logic_vector(4 downto 0);
-		read_addr_2: in std_logic_vector(4 downto 0); 
+		Op: in std_logic_vector(24 downto 0);
 		write_addr: in std_logic_vector(4 downto 0);
 		write_data: in std_logic_vector(127 downto 0);
 		rs1: out std_logic_vector(127 downto 0);
 		rs2: out std_logic_vector(127 downto 0);
-		rs3: out std_logic_vector(127 downto 0)   
+		rs3: out std_logic_vector(127 downto 0);
+		output_rf: out vec_array(0 to 31)(127 downto 0)
 		);
 end RF;									   
 
@@ -45,20 +42,16 @@ begin
 	variable f: vec_array(0 to 31)(127 downto 0) := (others => z128);
 	begin 
 		while true loop
-			wait until write_en = '1' or li = '1' or read_addr_0'event or read_addr_1'event or read_addr_2'event or
-			write_addr'event or write_data'event;
-			rs1 <= f(to_integer(unsigned(read_addr_0)));
-			rs2 <= f(to_integer(unsigned(read_addr_1)));
-			rs3 <= f(to_integer(unsigned(read_addr_2)));
-			if write_en = '1' then
-				if li = '1' then
-					f(to_integer(unsigned(write_addr))) := f(to_integer(unsigned(write_addr))) or write_data;
-				else
-					f(to_integer(unsigned(write_addr))) := write_data;
-				end if;
-			end if;
+			wait until write_en = '1' or Op'event or write_addr'event or write_data'event;
+			rs1 <= f(to_integer(unsigned(Op(9 downto 5)))) when Op(24) = '1' else f(to_integer(unsigned(Op(4 downto 0))));
+			rs2 <= f(to_integer(unsigned(Op(14 downto 10))));
+			rs3 <= f(to_integer(unsigned(Op(19 downto 15))));
+			if write_en = '1' then	
+				f(to_integer(unsigned(write_addr))) := write_data;	
+			end if;	
+			output_rf <= f;
 		end loop;
-
+				 
 	end process; 	  
 	
 end behavioral;

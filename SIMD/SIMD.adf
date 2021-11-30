@@ -37,7 +37,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=mmu_tb|bench|0
+HierarchyInformation=mmu_tb|bench|0 
 ShowHide=ShowTopLevel
 Selected=
 .\src\FU.vhd=VHDL Source Code
@@ -57,6 +57,33 @@ DisableRangeChecks=0
 ProtectLevel=0
 IncrementalCompilation=0
 AdditionalOptions=
+
+[file_out:/..\..\blocks\ALU.bde]
+/..\compile\ALU.vhd=-1
+
+[file_out:/..\..\blocks\ALU_tb.bde]
+/..\compile\ALU_tb.vhd=-1
+
+[file_out:/..\..\blocks\EX_WB.bde]
+/..\compile\EX_WB.vhd=-1
+
+[file_out:/..\..\blocks\FU.bde]
+/..\compile\FU.vhd=-1
+
+[file_out:/..\..\blocks\IB.bde]
+/..\compile\IB.vhd=-1
+
+[file_out:/..\..\blocks\ID_EX.bde]
+/..\compile\ID_EX.vhd=-1
+
+[file_out:/..\..\blocks\IF_ID.bde]
+/..\compile\IF_ID.vhd=-1
+
+[file_out:/..\..\blocks\MMU_tb.bde]
+/..\compile\MMU_tb.vhd=-1
+
+[file_out:/..\..\blocks\RF.bde]
+/..\compile\RF.vhd=-1
 
 [Files]
 /ALU.vhd=-1
@@ -97,41 +124,4 @@ AdditionalOptions=
 .\src\alu_waveform.awc=Accelerated Waveform Configuration
 .\src\mmu_wave.asdb=Accelerated Waveform File
 .\src\mmu_wave.awc=Accelerated Waveform Configuration
-.\..\blocks\ALU.bde=Block Diagram
-.\..\blocks\ALU_tb.bde=Block Diagram
-.\..\blocks\EX_WB.bde=Block Diagram
-.\..\blocks\FU.bde=Block Diagram
-.\..\blocks\IB.bde=Block Diagram
-.\..\blocks\ID_EX.bde=Block Diagram
-.\..\blocks\IF_ID.bde=Block Diagram
-.\..\blocks\MMU.bde=Block Diagram
-.\..\blocks\MMU_tb.bde=Block Diagram
-.\..\blocks\RF.bde=Block Diagram
-
-[file_out:/..\..\blocks\ALU.bde]
-/..\compile\ALU.vhd=-1
-
-[file_out:/..\..\blocks\ALU_tb.bde]
-/..\compile\ALU_tb.vhd=-1
-
-[file_out:/..\..\blocks\EX_WB.bde]
-/..\compile\EX_WB.vhd=-1
-
-[file_out:/..\..\blocks\FU.bde]
-/..\compile\FU.vhd=-1
-
-[file_out:/..\..\blocks\IB.bde]
-/..\compile\IB.vhd=-1
-
-[file_out:/..\..\blocks\ID_EX.bde]
-/..\compile\ID_EX.vhd=-1
-
-[file_out:/..\..\blocks\IF_ID.bde]
-/..\compile\IF_ID.vhd=-1
-
-[file_out:/..\..\blocks\MMU_tb.bde]
-/..\compile\MMU_tb.vhd=-1
-
-[file_out:/..\..\blocks\RF.bde]
-/..\compile\RF.vhd=-1
 

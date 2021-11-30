@@ -1,4 +1,4 @@
-Active-HDL 11.1.262.7351 2021-11-30 14:00:31
+Active-HDL 11.1.262.7351 2021-11-30 17:39:04
 
 Elaboration top modules:
 Architecture                  bench(MMU_tb)
@@ -29,7 +29,6 @@ ENV                     | std     |      |                         | <unavailabl
 NUMERIC_STD             | ieee    |      |                         | <unavailable>
 std_logic_arith         | ieee    |      |                         | <unavailable>
 STD_LOGIC_UNSIGNED      | ieee    |      |                         | <unavailable>
-MATH_REAL               | ieee    |      |                         | <unavailable>
 ALU_functions           | simd    |      |                         | <unavailable>
 -------------------------------------------------------------------------------------------
 
@@ -40,9 +39,3 @@ ieee                    | Standard IEEE packages library
 simd                    | None
 std                     | Standard VHDL library
 -------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+MMU_tb MMU_tb bench
-
-
-The performance of simulation is reduced. Version Student Edition

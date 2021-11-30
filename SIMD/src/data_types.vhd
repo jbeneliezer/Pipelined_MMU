@@ -52,7 +52,6 @@ package data_types is
 		instr1: std_logic_vector(24 downto 0); 
 		rf_out: vec_array(0 to 2)(127 downto 0);
 		write_en: std_logic;
-		li: std_logic;
 		write_data: std_logic_vector(127 downto 0); 
 		write_addr: std_logic_vector(4 downto 0);
 		

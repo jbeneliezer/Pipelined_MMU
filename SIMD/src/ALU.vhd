@@ -41,7 +41,7 @@ begin
 	begin
 		case? (Op) is
 			when "0------------------------" =>		-- LI  
-				l_tmp := z128;
+				l_tmp := rs1;
 				case (op(23 downto 21)) is
 					when "000" => l_tmp(15 downto 0) := Op(20 downto 5);			   						-- set the specied range of r to immediate
 					when "001" => l_tmp(31 downto 16) := Op(20 downto 5);
