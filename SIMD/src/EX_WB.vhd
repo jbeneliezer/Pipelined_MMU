@@ -26,20 +26,36 @@ entity EX_WB is
 	 port(
 		 clk : in std_logic;
 		 rst : in std_logic;
-		 D : in std_logic_vector(127 downto 0);
-		 Q: out std_logic_vector(127 downto 0)
+		 Op : in std_logic_vector(24 downto 0);
+		 Rd: in std_logic_vector(127 downto 0);
+		 write_en: out std_logic;
+		 li: out std_logic;
+		 addr: out std_logic_vector(4 downto 0);
+		 data: out std_logic_vector(127 downto 0)
 	     );
 end EX_WB;									
 
 architecture behavioral of EX_WB is
-begin
-	
-	process(clk, rst)
-	begin
+begin	
+	process(rst, clk)
+	begin 
 		if rst = '1' then
-			Q <= z128;  	-- reset
-		elsif rising_edge(clk) then
-			Q <= D;					-- set
+			write_en <= '0';
+			addr <= "00000";
+			data <= z128;
+		elsif clk = '1' then
+			if Op = nop then
+				write_en <= '0';
+			else
+				write_en <= '1';
+			end if;
+			if Op(24) = '0' then
+				li <= '1';
+			else
+				li <= '0';
+			end if;
+			addr <= Op(4 downto 0);
+			data <= Rd;
 		end if;
 	end process;
 

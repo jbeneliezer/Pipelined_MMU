@@ -37,7 +37,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=alu_tb|ALU_tb|0    
+HierarchyInformation=mmu_tb|bench|0        
 ShowHide=ShowTopLevel
 Selected=
 .\src\FU.vhd=VHDL Source Code
@@ -75,6 +75,8 @@ AdditionalOptions=
 /ALU_tb.vhd=-1
 /alu_waveform.asdb=-1
 /alu_waveform.awc=-1
+/mmu_wave.asdb=-1
+/mmu_wave.awc=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
@@ -94,3 +96,5 @@ AdditionalOptions=
 .\src\ALU_tb.vhd=VHDL Source Code
 .\src\alu_waveform.asdb=Accelerated Waveform File
 .\src\alu_waveform.awc=Accelerated Waveform Configuration
+.\src\mmu_wave.asdb=Accelerated Waveform File
+.\src\mmu_wave.awc=Accelerated Waveform Configuration

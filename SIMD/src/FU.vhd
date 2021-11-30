@@ -24,28 +24,37 @@ use IEEE.numeric_std.all;
 use work.data_types.all;
 
 entity FU is
-	port( 
+	port(
 		Op: in std_logic_vector(24 downto 0);
-		rs1: out std_logic_vector(4 downto 0);
-		rs2: out std_logic_vector(4 downto 0);
-		rs3: out std_logic_vector(4 downto 0);
-		Op_out: out std_logic_vector(24 downto 0)
+		addr: in std_logic_vector(4 downto 0);
+		write_data: in std_logic_vector(127 downto 0);
+		rs_in: in vec_array(0 to 2)(127 downto 0);
+		rs_out: out vec_array(0 to 2)(127 downto 0)
 		);
 end FU;
 
-architecture behavioral of FU is	    
+architecture behavioral of FU is
 begin
-	process(Op)
-	begin 
-		if (Op(24) = '0') then
-			null;
+	process (all)
+	begin
+		if Op(24) = '0' or Op = nop then
+			rs_out <= rs_in;
 		else
-			if (Op(23) = '0') then
-				rs3 <= Op(19 downto 15);
-			end if;	 
-			rs2 <= Op(14 downto 10);
-			rs1 <= Op(9 downto 5);
+			if addr = Op(9 downto 5) then
+				rs_out(0) <= write_data;
+			else
+				rs_out(0) <= rs_in(0);
+			end if;
+			if addr = Op(14 downto 10) then
+				rs_out(1) <= write_data;
+			else
+				rs_out(1) <= rs_in(1);
+			end if;
+			if addr = Op(19 downto 15) then
+				rs_out(2) <= write_data;
+			else
+				rs_out(2) <= rs_in(2);
+			end if;
 		end if;
-		Op_out <= Op;
 	end	process;  
 end behavioral;

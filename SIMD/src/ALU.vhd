@@ -22,34 +22,38 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.ALU_functions.all;
+use work.data_types.all;
 
 entity ALU is
 	port(					
-		Op : in STD_LOGIC_VECTOR(24 downto 0);
-		rs1 : in STD_LOGIC_VECTOR(127 downto 0);
-		rs2 : in STD_LOGIC_VECTOR(127 downto 0);
-		rs3 : in STD_LOGIC_VECTOR(127 downto 0);
-		Rd : out STD_LOGIC_VECTOR(127 downto 0)
+		Op : in std_logic_vector(24 downto 0);
+		rs1 : in std_logic_vector(127 downto 0);
+		rs2 : in std_logic_vector(127 downto 0);
+		rs3 : in std_logic_vector(127 downto 0);
+		Rd : out std_logic_vector(127 downto 0)
 		);
 end ALU;
 
-architecture behavioral of ALU is
+architecture behavioral of ALU is							  
 begin  		
-	process(all)
+	process(all)		
+		variable l_tmp : std_logic_vector(127 downto 0) := z128;
 	begin
 		case? (Op) is
-			when "0------------------------" =>		-- LI
+			when "0------------------------" =>		-- LI  
+				l_tmp := z128;
 				case (op(23 downto 21)) is
-					when "000" => Rd(15 downto 0) <= Op(20 downto 5);			   						-- set the specied range of r to immediate
-					when "001" => Rd(31 downto 16) <= Op(20 downto 5);
-					when "010" => Rd(47 downto 32) <= Op(20 downto 5);
-					when "011" => Rd(63 downto 48) <= Op(20 downto 5);
-					when "100" => Rd(79 downto 64) <= Op(20 downto 5);
-					when "101" => Rd(95 downto 80) <= Op(20 downto 5);
-					when "110" => Rd(111 downto 96) <= Op(20 downto 5);
-					when "111" => Rd(127 downto 112) <= Op(20 downto 5);
+					when "000" => l_tmp(15 downto 0) := Op(20 downto 5);			   						-- set the specied range of r to immediate
+					when "001" => l_tmp(31 downto 16) := Op(20 downto 5);
+					when "010" => l_tmp(47 downto 32) := Op(20 downto 5);
+					when "011" => l_tmp(63 downto 48) := Op(20 downto 5);
+					when "100" => l_tmp(79 downto 64) := Op(20 downto 5);
+					when "101" => l_tmp(95 downto 80) := Op(20 downto 5);
+					when "110" => l_tmp(111 downto 96) := Op(20 downto 5);
+					when "111" => l_tmp(127 downto 112) := Op(20 downto 5);
 					when others => null;
 			    end case;
+				Rd <= l_tmp;
 			when "10000--------------------" =>		-- SIMALS
 				Rd(31 downto 0) <= MULT_ADD_I(rs3(15 downto 0), rs2(15 downto 0), rs1(31 downto 0));
 				Rd(63 downto 32) <= MULT_ADD_I(rs3(47 downto 32), rs2(47 downto 32), rs1(63 downto 32));
@@ -83,7 +87,7 @@ begin
 				Rd(63 downto 0) <= MULT_SUB_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
 			    Rd(127 downto 64) <= MULT_SUB_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
 			when "11----0000---------------" => 	-- NOP
-				null;
+				Rd <= z128;
 			when "11----0001---------------" =>   	-- AH  
 				Rd(15 downto 0) <= std_logic_vector(unsigned(rs1(15 downto 0)) + unsigned(rs2(15 downto 0)));
 				Rd(31 downto 16) <= std_logic_vector(unsigned(rs1(31 downto 16)) + unsigned(rs2(31 downto 16)));
@@ -181,18 +185,18 @@ begin
 				Rd <= std_logic_vector(rotate_right(unsigned(rs1), to_integer(unsigned(rs2(6 downto 0)))));
 			when "11----1011---------------" =>		-- ROTW
 				Rd(31 downto 0) <= std_logic_vector(rotate_right(unsigned(rs1(31 downto 0)), to_integer(unsigned(rs2(4 downto 0)))));
-				Rd(63 downto 32) <= std_logic_vector(rotate_right(unsigned(rs1(63 downto 32)), to_integer(unsigned(rs2(4 downto 0)))));
-				Rd(95 downto 64) <= std_logic_vector(rotate_right(unsigned(rs1(95 downto 64)), to_integer(unsigned(rs2(4 downto 0)))));
-			    Rd(127 downto 96) <= std_logic_vector(rotate_right(unsigned(rs1(127 downto 96)), to_integer(unsigned(rs2(4 downto 0)))));		
+				Rd(63 downto 32) <= std_logic_vector(rotate_right(unsigned(rs1(63 downto 32)), to_integer(unsigned(rs2(36 downto 32)))));
+				Rd(95 downto 64) <= std_logic_vector(rotate_right(unsigned(rs1(95 downto 64)), to_integer(unsigned(rs2(68 downto 64)))));
+			    Rd(127 downto 96) <= std_logic_vector(rotate_right(unsigned(rs1(127 downto 96)), to_integer(unsigned(rs2(100 downto 96)))));		
 			when "11----1100---------------" =>		-- SHLHI  		 
-				Rd(15 downto 0) <= std_logic_vector(shift_left(unsigned(rs1(15 downto 0)), to_integer(unsigned(rs2(3 downto 0)))));
-				Rd(31 downto 16) <= std_logic_vector(shift_left(unsigned(rs1(31 downto 16)), to_integer(unsigned(rs2(3 downto 0)))));
-				Rd(47 downto 32) <= std_logic_vector(shift_left(unsigned(rs1(47 downto 32)), to_integer(unsigned(rs2(3 downto 0)))));
-				Rd(63 downto 48) <= std_logic_vector(shift_left(unsigned(rs1(63 downto 48)), to_integer(unsigned(rs2(3 downto 0)))));
-				Rd(79 downto 64) <= std_logic_vector(shift_left(unsigned(rs1(79 downto 64)), to_integer(unsigned(rs2(3 downto 0)))));
-				Rd(95 downto 80) <= std_logic_vector(shift_left(unsigned(rs1(95 downto 80)), to_integer(unsigned(rs2(3 downto 0)))));
-				Rd(111 downto 96) <= std_logic_vector(shift_left(unsigned(rs1(111 downto 96)), to_integer(unsigned(rs2(3 downto 0)))));
-				Rd(127 downto 112) <= std_logic_vector(shift_left(unsigned(rs1(127 downto 112)), to_integer(unsigned(rs2(3 downto 0)))));																							   
+				Rd(15 downto 0) <= std_logic_vector(shift_left(unsigned(rs1(15 downto 0)), to_integer(unsigned(Op(13 downto 10)))));
+				Rd(31 downto 16) <= std_logic_vector(shift_left(unsigned(rs1(31 downto 16)), to_integer(unsigned(Op(13 downto 10)))));
+				Rd(47 downto 32) <= std_logic_vector(shift_left(unsigned(rs1(47 downto 32)), to_integer(unsigned(Op(13 downto 10)))));
+				Rd(63 downto 48) <= std_logic_vector(shift_left(unsigned(rs1(63 downto 48)), to_integer(unsigned(Op(13 downto 10)))));
+				Rd(79 downto 64) <= std_logic_vector(shift_left(unsigned(rs1(79 downto 64)), to_integer(unsigned(Op(13 downto 10)))));
+				Rd(95 downto 80) <= std_logic_vector(shift_left(unsigned(rs1(95 downto 80)), to_integer(unsigned(Op(13 downto 10)))));
+				Rd(111 downto 96) <= std_logic_vector(shift_left(unsigned(rs1(111 downto 96)), to_integer(unsigned(Op(13 downto 10)))));
+				Rd(127 downto 112) <= std_logic_vector(shift_left(unsigned(rs1(127 downto 112)), to_integer(unsigned(Op(13 downto 10)))));																							   
 			when "11----1101---------------" =>		-- SFH
 				Rd(15 downto 0) <= std_logic_vector(unsigned(rs2(15 downto 0)) - unsigned(rs1(15 downto 0)));
 				Rd(31 downto 16) <= std_logic_vector(unsigned(rs2(31 downto 16)) - unsigned(rs1(31 downto 16)));
@@ -213,7 +217,7 @@ begin
 				Rd(127 downto 112) <= SAT(not rs1(127), rs2(127), std_logic_vector(signed(rs2(127 downto 112)) - signed(rs1(127 downto 112))));
 			when "11----1111---------------" =>		-- XOR
 				Rd <= rs1 xor rs2;
-			when others => null;
+			when others => Rd <= z128;
 		end case?;
 	end process;
 end behavioral;

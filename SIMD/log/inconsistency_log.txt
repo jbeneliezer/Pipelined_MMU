@@ -1,10 +1,19 @@
-Repaired file: C:/My_Designs/SIMD/blocks/MMU.bde:
+Repaired file: C:/Users/jb/Documents/repos/SIMD/blocks/MMU.bde:
 
 ____________________________________________________________________________________________________
-Repaired inconsistent taps:
-	net id=28
-	net id=29
-	net id=30
-	net id=31
-	net id=32
+Repaired legacy connectivity issues:
+	
+
+____________________________________________________________________________________________________
+Repaired legacy complex bus taps:
+	net fu_in(0)
+	net fu_in(0)(7:0)
+	net fu_in(1)
+	net fu_in(1)(7:0)
+	net fu_in(2)
+	net fu_in(2)(7:0)
+
+____________________________________________________________________________________________________
+Recreated missing compound bus sub-nets:
+	instr2,fu_in(0),fu_in(1),fu_in(2)
 

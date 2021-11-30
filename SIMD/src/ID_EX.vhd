@@ -18,10 +18,6 @@
 --
 -------------------------------------------------------------------------------
 
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {ID_EX} architecture {behavioral}}
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 use work.data_types.all;
@@ -37,12 +33,12 @@ end ID_EX;
 
 architecture behavioral of ID_EX is
 begin
-	process(clk, rst)
-	begin
+	process(rst, clk)
+	begin 
 		if rst = '1' then
-			Q <= idex_clr;  	-- reset
-		elsif rising_edge(clk) then
-			Q <= D;					-- set
+			Q <= idex_clr;  	-- reset 
+		elsif clk = '1' then
+			Q <= D;				-- set
 		end if;
 	end process;
 

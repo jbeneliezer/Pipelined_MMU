@@ -42,6 +42,31 @@ package data_types is
 		Rd	:	std_logic_vector(127 downto 0);
 	end record test;
 	
+	type result is record
+		PC: std_logic_vector(5 downto 0);
+		
+		-- IB Signals 
+		instr0: std_logic_vector(24 downto 0);
+		
+		-- RF Signals
+		instr1: std_logic_vector(24 downto 0); 
+		rf_out: vec_array(0 to 2)(127 downto 0);
+		write_en: std_logic;
+		li: std_logic;
+		write_data: std_logic_vector(127 downto 0); 
+		write_addr: std_logic_vector(4 downto 0);
+		
+		-- FU Signals
+		instr2: std_logic_vector(24 downto 0);
+		fu_in: vec_array(0 to 2)(127 downto 0);
+		
+		-- ALU Signals
+		alu_in: vec_array(0 to 2)(127 downto 0);
+		alu_out: std_logic_vector(127 downto 0);
+	end record result;
+	
+	type results is array(natural range<>) of result;
+	
 	constant z128: std_logic_vector(127 downto 0) := (others => '0');
 	
 	constant nop: std_logic_vector(24 downto 0) := "1100000000000000000000000";

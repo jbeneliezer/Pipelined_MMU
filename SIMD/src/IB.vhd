@@ -23,24 +23,24 @@ use IEEE.numeric_std.all;
 use work.data_types.all;
 
 entity IB is
-	 port(
-		 clk : in std_logic;
+	 port(			 
 		 rst: in std_logic;
-		 index: std_logic_vector(5 downto 0);
-		 instruction_in: in vec_array(0 to 63)(24 downto 0);
+		 index: in std_logic_vector(5 downto 0);
+		 program: in vec_array(0 to 63)(24 downto 0);
 		 instruction_out: out std_logic_vector(24 downto 0)
 	     );
 end IB;
 
 architecture behavioral of IB is
-	signal f: vec_array(0 to 63)(24 downto 0);
+	signal f: vec_array(0 to 63)(24 downto 0) := (others => nop);
 begin
-	process(clk, rst)
+	reset: process(rst)
 	begin
 		if rst = '1' then
-			f <= instruction_in;
-		elsif rising_edge(clk) then
-			instruction_out <= instruction_in(to_integer(unsigned(index)));
+			f <= program;
 		end if;
-	end process; 
+	end process;
+
+	instruction_out <= f(to_integer(unsigned(index)));
+
 end behavioral;

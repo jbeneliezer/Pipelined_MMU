@@ -26,19 +26,21 @@ entity IF_ID is
 	port(
 		clk: in std_logic;
 		rst: in std_logic;
-		instruction_in: in std_logic_vector(24 downto 0);
-		instruction_out: out std_logic_vector(24 downto 0)
+		D: in std_logic_vector(24 downto 0);
+		Q: out std_logic_vector(24 downto 0)
 		);
 end IF_ID;
 
 architecture behavioral of IF_ID is
+signal buf: std_logic_vector(24 downto 0);
 begin
-	process(clk, rst)
+
+	process(rst, clk)
 	begin
-		if rst = '1' then
-			instruction_out <= nop;  	-- reset
-		elsif rising_edge(clk) then
-			instruction_out <= instruction_in;		
+		if rst = '1' then        
+			Q <= nop;  	 -- reset
+		elsif clk = '1' then
+			Q <= D;		-- set
 		end if;
 	end process;
 
