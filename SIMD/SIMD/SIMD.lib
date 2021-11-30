@@ -1,13 +1,13 @@
-timestamp=1638294241759
+timestamp=1638297056515
 
 [~A]
-ModifyID=406
+ModifyID=427
 Version=74
 
 [~MFT]
 0=22|0SIMD.mgf|614163|563962
 1=22|1SIMD.mgf|3002218|2953955
-2=0|2SIMD.mgf|17501|0
+2=7|2SIMD.mgf|33209|0
 3=22|3SIMD.mgf|1507063|1488283
 
 [alu]
@@ -74,6 +74,27 @@ NSymbols/fu=NSymbols/FU 40|0|2*0
 R=../src/FU.vhd|26
 Version=11.1.262.7351 (Windows)|00000015789cd34d494a57d04dc92c4e4cca49b53057d0353230b0000047d40602|1b8e469ebe427e3f3be0cf103bc7c626d1b5079edaa0ad6acb215ea964ecbc68
 Version/behavioral=11.1.262.7351 (Windows)|00000015789cd34d494a57d04dc92c4e4cca49b53057d0353230b0000047d40602|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4b0cb2ba57b157f95e3a44f3ec3c4434b
+
+[fub1]
+NSymbols/fub1=NSymbols/Fub1 40|0|2*19522
+
+[fub2]
+NSymbols/fub2=NSymbols/Fub2 40|0|2*21775
+
+[fub3]
+NSymbols/fub3=NSymbols/Fub3 40|0|2*23649
+
+[fub4]
+NSymbols/fub4=NSymbols/Fub4 40|0|2*26279
+
+[fub5]
+NSymbols/fub5=NSymbols/Fub5 40|0|2*28629
+
+[fub6]
+NSymbols/fub6=NSymbols/Fub6 40|0|2*31654
+
+[fub7]
+NSymbols/fub7=NSymbols/Fub7 40|0|2*33209
 
 [ib]
 A/behavioral=21|../src/IB.vhd|34|1*3000550
@@ -212,6 +233,13 @@ alu_tb=ALU_tb 11|0*608726|
 data_types=3|0*298235|0*298611
 ex_wb=EX_WB 11|0*605438||0x3
 fu=FU 11|0*593973||0x3
+fub1=Fub1 11|||0x7
+fub2=Fub2 11|||0x7
+fub3=Fub3 11|||0x7
+fub4=Fub4 11|||0x7
+fub5=Fub5 11|||0x7
+fub6=Fub6 11|||0x7
+fub7=Fub7 11|||0x7
 ib=IB 11|0*607120||0x3
 id_ex=ID_EX 11|0*604099||0x3
 if_id=IF_ID 11|0*598097||0x3
