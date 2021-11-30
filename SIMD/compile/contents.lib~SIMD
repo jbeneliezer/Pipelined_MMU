@@ -1,4 +1,4 @@
-365
+406
 ~E 1 "../src/ALU.vhd" 27 ALU
 ~A 1 "../src/ALU.vhd" 37 behavioral
 ~E 1 "../src/ALU_tb.vhd" 27 ALU_tb
@@ -9,7 +9,7 @@
 ~A 1 "../src/FU.vhd" 36 behavioral
 ~E 1 "../src/IB.vhd" 25 IB
 ~A 1 "../src/IB.vhd" 34 behavioral
-~E 1 "../src/ID_EX.vhd" 29 ID_EX
+~E 1 "../src/ID_EX.vhd" 25 ID_EX
 ~A 1 "../src/ID_EX.vhd" 34 behavioral
 ~E 1 "../src/IF_ID.vhd" 25 IF_ID
 ~A 1 "../src/IF_ID.vhd" 34 behavioral

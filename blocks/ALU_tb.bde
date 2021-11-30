@@ -1,0 +1,452 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 37
+ VARIABLES
+ {
+  #ARCHITECTURE="ALU_tb"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"result\"><left=\"127\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="ALU_tb"
+  #LANGUAGE="VHDL"
+  AUTHOR="Judah Ben-Eliezer"
+  COMPANY="Stony Brook University"
+  CREATIONDATE="11/30/2021"
+  SOURCE="..\\src\\ALU_tb.vhd"
+ }
+ SYMBOL "simd" "ALU" "ALU"
+ {
+  HEADER
+  {
+   VARIABLES
+   {
+    #CUSTOM_NAME=""
+    #DESCRIPTION=""
+    #HDL_ENTRIES=
+"library IEEE;\n"+
+"use ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1619476514"
+    #NAME="ALU"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="614a905a-8bd3-4c9c-b204-9b2ed1a8481d"
+   }
+  }
+  PAGE "" 
+  {
+   PAGEHEADER
+   {
+    RECT (0,0,240,200)
+    FREEID 12
+   }
+   
+   BODY
+   {
+    RECT  1, -1, 0
+    {
+     VARIABLES
+     {
+      #OUTLINE_FILLING="1"
+     }
+     AREA (20,0,220,200)
+    }
+    TEXT  3, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,28,103,52)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 2
+    }
+    TEXT  5, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,68,115,92)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 4
+    }
+    TEXT  7, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,108,115,132)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 6
+    }
+    TEXT  9, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,148,115,172)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 8
+    }
+    TEXT  11, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (127,28,215,52)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 10
+    }
+    PIN  2, 0, 0
+    {
+     COORD (0,40)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #NAME="Op(24:0)"
+      #SIDE="left"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  4, 0, 0
+    {
+     COORD (0,80)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #NAME="rs1(127:0)"
+      #SIDE="left"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  6, 0, 0
+    {
+     COORD (0,120)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #NAME="rs2(127:0)"
+      #SIDE="left"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  8, 0, 0
+    {
+     COORD (0,160)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #NAME="rs3(127:0)"
+      #SIDE="left"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  10, 0, 0
+    {
+     COORD (240,40)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #LENGTH="20"
+      #NAME="Rd(127:0)"
+      #SIDE="right"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (0,0), (-20,0) )
+     }
+    }
+   }
+  }
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library simd;\n"+
+"use simd.data_types.all;\n"+
+"use std.TEXTIO.all;\n"+
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.NUMERIC_STD.all;"
+   RECT (220,260,620,571)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "read_file"
+   TEXT 
+"read_file : process\n"+
+"                         file input : text;\n"+
+"                         variable row : line;\n"+
+"                         variable test_input : test;\n"+
+"                         variable space : character;\n"+
+"                       begin\n"+
+"                         FILE_OPEN(input,\"stimulus.txt\",read_mode);\n"+
+"                         while not endfile(input) loop\n"+
+"                             READLINE(input,row);\n"+
+"                             READ(row,test_input.Op);\n"+
+"                             READ(row,space);\n"+
+"                             READ(row,test_input.rs1);\n"+
+"                             READ(row,space);\n"+
+"                             READ(row,test_input.rs2);\n"+
+"                             READ(row,space);\n"+
+"                             READ(row,test_input.rs3);\n"+
+"                             READ(row,space);\n"+
+"                             READ(row,test_input.Rd);\n"+
+"                             current_test <= test_input;\n"+
+"                             wait for 20 ns;\n"+
+"                         end loop;\n"+
+"                         FILE_CLOSE(input);\n"+
+"                         wait;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (760,500,1161,900)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  13 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+  }
+  PROCESS  3, 0, 0
+  {
+   LABEL "verify"
+   TEXT 
+"verify : process (result)\n"+
+"                       begin\n"+
+"                         assert (result = current_test.Rd) report \"Error for input \" & to_string(current_test.Op) severity error;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1260,260,1661,480)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  17, 22 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  22 )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="ALU"
+    #CUSTOM_NAME=""
+    #LIBRARY="simd"
+    #REFERENCE="uut"
+    #SYMBOL="ALU"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="614a905a-8bd3-4c9c-b204-9b2ed1a8481d"
+   }
+   COORD (760,240)
+   VERTEXES ( (10,21), (2,24), (4,27), (6,30), (8,33) )
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (760,240,760,240)
+   ALIGN 8
+   PARENT 4
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#COMPONENT"
+   RECT (760,440,760,440)
+   PARENT 4
+  }
+  NET BUS  7, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="current_test.Op(24:0)"
+   }
+  }
+  NET BUS  8, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="current_test.rs1(127:0)"
+   }
+  }
+  NET BUS  9, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="current_test.rs2(127:0)"
+   }
+  }
+  NET BUS  10, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="current_test.rs3(127:0)"
+   }
+  }
+  NET RECORD  11, 0, 0
+  {
+   VARIABLES
+   {
+    #MDA_RECORD_TOKEN="RECORD"
+    #NAME="current_test"
+    #VHDL_TYPE="test"
+   }
+  }
+  NET BUS  12, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="result(127:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  13, 0, 0
+  {
+   COORD (1161,520)
+  }
+  VTX  14, 0, 0
+  {
+   COORD (1240,520)
+  }
+  RECORD  15, 0, 0
+  {
+   NET 11
+   VTX 13, 14
+  }
+  TEXT  16, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1200,520,1200,520)
+   ALIGN 9
+   PARENT 15
+  }
+  VTX  17, 0, 0
+  {
+   COORD (1260,320)
+  }
+  VTX  18, 0, 0
+  {
+   COORD (1240,320)
+  }
+  RECORD  19, 0, 0
+  {
+   NET 11
+   VTX 17, 18
+  }
+  TEXT  20, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1250,320,1250,320)
+   ALIGN 9
+   PARENT 19
+  }
+  VTX  21, 0, 0
+  {
+   COORD (1000,280)
+  }
+  VTX  22, 0, 0
+  {
+   COORD (1260,280)
+  }
+  BUS  23, 0, 0
+  {
+   NET 12
+   VTX 21, 22
+  }
+  VTX  24, 0, 0
+  {
+   COORD (760,280)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (740,280)
+  }
+  BUS  26, 0, 0
+  {
+   NET 7
+   VTX 24, 25
+  }
+  VTX  27, 0, 0
+  {
+   COORD (760,320)
+  }
+  VTX  28, 0, 0
+  {
+   COORD (740,320)
+  }
+  BUS  29, 0, 0
+  {
+   NET 8
+   VTX 27, 28
+  }
+  VTX  30, 0, 0
+  {
+   COORD (760,360)
+  }
+  VTX  31, 0, 0
+  {
+   COORD (740,360)
+  }
+  BUS  32, 0, 0
+  {
+   NET 9
+   VTX 30, 31
+  }
+  VTX  33, 0, 0
+  {
+   COORD (760,400)
+  }
+  VTX  34, 0, 0
+  {
+   COORD (740,400)
+  }
+  BUS  35, 0, 0
+  {
+   NET 10
+   VTX 33, 34
+  }
+  RECORD  36, 0, 0
+  {
+   NET 11
+   VTX 18, 14
+  }
+ }
+ 
+}
+

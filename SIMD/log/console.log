@@ -1,0 +1,71 @@
+# ELBREAD: Elaboration process.
+# ULM: Warning: ULM_0021 Architecture `bench' of entity `simd.mmu_tb' is not up-to-date. Please recompile file `C:\Users\jb\Documents\repos\SIMD/blocks/MMU_tb.bde'.
+# ELBREAD: Error: Architecture 'bench' of entity 'MMU_tb' not found in library 'simd'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: Fatal diagram consistency problem caused by Net ( Name: instr2,fu_in(0),fu_in(1),fu_in(2) ) with item id of 83.
+# Warning: Diagram structure inconsistencies encountered when opening "C:/Users/jb/Documents/repos/SIMD/blocks/MMU.bde".
+# Warning: Inconsistencies have been removed during loading and file has been marked as modified.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IF_ID.vhd
+# Compile Entity "IF_ID"
+# Compile Architecture "behavioral" of Entity "IF_ID"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ID_EX.vhd
+# Compile Entity "ID_EX"
+# Compile Architecture "behavioral" of Entity "ID_EX"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/EX_WB.vhd
+# Compile Entity "EX_WB"
+# Compile Architecture "behavioral" of Entity "EX_WB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Warning: The synthesis tool has not been selected.
+# Warning: Use 'Flow Configuration Settings' option to specify this tool.
+# Warning: The synthesis tool has not been selected.
+# BDE: Error: Document not in current design.
+# BDE: Error: Document not in current design.
+# BDE: Error: Document not in current design.
+# BDE: Error: Document not in current design.
+acom -dbg -e 100 -work SIMD -disable87 -2008  $dsn/src/ALU.vhd $dsn/src/ALU_functions.vhd $dsn/src/data_types.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/RF.vhd $dsn/src/IF_ID.vhd $dsn/src/MMU_tb.vhd $dsn/src/ID_EX.vhd $dsn/src/EX_WB.vhd $dsn/src/IB.vhd $dsn/src/ALU_tb.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/s

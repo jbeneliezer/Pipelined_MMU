@@ -14,7 +14,7 @@
 --
 -------------------------------------------------------------------------------
 --
--- Description : 
+-- Description : Testbench for MMU
 --
 -------------------------------------------------------------------------------
 
@@ -46,8 +46,7 @@ constant program_size: integer := 64;
 	signal rst: std_logic; 
 	signal input: vec_array(0 to 63)(24 downto 0);
 	signal output: result;
-	signal outputs: results(0 to 63);
-	signal state: vec_array(0 to 31)(127 downto 0);
+	signal outputs: results(0 to 63);			   
 begin
 	
 	uut: MMU port map (clk => clk, rst => rst, input => input, output => output);

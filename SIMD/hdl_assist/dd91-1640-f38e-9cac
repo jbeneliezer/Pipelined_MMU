@@ -124,8 +124,7 @@ architecture structural of MMU is
 	signal write_en: std_logic := '0';
 	signal li: std_logic := '0';
 	signal write_data: std_logic_vector(127 downto 0); 
-	signal write_addr: std_logic_vector(4 downto 0);
-	signal tmp_state: vec_array(0 to 31)(127 downto 0);
+	signal write_addr: std_logic_vector(4 downto 0);   
 	
 	-- FU Signals
 	signal instr2: std_logic_vector(24 downto 0);

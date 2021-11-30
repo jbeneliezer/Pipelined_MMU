@@ -1,0 +1,368 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 46
+ VARIABLES
+ {
+  #ARCHITECTURE="behavioral"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"f\"><left=\"0\"><direction=\"to\"><right=\"63\"><initial_value=\"(others => nop)\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"index\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"instruction_out\"><left=\"24\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"program\"><left=\"0\"><direction=\"to\"><right=\"63\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="IB"
+  #LANGUAGE="VHDL"
+  AUTHOR="Judah Ben-Eliezer"
+  COMPANY="Stony Brook University"
+  CREATIONDATE="11/30/2021"
+  SOURCE="..\\src\\IB.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2531,1210)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library simd;\n"+
+"use simd.data_types.all;\n"+
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;\n"+
+"use ieee.NUMERIC_STD.all;"
+   RECT (220,260,620,538)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  2, 0, 0
+  {
+   LABEL "block_44"
+   TEXT "instruction_out <= f(to_integer(unsigned(index)));"
+   RECT (1560,240,1961,340)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  18, 25, 28 )
+  }
+  PROCESS  3, 0, 0
+  {
+   LABEL "reset"
+   TEXT 
+"reset : process (rst)\n"+
+"                       begin\n"+
+"                         if rst = '1' then\n"+
+"                            f <= program;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1060,240,1461,520)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  21, 34, 38 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  38 )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rst"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (920,260)
+   VERTEXES ( (2,39) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="index(5:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (920,580)
+   VERTEXES ( (2,31) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #DECLARATION="(0:63)"
+    #LIBRARY="#terminals"
+    #MDA_BASE_TYPE="STD_LOGIC_VECTOR"
+    #MDA_KIND="UNCONSTR"
+    #MDA_RECORD_TOKEN="MDA"
+    #REFERENCE="program"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="vec_array"
+   }
+   COORD (920,300)
+   VERTEXES ( (2,35) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="instruction_out(24:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (2060,260)
+   VERTEXES ( (2,19) )
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (869,260,869,260)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (869,580,869,580)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (869,300,869,300)
+   ALIGN 6
+   PARENT 6
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2111,260,2111,260)
+   ALIGN 4
+   PARENT 7
+  }
+  NET MDARRAY  12, 0, 0
+  {
+   VARIABLES
+   {
+    #DECLARATION="(0:63)"
+    #INITIAL_VALUE="(others => nop)"
+    #MDA_BASE_TYPE="STD_LOGIC_VECTOR"
+    #MDA_KIND="UNCONSTR"
+    #MDA_RECORD_TOKEN="MDA"
+    #NAME="f"
+    #VHDL_TYPE="vec_array"
+   }
+  }
+  NET BUS  13, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="(others => nop)"
+    #NAME="f(to_integer(unsigned(index)))(7:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="index(5:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  15, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="instruction_out(24:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET MDARRAY  16, 0, 0
+  {
+   VARIABLES
+   {
+    #DECLARATION="(0:63)"
+    #MDA_BASE_TYPE="STD_LOGIC_VECTOR"
+    #MDA_KIND="UNCONSTR"
+    #MDA_RECORD_TOKEN="MDA"
+    #NAME="program"
+    #VHDL_TYPE="vec_array"
+   }
+  }
+  NET WIRE  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rst"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  VTX  18, 0, 0
+  {
+   COORD (1961,260)
+  }
+  VTX  19, 0, 0
+  {
+   COORD (2060,260)
+  }
+  BUS  20, 0, 0
+  {
+   NET 15
+   VTX 18, 19
+  }
+  VTX  21, 0, 0
+  {
+   COORD (1461,260)
+  }
+  VTX  22, 0, 0
+  {
+   COORD (1540,260)
+  }
+  MDARRAY  23, 0, 0
+  {
+   NET 12
+   VTX 21, 22
+  }
+  TEXT  24, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1500,260,1500,260)
+   ALIGN 9
+   PARENT 23
+  }
+  VTX  25, 0, 0
+  {
+   COORD (1560,260)
+  }
+  VTX  26, 0, 0
+  {
+   COORD (1540,260)
+  }
+  BUS  27, 0, 0
+  {
+   NET 13
+   VTX 25, 26
+  }
+  VTX  28, 0, 0
+  {
+   COORD (1560,300)
+  }
+  VTX  29, 0, 0
+  {
+   COORD (1540,300)
+  }
+  BUS  30, 0, 0
+  {
+   NET 14
+   VTX 28, 29
+  }
+  VTX  31, 0, 0
+  {
+   COORD (920,580)
+  }
+  VTX  32, 0, 0
+  {
+   COORD (1540,580)
+  }
+  BUS  33, 0, 0
+  {
+   NET 14
+   VTX 31, 32
+  }
+  VTX  34, 0, 0
+  {
+   COORD (1060,300)
+  }
+  VTX  35, 0, 0
+  {
+   COORD (920,300)
+  }
+  MDARRAY  36, 0, 0
+  {
+   NET 16
+   VTX 34, 35
+  }
+  TEXT  37, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (990,300,990,300)
+   ALIGN 9
+   PARENT 36
+  }
+  VTX  38, 0, 0
+  {
+   COORD (1060,260)
+  }
+  VTX  39, 0, 0
+  {
+   COORD (920,260)
+  }
+  WIRE  40, 0, 0
+  {
+   NET 17
+   VTX 38, 39
+  }
+  VTX  41, 0, 0
+  {
+   COORD (1540,250)
+  }
+  VTX  42, 0, 0
+  {
+   COORD (1540,270)
+  }
+  MDARRAY  43, 0, 0
+  {
+   NET 12
+   VTX 41, 22
+  }
+  MDARRAY  44, 0, 0
+  {
+   NET 12
+   VTX 22, 42
+   BUSTAPS ( 26 )
+  }
+  BUS  45, 0, 0
+  {
+   NET 14
+   VTX 29, 32
+  }
+ }
+ 
+}
+
