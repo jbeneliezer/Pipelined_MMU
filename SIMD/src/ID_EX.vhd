@@ -18,8 +18,8 @@
 --
 -------------------------------------------------------------------------------
 
-library IEEE;
-use IEEE.std_logic_1164.all;
+library ieee;
+use ieee.std_logic_1164.all;
 use work.data_types.all;
 
 entity ID_EX is

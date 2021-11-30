@@ -19,19 +19,17 @@
 -------------------------------------------------------------------------------
 
 
-library IEEE;
-use IEEE.Std_logic_1164.all;
-use IEEE.Numeric_Std.all;
-use work.data_types.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_Std.all; 
 use std.textio.all;
 use std.env.finish;
+use work.data_types.all; 
 
 entity MMU_tb is
 end;
 
 architecture bench of MMU_tb is
-
-constant program_size: integer := 64;
 	
 	component MMU
 		port(
@@ -45,7 +43,7 @@ constant program_size: integer := 64;
 	
 	signal clk: std_logic;
 	signal rst: std_logic; 
-	signal input: vec_array(0 to 63)(24 downto 0);
+	signal input: vec_array(0 to 63)(24 downto 0) := (others => (others => '0'));
 	signal output: result;
 	signal outputs: results(0 to 63);	
 	signal output_rf: vec_array(0 to 31)(127 downto 0) := (others => (others => '0'));
@@ -56,7 +54,7 @@ begin
 	read_file: process
 		file file_in : text open read_mode is "stimulus.txt";
 		variable row: line;
-		variable test_input: vec_array(0 to 63)(24 downto 0);
+		variable test_input: vec_array(0 to 63)(24 downto 0) := (others => (others => '0'));
 		variable i: integer := 0;
 	begin		   									   
 		while not endfile(file_in) and i < 64 loop 
@@ -78,7 +76,7 @@ begin
 		wait for 10 ns;
 		rst <= '0';
 		wait for 10 ns;
-		for i in 0 to program_size - 1 loop
+		for i in 0 to 63 loop
 			clk <= '1';
 			if (i < 64) then
 				outputs(i) <= output;

@@ -18,9 +18,9 @@
 --
 -------------------------------------------------------------------------------
 
-library IEEE; 
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+library ieee; 
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 use work.ALU_functions.all;
 use work.data_types.all;
 
@@ -37,7 +37,7 @@ end ALU;
 architecture behavioral of ALU is							  
 begin  		
 	process(all)		
-		variable l_tmp : std_logic_vector(127 downto 0) := z128;
+		variable l_tmp : std_logic_vector(127 downto 0) := (others => '0');
 	begin
 		case? (Op) is
 			when "0------------------------" =>		-- LI  
@@ -87,7 +87,7 @@ begin
 				Rd(63 downto 0) <= MULT_SUB_L(rs3(63 downto 32), rs2(63 downto 32), rs1(63 downto 0));
 			    Rd(127 downto 64) <= MULT_SUB_L(rs3(127 downto 96), rs2(127 downto 96), rs1(127 downto 64));
 			when "11----0000---------------" => 	-- NOP
-				Rd <= z128;
+				Rd <= (others => '0');
 			when "11----0001---------------" =>   	-- AH  
 				Rd(15 downto 0) <= std_logic_vector(unsigned(rs1(15 downto 0)) + unsigned(rs2(15 downto 0)));
 				Rd(31 downto 16) <= std_logic_vector(unsigned(rs1(31 downto 16)) + unsigned(rs2(31 downto 16)));
@@ -217,7 +217,7 @@ begin
 				Rd(127 downto 112) <= SAT(not rs1(127), rs2(127), std_logic_vector(signed(rs2(127 downto 112)) - signed(rs1(127 downto 112))));
 			when "11----1111---------------" =>		-- XOR
 				Rd <= rs1 xor rs2;
-			when others => Rd <= z128;
+			when others => Rd <= (others => '0');
 		end case?;
 	end process;
 end behavioral;

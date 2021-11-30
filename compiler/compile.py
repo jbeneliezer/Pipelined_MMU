@@ -33,28 +33,31 @@ tests = []
 with open("program2.txt", "r") as input:
     data = input.readlines()
     for line in data:
-        lst = list(filter(None, (re.split('\W+', line))))
-        print(lst)
+        instr = list(filter(None, (re.split('\W+', line))))
 
         # li format
         # li imm, offset(rd)
-        if lst[0] == "li":
-            op = "0" + format(int(lst[2])%0x8, "b").zfill(3) + format(int(lst[1])%0xFFFF, "b").zfill(16) + format(int(lst[3][1:])%0x1F, "b").zfill(5)
+        if instr[0] == "li":
+            op = "0" + format(int(instr[2])%0x8, "b").zfill(3) + format(int(instr[1])%0xFFFF, "b").zfill(16) + format(int(instr[3][1:])%0x1F, "b").zfill(5)
 
         # r4 format
         # op rd, rs1, rs2, rs3
-        elif len(lst) == 5:
-            op = ops[lst[0]] + format(int(lst[4][1:])%0x1F, "b").zfill(5) + format(int(lst[3][1:])%0x1F, "b").zfill(5) + format(int(lst[2][1:])%0x1F, "b").zfill(5) + \
-                format(int(lst[1][1:])%0x1F, "b").zfill(5)
+        elif len(instr) == 5:
+            op = ops[instr[0]] + format(int(instr[4][1:])%0x1F, "b").zfill(5) + format(int(instr[3][1:])%0x1F, "b").zfill(5) + format(int(instr[2][1:])%0x1F, "b").zfill(5) + \
+                format(int(instr[1][1:])%0x1F, "b").zfill(5)
 
         # r3 format
         # op rd, rs1, rs2
-        elif len(lst) == 4:
-            op = ops[lst[0]] + format(int(lst[3][1:])%0x1F, "b").zfill(5) + format(int(lst[2][1:])%0x1F, "b").zfill(5) + format(int(lst[1][1:])%0x1F, "b").zfill(5)
+        elif len(instr) == 4:
+            op = ops[instr[0]] + format(int(instr[3][1:])%0x1F, "b").zfill(5) + format(int(instr[2][1:])%0x1F, "b").zfill(5) + format(int(instr[1][1:])%0x1F, "b").zfill(5)
 
         # nop
-        elif len(lst) == 1:
+        elif len(instr) == 1:
             op = "11".ljust(25, "0")
+
+        else:
+            print("format error.")
+            exit(1)
 
         tests.append(op)
 

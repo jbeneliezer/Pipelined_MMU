@@ -18,8 +18,8 @@
 --
 -------------------------------------------------------------------------------
 
-library IEEE;
-use IEEE.std_logic_1164.all;
+library ieee;
+use ieee.std_logic_1164.all;
 
 package data_types is
 	
@@ -64,15 +64,13 @@ package data_types is
 		alu_out: std_logic_vector(127 downto 0);
 	end record result;
 	
-	type results is array(natural range<>) of result;
-	
-	constant z128: std_logic_vector(127 downto 0) := (others => '0');
+	type results is array(natural range<>) of result;						 
 	
 	constant nop: std_logic_vector(24 downto 0) := "1100000000000000000000000";
 	
 	constant idex_clr: idex := (Op => nop,
-							rs1 => z128,
-							rs2 => z128,
-							rs3 => z128);
+							rs1 => (others => '0'),
+							rs2 => (others => '0'),
+							rs3 => (others => '0'));
 	
 end package data_types;

@@ -86,6 +86,9 @@ AdditionalOptions=
 /..\compile\RF.vhd=-1
 
 [Files]
+/RF.vhd=-1
+
+[Files]
 /ALU.vhd=-1
 /ALU_functions.vhd=-1
 /data_types.vhd=-1
@@ -104,6 +107,10 @@ AdditionalOptions=
 /alu_waveform.awc=-1
 /mmu_wave.asdb=-1
 /mmu_wave.awc=-1
+/main_test.asdb=-1
+/main_test.awc=-1
+/additional_test.asdb=-1
+/additional_test.awc=-1
 
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
@@ -124,4 +131,8 @@ AdditionalOptions=
 .\src\alu_waveform.awc=Accelerated Waveform Configuration
 .\src\mmu_wave.asdb=Accelerated Waveform File
 .\src\mmu_wave.awc=Accelerated Waveform Configuration
+.\src\main_test.asdb=Accelerated Waveform File
+.\src\main_test.awc=Accelerated Waveform Configuration
+.\src\additional_test.asdb=Accelerated Waveform File
+.\src\additional_test.awc=Accelerated Waveform Configuration
 

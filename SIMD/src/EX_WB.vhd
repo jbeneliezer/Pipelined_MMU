@@ -18,8 +18,8 @@
 --
 -------------------------------------------------------------------------------
 
-library IEEE;
-use IEEE.std_logic_1164.all;
+library ieee;
+use ieee.std_logic_1164.all;
 use work.data_types.all;
 
 entity EX_WB is
@@ -41,7 +41,7 @@ begin
 		if rst = '1' then
 			write_en <= '0';
 			addr <= "00000";
-			data <= z128;
+			data <= (others => '0');
 		elsif clk = '1' then
 			if Op = nop then
 				write_en <= '0';

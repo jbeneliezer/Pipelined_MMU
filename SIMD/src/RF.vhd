@@ -18,9 +18,9 @@
 --
 -------------------------------------------------------------------------------
 
-library IEEE;
-use IEEE.std_logic_1164.all; 
-use IEEE.numeric_std.all;  
+library ieee;
+use ieee.std_logic_1164.all; 
+use ieee.numeric_std.all;  
 use work.data_types.all;
 
 entity RF is
@@ -39,7 +39,7 @@ end RF;
 architecture behavioral of RF is								  
 begin
 	write: process 
-	variable f: vec_array(0 to 31)(127 downto 0) := (others => z128);
+	variable f: vec_array(0 to 31)(127 downto 0) := (others => (others => '0'));
 	begin 
 		while true loop
 			wait until write_en = '1' or Op'event or write_addr'event or write_data'event;
