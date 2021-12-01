@@ -113,43 +113,43 @@ begin
 			write(row, " ", left, 1);
 			hwrite(row, outputs(i).instr1, left, 7);  
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).instr2, left, 7); 
+			hwrite(row, outputs(i).fu_in.op, left, 7); 
 			write(row, " ", left, 1);
-			write(row, outputs(i).write_en, left, 1);
+			write(row, outputs(i).wb_out.write_en, left, 1);
 			write(row, " ", left, 1);	  
-			hwrite(row, outputs(i).write_addr, left, 2);
+			hwrite(row, outputs(i).wb_out.op(4 downto 0), left, 2);
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).write_data, left, 32);
+			hwrite(row, outputs(i).wb_out.data, left, 32);
 			writeline(file_out, row);
 			
 			-- write rf_out
 			write(row, " ", left, 4);
 			write(row, "rf_out ", right, 7);
-			hwrite(row, outputs(i).rf_out(0), left, 32);
+			hwrite(row, outputs(i).rf_out.rs1, left, 32);
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).rf_out(1), left, 32);
+			hwrite(row, outputs(i).rf_out.rs2, left, 32);
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).rf_out(2), left, 32);
+			hwrite(row, outputs(i).rf_out.rs3, left, 32);
 			writeline(file_out, row);
 			
 			-- write fu_in
 			write(row, " ", left, 4);
 			write(row, "fu_in ", right, 7);
-			hwrite(row, outputs(i).fu_in(0), left, 32);	
+			hwrite(row, outputs(i).fu_in.rs1, left, 32);	
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).fu_in(1), left, 32);
+			hwrite(row, outputs(i).fu_in.rs2, left, 32);
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).fu_in(2), left, 32);
+			hwrite(row, outputs(i).fu_in.rs3, left, 32);
 			writeline(file_out, row);
 			
 			-- write alu_in
 			write(row, " ", left, 4);
 			write(row, "alu_in ", right, 7);
-			hwrite(row, outputs(i).alu_in(0), left, 32); 
+			hwrite(row, outputs(i).alu_in.rs1, left, 32); 
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).alu_in(1), left, 32); 
+			hwrite(row, outputs(i).alu_in.rs2, left, 32); 
 			write(row, " ", left, 1);
-			hwrite(row, outputs(i).alu_in(2), left, 32);
+			hwrite(row, outputs(i).alu_in.rs3, left, 32);
 			writeline(file_out, row);
 			
 			-- write alu_out   

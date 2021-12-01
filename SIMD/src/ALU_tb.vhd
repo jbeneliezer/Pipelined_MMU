@@ -33,20 +33,17 @@ signal result: std_logic_vector(127 downto 0);
 
 component ALU is
 	port(					
-		Op : in STD_LOGIC_VECTOR(24 downto 0);
-		rs1 : in STD_LOGIC_VECTOR(127 downto 0);
-		rs2 : in STD_LOGIC_VECTOR(127 downto 0);
-		rs3 : in STD_LOGIC_VECTOR(127 downto 0);
-		Rd : out STD_LOGIC_VECTOR(127 downto 0)
+		input: in idex;
+		rd : out std_logic_vector(127 downto 0)
 		);
 end component ALU;
 begin
 	
-	uut: ALU port map (Op => current_test.Op,
-						rs1 => current_test.rs1,
-						rs2 => current_test.rs2,
-						rs3 => current_test.rs3,
-						Rd => result);
+	uut: ALU port map (input.op => current_test.op,
+						input.rs1 => current_test.rs1,
+						input.rs2 => current_test.rs2,
+						input.rs3 => current_test.rs3, 
+						rd => result);
 	
 	read_file: process
 		file input : text;
@@ -65,7 +62,7 @@ begin
 			read(row, space);
 			read(row, test_input.rs3);
 			read(row, space);
-			read(row, test_input.Rd);
+			read(row, test_input.rd);
 			
 			current_test <= test_input;
 			
@@ -80,7 +77,7 @@ begin
 	
 	verify: process(result)
 	begin
-		assert(result = current_test.Rd) report "Error for input " & to_string(current_test.Op) severity error;
+		assert(result = current_test.rd) report "Error for input " & to_string(current_test.Op) severity error;
 	end process;
 					 
 end ALU_tb;

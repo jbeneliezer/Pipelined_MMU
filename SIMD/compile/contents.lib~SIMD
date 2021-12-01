@@ -1,12 +1,11 @@
-490
+635
 ~E 1 "../src/ALU.vhd" 27 ALU
-~A 1 "../src/ALU.vhd" 37 behavioral
+~A 1 "../src/ALU.vhd" 34 behavioral
 ~E 1 "../src/ALU_tb.vhd" 27 ALU_tb
 ~A 1 "../src/ALU_tb.vhd" 30 ALU_tb
 ~E 1 "../src/EX_WB.vhd" 25 EX_WB
-~A 1 "../src/EX_WB.vhd" 37 behavioral
 ~E 1 "../src/FU.vhd" 26 FU
-~A 1 "../src/FU.vhd" 36 behavioral
+~A 1 "../src/FU.vhd" 35 behavioral
 ~E 0 "" 0 Fub1
 ~E 0 "" 0 Fub2
 ~E 0 "" 0 Fub3
@@ -14,10 +13,11 @@
 ~E 0 "" 0 Fub5
 ~E 0 "" 0 Fub6
 ~E 0 "" 0 Fub7
+~E 1 "../src/generic_register.vhd" 25 generic_register
+~A 1 "../src/generic_register.vhd" 38 behavioral
 ~E 1 "../src/IB.vhd" 25 IB
 ~A 1 "../src/IB.vhd" 34 behavioral
 ~E 1 "../src/ID_EX.vhd" 25 ID_EX
-~A 1 "../src/ID_EX.vhd" 34 behavioral
 ~E 1 "../src/IF_ID.vhd" 25 IF_ID
 ~A 1 "../src/IF_ID.vhd" 34 behavioral
 ~E 1 "../src/MMU.vhd" 27 MMU
@@ -27,6 +27,6 @@
 ~E 1 "../src/PIPE.vhd" 25 PIPE
 ~A 1 "../src/IF_ID.vhd" 34 behavioral
 ~E 1 "../src/RF.vhd" 26 RF
-~A 1 "../src/RF.vhd" 39 behavioral
+~A 1 "../src/RF.vhd" 37 behavioral
 ~E 1 "../src/top_level.vhd" 24 top_level
 ~A 1 "../src/top_level.vhd" 30 structural

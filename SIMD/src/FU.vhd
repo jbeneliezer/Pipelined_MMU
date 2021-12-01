@@ -24,12 +24,11 @@ use ieee.numeric_std.all;
 use work.data_types.all;
 
 entity FU is
-	port(
-		Op: in std_logic_vector(24 downto 0);
+	port(									  
 		addr: in std_logic_vector(4 downto 0);
 		write_data: in std_logic_vector(127 downto 0);
-		rs_in: in vec_array(0 to 2)(127 downto 0);
-		rs_out: out vec_array(0 to 2)(127 downto 0)
+		input: in idex;
+		output: out idex
 		);
 end FU;
 
@@ -37,24 +36,25 @@ architecture behavioral of FU is
 begin
 	process (all)
 	begin
-		if Op(24) = '0' or Op = nop then
-			rs_out <= rs_in;
+		if input.Op(24) = '0' or input.Op = nop then
+			output <= input;
 		else
-			if addr = Op(9 downto 5) then
-				rs_out(0) <= write_data;
+			if addr = input.Op(9 downto 5) then
+				output.rs1 <= write_data;
 			else
-				rs_out(0) <= rs_in(0);
+				output.rs1 <= input.rs1;
 			end if;
-			if addr = Op(14 downto 10) then
-				rs_out(1) <= write_data;
+			if addr = input.Op(14 downto 10) then
+				output.rs2 <= write_data;
 			else
-				rs_out(1) <= rs_in(1);
+				output.rs2 <= input.rs2;
 			end if;
-			if addr = Op(19 downto 15) then
-				rs_out(2) <= write_data;
+			if addr = input.Op(19 downto 15) then
+				output.rs3 <= write_data;
 			else
-				rs_out(2) <= rs_in(2);
+				output.rs3 <= input.rs3;
 			end if;
+			output.Op <= input.Op;
 		end if;
 	end	process;  
 end behavioral;

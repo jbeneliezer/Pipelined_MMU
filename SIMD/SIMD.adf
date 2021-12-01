@@ -37,7 +37,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=mmu_tb|bench|0  
+HierarchyInformation=alu|behavioral|0 alu_tb|ALU_tb|0 mmu_tb|bench|0 
 ShowHide=ShowTopLevel
 Selected=
 .\src\FU.vhd=VHDL Source Code
@@ -48,10 +48,10 @@ EnableVHDL93Key=0
 EnableVHDL2002Key=0
 EnableVHDL2008Key=1
 EnableVHDL2018Key=0
-DisableVHDL87Key=1
+DisableVHDL87Key=0
 Syntax RelaxLRM=0
 MaxErrorsKey=100
-CompileWithDebug=1
+CompileWithDebug=0
 OptimizationLevel=3
 DisableRangeChecks=0
 ProtectLevel=0
@@ -87,10 +87,37 @@ AdditionalOptions=
 
 [Files]
 /RF.vhd=-1
+/MMU_tb.vhd=-1
+/MMU.vhd=-1
+/FU.vhd=-1
+/IB.vhd=-1
+/data_types.vhd=-1
+/ALU_tb.vhd=-1
+/ALU_functions.vhd=-1
+/ALU.vhd=-1
+/generic_register.vhd=-1
 
 [Files]
 /RF.vhd=-1
+/MMU_tb.vhd=-1
+/MMU.vhd=-1
+/FU.vhd=-1
+/IB.vhd=-1
+/data_types.vhd=-1
+/ALU_tb.vhd=-1
+/ALU_functions.vhd=-1
+/ALU.vhd=-1
+/generic_register.vhd=-1
 
 [Files.Data]
 .\src\RF.vhd=VHDL Source Code
+.\src\MMU_tb.vhd=VHDL Source Code
+.\src\MMU.vhd=VHDL Source Code
+.\src\FU.vhd=VHDL Source Code
+.\src\IB.vhd=VHDL Source Code
+.\src\data_types.vhd=VHDL Source Code
+.\src\ALU_tb.vhd=VHDL Source Code
+.\src\ALU_functions.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\generic_register.vhd=VHDL Source Code
 

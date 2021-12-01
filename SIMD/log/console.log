@@ -1,2 +1,2210 @@
 # ELBREAD: Elaboration process.
+# ULM: Warning: ULM_0021 Architecture `structural' of entity `simd.mmu' is not up-to-date. Please recompile file `C:\Users\jb\Documents\repos\SIMD\SIMD/src/MMU.vhd'.
+# ELBREAD: Warning: ELBREAD_0081 MMU_tb.vhd (52): Design unit MMU instantiated in simd.MMU_tb(bench) not found in searched libraries: simd.
 # ELBREAD: Elaboration time 0.0 [s].
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (123, 8): Unknown identifier "IF_ID".
+# Error: COMP96_0134: MMU.vhd : (123, 8): Cannot find component declaration.
+# Error: COMP96_0112: MMU.vhd : (131, 19): "t" does not match the formal name.
+# Error: COMP96_0711: MMU.vhd : (131, 2): The procedure name denotes an uninstantiated procedure. (IEEE 1076-2008, 10.7)
+# Error: COMP96_0078: MMU.vhd : (135, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (137, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (137, 8): Cannot find component declaration.
+# Error: COMP96_0617: MMU.vhd : (145, 19): Assignment target incompatible with right side. Cannot convert 'idex' to 'vec_array'.
+# Error: COMP96_0617: MMU.vhd : (149, 18): Assignment target incompatible with right side. Cannot convert 'idex' to 'vec_array'.
+# Error: COMP96_0617: MMU.vhd : (150, 19): Assignment target incompatible with right side. Cannot convert 'idex' to 'vec_array'.
+# Compile failure 10 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (122, 8): Unknown identifier "IF_ID".
+# Error: COMP96_0134: MMU.vhd : (122, 8): Cannot find component declaration.
+# Error: COMP96_0153: MMU.vhd : (130, 78): Formal "Q" of class variable must be associated with a variable.
+# Error: COMP96_0078: MMU.vhd : (134, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (136, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (136, 8): Cannot find component declaration.
+# Error: COMP96_0617: MMU.vhd : (144, 19): Assignment target incompatible with right side. Cannot convert 'idex' to 'vec_array'.
+# Error: COMP96_0617: MMU.vhd : (148, 18): Assignment target incompatible with right side. Cannot convert 'idex' to 'vec_array'.
+# Error: COMP96_0617: MMU.vhd : (149, 19): Assignment target incompatible with right side. Cannot convert 'idex' to 'vec_array'.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# Compile failure 9 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# Error: COMP96_0078: MMU_tb.vhd : (116, 27): Unknown identifier "instr2".
+# Error: COMP96_0273: MMU_tb.vhd : (116, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (128, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (128, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (130, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (130, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (132, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (132, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (138, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (138, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (140, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (140, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (142, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (142, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (148, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (148, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (150, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (150, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (152, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (152, 4): Cannot find procedure "hwrite" for these actuals.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (122, 8): Unknown identifier "IF_ID".
+# Error: COMP96_0134: MMU.vhd : (122, 8): Cannot find component declaration.
+# Error: COMP96_0078: MMU.vhd : (134, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (136, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (136, 8): Cannot find component declaration.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# Compile failure 25 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0018: MMU.vhd : (79, 14): Identifier expected.
+# Error: COMP96_0015: MMU.vhd : (79, 14): ')' expected.
+# Error: COMP96_0015: MMU.vhd : (79, 14): ';' expected.
+# Error: COMP96_0018: MMU.vhd : (79, 19): Identifier expected.
+# Error: COMP96_0018: MMU.vhd : (81, 16): Identifier expected.
+# Error: COMP96_0018: MMU.vhd : (82, 16): Identifier expected.
+# Error: COMP96_0018: MMU.vhd : (83, 14): Identifier expected.
+# Error: COMP96_0018: MMU.vhd : (84, 18): Identifier expected.
+# Error: COMP96_0018: MMU.vhd : (85, 14): Identifier expected.
+# Error: COMP96_0329: MMU.vhd : (88, 3): Generate statement must have a label.
+# Error: COMP96_0019: MMU.vhd : (88, 16): Keyword 'generate' expected.
+# Error: COMP96_0019: MMU.vhd : (90, 3): Keyword 'end' expected.
+# Error: COMP96_0016: MMU.vhd : (90, 9): Design unit declaration expected.
+# Compile failure 13 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (123, 8): Unknown identifier "IF_ID".
+# Error: COMP96_0134: MMU.vhd : (123, 8): Cannot find component declaration.
+# Error: COMP96_0711: MMU.vhd : (131, 2): The procedure name denotes an uninstantiated procedure. (IEEE 1076-2008, 10.7)
+# Error: COMP96_0078: MMU.vhd : (135, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (137, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (137, 8): Cannot find component declaration.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (106, 8): Unknown identifier "generic_register".
+# Error: COMP96_0134: MMU.vhd : (106, 8): Cannot find component declaration.
+# Error: COMP96_0078: MMU.vhd : (114, 2): Unknown identifier "generic_register".
+# Error: COMP96_0066: MMU.vhd : (114, 2): Cannot find "generic_register" procedure declaration.
+# Error: COMP96_0078: MMU.vhd : (118, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (120, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (120, 8): Cannot find component declaration.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# Error: COMP96_0078: MMU_tb.vhd : (116, 27): Unknown identifier "instr2".
+# Error: COMP96_0273: MMU_tb.vhd : (116, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (128, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (128, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (130, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (130, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (132, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (132, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (138, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (138, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (140, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (140, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (142, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (142, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (148, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (148, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (150, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (150, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (152, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (152, 4): Cannot find procedure "hwrite" for these actuals.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (106, 8): Unknown identifier "generic_register".
+# Error: COMP96_0134: MMU.vhd : (106, 8): Cannot find component declaration.
+# Error: COMP96_0078: MMU.vhd : (114, 2): Unknown identifier "generic_register".
+# Error: COMP96_0066: MMU.vhd : (114, 2): Cannot find "generic_register" procedure declaration.
+# Error: COMP96_0078: MMU.vhd : (118, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (120, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (120, 8): Cannot find component declaration.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile failure 27 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0066: MMU.vhd : (127, 2): Cannot find "generic_register" procedure declaration.
+# Error: COMP96_0078: MMU.vhd : (131, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (133, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (133, 8): Cannot find component declaration.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Warning: ELAB1_0026: MMU.vhd : (131, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# Error: COMP96_0078: MMU.vhd : (131, 29): Unknown identifier "instr2".
+# Error: COMP96_0078: MMU.vhd : (133, 8): Unknown identifier "EX_WB".
+# Error: COMP96_0134: MMU.vhd : (133, 8): Cannot find component declaration.
+# Compile failure 3 Errors 1 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# Error: COMP96_0078: MMU_tb.vhd : (116, 27): Unknown identifier "instr2".
+# Error: COMP96_0273: MMU_tb.vhd : (116, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (128, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (128, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (130, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (130, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (132, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (132, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (138, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (138, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (140, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (140, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (142, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (142, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (148, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (148, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (150, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (150, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (152, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (152, 4): Cannot find procedure "hwrite" for these actuals.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0724: MMU.vhd : (130, 53): ',' or ')' expected.
+# Error: COMP96_0015: MMU.vhd : (130, 58): ';' expected.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile failure 22 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/data_types.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (107, 25): Unknown identifier "exwb_clr".
+# Error: COMP96_0133: MMU.vhd : (107, 25): Cannot find object declaration.
+# Error: COMP96_0077: MMU.vhd : (107, 25): Undefined type of expression. Expected type 'exwb'.
+# Error: COMP96_0078: MMU.vhd : (125, 56): Unknown identifier "exwb_clr".
+# Error: COMP96_0133: MMU.vhd : (125, 56): Cannot find object declaration.
+# Error: COMP96_0078: MMU.vhd : (135, 23): Unknown identifier "write_data".
+# Error: COMP96_0133: MMU.vhd : (135, 23): Cannot find object declaration.
+# Error: COMP96_0077: MMU.vhd : (135, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: MMU.vhd : (136, 23): Unknown identifier "write_addr".
+# Error: COMP96_0133: MMU.vhd : (136, 23): Cannot find object declaration.
+# Error: COMP96_0077: MMU.vhd : (136, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Compile failure 11 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/data_types.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (135, 23): Unknown identifier "write_data".
+# Error: COMP96_0133: MMU.vhd : (135, 23): Cannot find object declaration.
+# Error: COMP96_0077: MMU.vhd : (135, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0078: MMU.vhd : (136, 23): Unknown identifier "write_addr".
+# Error: COMP96_0133: MMU.vhd : (136, 23): Cannot find object declaration.
+# Error: COMP96_0077: MMU.vhd : (136, 23): Undefined type of expression. Expected type 'STD_ULOGIC_VECTOR'.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# Error: COMP96_0078: MMU_tb.vhd : (116, 27): Unknown identifier "instr2".
+# Error: COMP96_0273: MMU_tb.vhd : (116, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (128, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (128, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (130, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (130, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (132, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (132, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (138, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (138, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (140, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (140, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (142, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (142, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (148, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (148, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (150, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (150, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (152, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (152, 4): Cannot find procedure "hwrite" for these actuals.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile failure 20 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/MMU.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# Error: COMP96_0078: MMU_tb.vhd : (116, 27): Unknown identifier "instr2".
+# Error: COMP96_0273: MMU_tb.vhd : (116, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (128, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (128, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (130, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (130, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (132, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (132, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (138, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (138, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (140, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (140, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (142, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (142, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (148, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (148, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (150, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (150, 4): Cannot find procedure "hwrite" for these actuals.
+# Error: COMP96_0090: MMU_tb.vhd : (152, 16): Expected array type.
+# Error: COMP96_0273: MMU_tb.vhd : (152, 4): Cannot find procedure "hwrite" for these actuals.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile failure 20 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -dbg -e 100 -work SIMD -disable87 -2018  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
+asim -O5 +access +r +m+MMU_tb MMU_tb bench
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0050: MMU.vhd : (78, 4): Improper object class in a generic declaration. Keyword 'constant' expected.
+# Error: COMP96_0018: MMU.vhd : (79, 3): Identifier expected.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Error: COMP96_0018: generic_register.vhd : (29, 2): Identifier expected.
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Error: VLM_0036: generic_register.vhd : (38, 1): The primary and the secondary unit must be compiled using the same language version (-93/-2002/-2008/-2018).
+# Error: COMP96_0056: generic_register.vhd : (38, 1): Cannot find referenced entity declaration "generic_register".
+# Compile failure 5 Errors 1 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0018: MMU.vhd : (79, 3): Identifier expected.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Error: COMP96_0018: generic_register.vhd : (29, 2): Identifier expected.
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Error: VLM_0036: generic_register.vhd : (38, 1): The primary and the secondary unit must be compiled using the same language version (-93/-2002/-2008/-2018).
+# Error: COMP96_0056: generic_register.vhd : (38, 1): Cannot find referenced entity declaration "generic_register".
+# Compile failure 4 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0018: MMU.vhd : (79, 3): Identifier expected.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Error: COMP96_0018: generic_register.vhd : (29, 2): Identifier expected.
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Error: VLM_0036: generic_register.vhd : (38, 1): The primary and the secondary unit must be compiled using the same language version (-93/-2002/-2008/-2018).
+# Error: COMP96_0056: generic_register.vhd : (38, 1): Cannot find referenced entity declaration "generic_register".
+# Compile failure 4 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0018: MMU.vhd : (78, 9): Identifier expected.
+# Error: COMP96_0015: MMU.vhd : (78, 9): ')' expected.
+# Error: COMP96_0015: MMU.vhd : (78, 9): ';' expected.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Error: COMP96_0018: generic_register.vhd : (28, 8): Identifier expected.
+# Error: COMP96_0015: generic_register.vhd : (28, 8): ')' expected.
+# Error: COMP96_0015: generic_register.vhd : (28, 8): ';' expected.
+# Error: COMP96_0019: generic_register.vhd : (29, 2): Keyword 'end' expected.
+# Error: COMP96_0015: generic_register.vhd : (29, 2): ';' expected.
+# Error: COMP96_0016: generic_register.vhd : (29, 3): Design unit declaration expected.
+# Compile Entity "generic_register"
+# Error: COMP96_0019: generic_register.vhd : (36, 28): Keyword 'is' expected.
+# Error: COMP96_0019: generic_register.vhd : (36, 28): Keyword 'end' expected.
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Error: VLM_0036: generic_register.vhd : (38, 1): The primary and the secondary unit must be compiled using the same language version (-93/-2002/-2008/-2018).
+# Error: COMP96_0056: generic_register.vhd : (38, 1): Cannot find referenced entity declaration "generic_register".
+# Compile failure 13 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0018: MMU.vhd : (79, 3): Identifier expected.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Error: COMP96_0018: generic_register.vhd : (29, 2): Identifier expected.
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Error: VLM_0036: generic_register.vhd : (38, 1): The primary and the secondary unit must be compiled using the same language version (-93/-2002/-2008/-2018).
+# Error: COMP96_0056: generic_register.vhd : (38, 1): Cannot find referenced entity declaration "generic_register".
+# Compile failure 4 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate VHDL-2018 unit 'simd.MMU'. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# Warning: ELAB1_0026: ALU_tb.vhd : (45, 0): There is no default binding for component "ALU". (Port "Op" is not on the entity).
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+asim -O5 +access +r +m+MMU_tb MMU_tb bench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 25904 kB (elbread=1280 elab2=24481 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:22 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+run 3000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# add wave -noreg {/MMU_tb/clk}
+# add wave -noreg {/MMU_tb/rst}
+# add wave -noreg {/MMU_tb/input}
+# add wave -noreg {/MMU_tb/output}
+# add wave -noreg {/MMU_tb/outputs}
+# add wave -noreg {/MMU_tb/output_rf}
+# 6 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 25904 kB (elbread=1280 elab2=24481 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:22 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 25904 kB (elbread=1280 elab2=24481 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:24 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0078: MMU.vhd : (127, 55): Unknown identifier "write_en".
+# Error: COMP96_0077: MMU.vhd : (127, 48): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# Error: COMP96_0617: MMU.vhd : (125, 106): Assignment target incompatible with right side. Cannot convert 'STD_ULOGIC_VECTOR' to 'STD_ULOGIC'.
+# Error: COMP96_0079: MMU.vhd : (125, 105): Invalid aggregate.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 25910 kB (elbread=1280 elab2=24487 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:31 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 25910 kB (elbread=1280 elab2=24487 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:36 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut,  Process: line__132.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /MMU_tb/uut,  Process: line__132.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# 
+# VSIM: Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.6 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+MMU_tb MMU_tb bench
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 25904 kB (elbread=1280 elab2=24481 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:38 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/rst' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/input' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/output' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/outputs' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/output_rf' has already been traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 25904 kB (elbread=1280 elab2=24481 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:38 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut,  Process: line__131.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /MMU_tb/uut,  Process: line__131.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# 
+# VSIM: Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# Error: COMP96_0018: MMU_tb.vhd : (49, 20): Identifier expected.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+MMU_tb MMU_tb bench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 16501 kB (elbread=1280 elab2=15078 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:42 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/rst' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/input' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/output' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/outputs' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/output_rf' has already been traced.
+run 3000 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut,  Process: line__131.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /MMU_tb/uut,  Process: line__131.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# BDE: Error: Document not in current design.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 16501 kB (elbread=1280 elab2=15078 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  1:57 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut,  Process: line__131.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /MMU_tb/uut,  Process: line__131.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.6 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 16501 kB (elbread=1280 elab2=15078 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  2:15 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+run 3000 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut,  Process: line__139.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /MMU_tb/uut,  Process: line__139.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# 
+# VSIM: Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: The contents of package 'simd.data_types' referenced in entity 'FU' differ from the contents available during the compilation of this entity.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.6 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+MMU_tb MMU_tb bench
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'IB' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'FU' instantiated in architecture 'structural' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMU' instantiated in architecture 'bench' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# VHPI: Loading library 'systf.dll'
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 16501 kB (elbread=1280 elab2=15078 kernel=143 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\jb\Documents\repos\SIMD\SIMD\src\wave.asdb
+#  2:16 PM, Wednesday, December 1, 2021
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/Users/jb/Documents/repos/SIMD/SIMD/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/rst' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/input' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/output' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/outputs' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/MMU_tb/output_rf' has already been traced.
+run 3000 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut,  Process: line__139.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /MMU_tb/uut/r_f,  Process: write.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /MMU_tb/uut,  Process: line__139.
+# RUNTIME: Info: RUNTIME_0142 MMU_tb.vhd (175): finish called.
+# KERNEL: Time: 670 ns,  Iteration: 0,  Instance: /MMU_tb,  Process: write_file.
+# KERNEL: stopped at time: 670 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
+# Compile Entity "RF"
+# Compile Architecture "behavioral" of Entity "RF"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd
+# Compile Entity "MMU_tb"
+# Compile Architecture "bench" of Entity "MMU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd
+# Compile Entity "MMU"
+# Compile Architecture "structural" of Entity "MMU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd
+# Compile Entity "FU"
+# Compile Architecture "behavioral" of Entity "FU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd
+# Compile Entity "IB"
+# Compile Architecture "behavioral" of Entity "IB"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd
+# Compile Package "data_types"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd
+# Compile Entity "ALU_tb"
+# Compile Architecture "ALU_tb" of Entity "ALU_tb"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd
+# Compile Package "ALU_functions"
+# Compile Package Body "ALU_functions"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "behavioral" of Entity "ALU"
+# File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
+# Compile Entity "generic_register"
+# Compile Architecture "behavioral" of Entity "generic_register"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

@@ -1,1 +1,10 @@
 .\src\RF.vhd
+.\src\MMU_tb.vhd
+.\src\MMU.vhd
+.\src\FU.vhd
+.\src\IB.vhd
+.\src\data_types.vhd
+.\src\ALU_tb.vhd
+.\src\ALU_functions.vhd
+.\src\ALU.vhd
+.\src\generic_register.vhd

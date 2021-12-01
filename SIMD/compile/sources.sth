@@ -1,3 +1,6 @@
+[DRC Time]
+C:\Users\jb\Documents\repos\SIMD\SIMD/src/MMU.vhd=D
+C:\Users\jb\Documents\repos\SIMD\SIMD/src/MMU_tb.vhd=D
 [Files List]
 C:\Aldec\Active-HDL-Student-Edition\vlib\std/src/standard.vhd=S
 C:\Aldec\Active-HDL-Student-Edition\vlib\std/src/textio.vhd=S
@@ -12,12 +15,10 @@ C:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/arith_b.vhd=S
 C:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/unsigned_p.vhd=S
 C:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/unsigned_b.vhd=S
 C:\Users\jb\Documents\repos\SIMD\SIMD/src/ALU_functions.vhd=S
-C:\Users\jb\Documents\repos\SIMD\SIMD/src/EX_WB.vhd=S
+C:\Users\jb\Documents\repos\SIMD\SIMD/src/generic_register.vhd=S
 C:\Users\jb\Documents\repos\SIMD\SIMD/src/ALU.vhd=S
 C:\Users\jb\Documents\repos\SIMD\SIMD/src/FU.vhd=S
-C:\Users\jb\Documents\repos\SIMD\SIMD/src/ID_EX.vhd=S
 C:\Users\jb\Documents\repos\SIMD\SIMD/src/RF.vhd=S
-C:\Users\jb\Documents\repos\SIMD\SIMD/src/IF_ID.vhd=S
 C:\Users\jb\Documents\repos\SIMD\SIMD/src/IB.vhd=S
 C:\Users\jb\Documents\repos\SIMD\SIMD/src/MMU.vhd=S
 C:\Users\jb\Documents\repos\SIMD\SIMD/src/MMU_tb.vhd=S

@@ -5,7 +5,8 @@ i<>.\src\FU.vhd
 i<>.\src\RF.vhd
 i<>.\src\PIPE.vhd
 i<>.\src\MMU_tb.vhd
-i<>.\src\ID_EX.vhd
-i<>.\src\EX_WB.vhd
 i<>.\src\IB.vhd
 i<>.\src\ALU_tb.vhd
+i<>.\src\MMU.vhd
+i<>.\src\data_types.vhd
+i<>.\src\generic_register.vhd

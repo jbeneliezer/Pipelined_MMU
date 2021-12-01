@@ -1,4 +1,37 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
 MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd" 
 MESSAGE "Compile Entity "RF"" 
 MESSAGE "Compile Architecture "behavioral" of Entity "RF"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd" 
+MESSAGE "Compile Entity "MMU_tb"" 
+MESSAGE "Compile Architecture "bench" of Entity "MMU_tb"" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU.vhd" 
+MESSAGE "Compile Entity "MMU"" 
+MESSAGE "Compile Architecture "structural" of Entity "MMU"" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/FU.vhd" 
+MESSAGE "Compile Entity "FU"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "FU"" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/IB.vhd" 
+MESSAGE "Compile Entity "IB"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "IB"" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/data_types.vhd" 
+MESSAGE "Compile Package "data_types"" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_tb.vhd" 
+MESSAGE "Compile Entity "ALU_tb"" 
+MESSAGE "Compile Architecture "ALU_tb" of Entity "ALU_tb"" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU_functions.vhd" 
+MESSAGE "Compile Package "ALU_functions"" 
+MESSAGE "Compile Package Body "ALU_functions"" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd" 
+BEGINPROGRESS C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "ALU"" 
+UPDATEPROGRESS 3
+MESSAGE "Compile Architecture "behavioral" of Entity "ALU"" 
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd" 
+MESSAGE "Compile Entity "generic_register"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "generic_register"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 
