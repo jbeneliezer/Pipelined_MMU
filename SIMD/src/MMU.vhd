@@ -130,7 +130,7 @@ begin
 		generic map (t => idex, clr => idex_clr)
 		port map (clk => clk, rst => rst, D => rf_out, Q => fu_in);		
 	
-	forward: FU
+	forward: FU		-- FU
 		port map (addr => wb_out.op(4 downto 0), write_data => wb_out.data, input => fu_in, output => alu_in);
 		
 	logic: ALU		-- ALU
