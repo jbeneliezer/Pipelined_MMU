@@ -1,4 +1,4 @@
-MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/MMU_tb.vhd" 
-MESSAGE "Compile Entity "MMU_tb"" 
-MESSAGE "Compile Architecture "bench" of Entity "MMU_tb"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]" 
+MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd" 
+MESSAGE "Compile Entity "RF"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "RF"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]" 

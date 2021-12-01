@@ -1,12 +1,1 @@
-.\src\ALU.vhd
-.\src\ALU_functions.vhd
-.\src\data_types.vhd
-.\src\MMU.vhd
-.\src\FU.vhd
 .\src\RF.vhd
-.\src\IF_ID.vhd
-.\src\MMU_tb.vhd
-.\src\ID_EX.vhd
-.\src\EX_WB.vhd
-.\src\IB.vhd
-.\src\ALU_tb.vhd
