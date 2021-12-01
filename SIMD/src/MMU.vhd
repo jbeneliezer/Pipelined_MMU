@@ -36,7 +36,6 @@ end MMU;
 
 architecture structural of MMU is
 
-	
 	component IB is
 		port(					
 			rst: in std_logic;
@@ -67,8 +66,7 @@ architecture structural of MMU is
 			output_rf: out vec_array(0 to 31)(127 downto 0)
 			);
 	end component RF;
-
-	
+							  
 	component ID_EX is
 		port(
 			clk : in std_logic;
@@ -110,7 +108,7 @@ architecture structural of MMU is
 			);
 	end component EX_WB;
 	
-	signal PC: std_logic_vector(5 downto 0) := "000000";
+	signal PC: std_logic_vector(5 downto 0) := (others => '0');
 	
 	-- IB Signals
 	signal program: vec_array(0 to 63)(24 downto 0); 
@@ -124,15 +122,14 @@ architecture structural of MMU is
 	signal write_addr: std_logic_vector(4 downto 0);   
 	
 	-- FU Signals
-	signal instr2: std_logic_vector(24 downto 0);
+	signal instr2: std_logic_vector(24 downto 0) := nop;
 	signal fu_in: vec_array(0 to 2)(127 downto 0);
 	
 	-- ALU Signals
 	signal alu_in: vec_array(0 to 2)(127 downto 0);
 	signal alu_out: std_logic_vector(127 downto 0);	
 	
-	signal final_rf: vec_array(0 to 31)(127 downto 0);
-	
+	signal final_rf: vec_array(0 to 31)(127 downto 0);	
 	
 begin
 	instructions: IB port map(rst => rst, index => PC, program => input, instruction_out => instr0);		-- IB

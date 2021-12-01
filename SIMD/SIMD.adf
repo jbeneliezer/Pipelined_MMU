@@ -37,7 +37,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=mmu_tb|bench|0 
+HierarchyInformation=mmu_tb|bench|0  
 ShowHide=ShowTopLevel
 Selected=
 .\src\FU.vhd=VHDL Source Code
@@ -89,50 +89,8 @@ AdditionalOptions=
 /RF.vhd=-1
 
 [Files]
-/ALU.vhd=-1
-/ALU_functions.vhd=-1
-/data_types.vhd=-1
-/MMU.vhd=-1
-/FU.vhd=-1
-/mmu.asdb=-1
-/mmu.awc=-1
 /RF.vhd=-1
-/IF_ID.vhd=-1
-/MMU_tb.vhd=-1
-/ID_EX.vhd=-1
-/EX_WB.vhd=-1
-/IB.vhd=-1
-/ALU_tb.vhd=-1
-/alu_waveform.asdb=-1
-/alu_waveform.awc=-1
-/mmu_wave.asdb=-1
-/mmu_wave.awc=-1
-/main_test.asdb=-1
-/main_test.awc=-1
-/additional_test.asdb=-1
-/additional_test.awc=-1
 
 [Files.Data]
-.\src\ALU.vhd=VHDL Source Code
-.\src\ALU_functions.vhd=VHDL Source Code
-.\src\data_types.vhd=VHDL Source Code
-.\src\MMU.vhd=VHDL Source Code
-.\src\FU.vhd=VHDL Source Code
-.\src\mmu.asdb=Accelerated Waveform File
-.\src\mmu.awc=Accelerated Waveform Configuration
 .\src\RF.vhd=VHDL Source Code
-.\src\IF_ID.vhd=VHDL Source Code
-.\src\MMU_tb.vhd=VHDL Source Code
-.\src\ID_EX.vhd=VHDL Source Code
-.\src\EX_WB.vhd=VHDL Source Code
-.\src\IB.vhd=VHDL Source Code
-.\src\ALU_tb.vhd=VHDL Source Code
-.\src\alu_waveform.asdb=Accelerated Waveform File
-.\src\alu_waveform.awc=Accelerated Waveform Configuration
-.\src\mmu_wave.asdb=Accelerated Waveform File
-.\src\mmu_wave.awc=Accelerated Waveform Configuration
-.\src\main_test.asdb=Accelerated Waveform File
-.\src\main_test.awc=Accelerated Waveform Configuration
-.\src\additional_test.asdb=Accelerated Waveform File
-.\src\additional_test.awc=Accelerated Waveform Configuration
 
