@@ -54,7 +54,7 @@ begin
 		file_open(input, "stimulus.txt", read_mode);
 		while not endfile(input) loop 
 			readline(input, row);
-			read(row, test_input.Op);
+			read(row, test_input.op);
 			read(row, space);
 			read(row, test_input.rs1);
 			read(row, space);
