@@ -85,6 +85,7 @@ architecture structural of MMU is
 		);
 	end component generic_register;
 	
+	-- Write enable condition
 	function w_e(op: std_logic_vector(24 downto 0)) return std_logic is
 	begin
 		if op = nop then return '0';
@@ -92,6 +93,7 @@ architecture structural of MMU is
 		end if;
 	end function;
 	
+	-- Program Counter
 	signal PC: std_logic_vector(5 downto 0) := (others => '0');
 	
 	-- IB Signals
