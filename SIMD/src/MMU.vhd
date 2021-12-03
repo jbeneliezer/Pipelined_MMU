@@ -88,7 +88,7 @@ architecture structural of MMU is
 	-- Write enable condition
 	function w_e(op: std_logic_vector(24 downto 0)) return std_logic is
 	begin
-		if op = nop then return '0';
+		if op(24 downto 23) = "11" and Op(19 downto 15) = "0000" then return '0';	-- nop
 		else return '1';
 		end if;
 	end function;
