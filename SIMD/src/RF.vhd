@@ -37,7 +37,7 @@ end RF;
 architecture behavioral of RF is
 	signal f: vec_array(0 to 31)(127 downto 0) := (others => (others => '0'));								  
 begin
-	write: process (all)													   
+	process (all)													   
 	begin  	
 		-- write data
 		if write_en = '1' then	
