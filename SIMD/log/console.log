@@ -1,5 +1,5 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration time 0.6 [s].
 acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/MMU.vhd $dsn/src/FU.vhd $dsn/src/IB.vhd $dsn/src/data_types.vhd $dsn/src/ALU_tb.vhd $dsn/src/ALU_functions.vhd $dsn/src/ALU.vhd $dsn/src/generic_register.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/RF.vhd
@@ -31,4 +31,4 @@ acom -O3 -e 100 -work SIMD -2008  $dsn/src/RF.vhd $dsn/src/MMU_tb.vhd $dsn/src/M
 # File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd
 # Compile Entity "generic_register"
 # Compile Architecture "behavioral" of Entity "generic_register"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

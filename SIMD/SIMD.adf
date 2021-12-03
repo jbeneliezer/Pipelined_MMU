@@ -37,7 +37,7 @@ UCF=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=mmu_tb|bench|0     
+HierarchyInformation=mmu_tb|bench|0      
 ShowHide=ShowTopLevel
 Selected=
 .\src\FU.vhd=VHDL Source Code

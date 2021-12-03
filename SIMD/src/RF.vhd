@@ -38,18 +38,17 @@ architecture behavioral of RF is
 	signal f: vec_array(0 to 31)(127 downto 0) := (others => (others => '0'));								  
 begin
 	write: process (all)													   
-	begin
+	begin  	
+		-- write data
+		if write_en = '1' then	
+			f(to_integer(unsigned(write_addr))) <= write_data;	   
+		end if;
 		
 		-- read data
 		output.op <= op;
 		output.rs1 <= f(to_integer(unsigned(op(9 downto 5)))) when op(24) = '1' else f(to_integer(unsigned(op(4 downto 0))));
 		output.rs2 <= f(to_integer(unsigned(op(14 downto 10))));
-		output.rs3 <= f(to_integer(unsigned(op(19 downto 15))));
-		
-		-- write data
-		if write_en = '1' then	
-			f(to_integer(unsigned(write_addr))) <= write_data;	   
-		end if;
+		output.rs3 <= f(to_integer(unsigned(op(19 downto 15))));   
 		
 		-- output state
 		output_rf <= f;	

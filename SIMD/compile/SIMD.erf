@@ -34,4 +34,4 @@ ENDPROGRESS C:/Users/jb/Documents/repos/SIMD/SIMD/src/ALU.vhd
 MESSAGE "File: C:/Users/jb/Documents/repos/SIMD/SIMD/src/generic_register.vhd" 
 MESSAGE "Compile Entity "generic_register"" 
 MESSAGE "Compile Architecture "behavioral" of Entity "generic_register"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 
